@@ -36,3 +36,6 @@ jobs:
       with:
         branch: gh-pages
         folder: out # The folder the action should deploy.
+        
+permissions:
+  contents: write
