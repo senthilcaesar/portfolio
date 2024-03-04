@@ -59,8 +59,8 @@ export default function About() {
                 BIOGRAPHY
               </h2>
               <p className="font-medium">
-                Hi👋 I&apos;m <strong>Senthil Palanivelu</strong>, a graduate
-                with a background in Computer Science from{" "}
+                Hi👋 I'm <strong>Senthil Palanivelu</strong>, a graduate with a
+                background in Computer Science from{" "}
                 <strong>University of Massachusetts Boston</strong>. I am
                 interested in developing predictive models that combines
                 physiological, behavioral, clinical, imaging, genetics,
