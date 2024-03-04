@@ -59,8 +59,8 @@ export default function About() {
                 BIOGRAPHY
               </h2>
               <p className="font-medium">
-                Hi👋 I'm <strong>Senthil Palanivelu</strong>, a graduate with a
-                background in Computer Science from{" "}
+                Hi👋 I&apos;m <strong>Senthil Palanivelu</strong>, a graduate
+                with a background in Computer Science from{" "}
                 <strong>University of Massachusetts Boston</strong>. I am
                 interested in developing predictive models that combines
                 physiological, behavioral, clinical, imaging, genetics,
@@ -78,7 +78,7 @@ export default function About() {
                   <li>
                     My second job at <strong>Boston University</strong> as a
                     Data Analyst where I built computing tools for multimodal
-                    analysis of the brain's connectivity structure.
+                    analysis of the brain&apos;s connectivity structure.
                   </li>
                   <br></br>
                   <li>
@@ -91,8 +91,8 @@ export default function About() {
                   <li>
                     At present I am at{" "}
                     <strong> Brigham and Women’s Hospital</strong> as a
-                    Bioinformatician where I am involved in the development of
-                    open-source C/C++ software package for analyzing
+                    Bioinformatician where I&apos;m involved in the development
+                    of open-source C/C++ software package for analyzing
                     polysomnographic recordings, focusing on sleep EEG.
                   </li>
                 </ul>
@@ -102,12 +102,12 @@ export default function About() {
                 experience. This diverse exposure has not only broadened my
                 understanding but has also sharpened my ability to appreciate
                 the complexities of data analysis, processing and engineering.
-                In this phase of my career, I'm consciously exploring various
-                interests to discover what truly ignites my passion. It's a
-                journey of self-discovery, where I'm open to embracing new
-                experiences that offer insights into my capabilities. Lately,
-                I’ve found myself particularly drawn to Statistics and
-                Probability Theory.
+                In this phase of my career, I&apos;m consciously exploring
+                various interests to discover what truly ignites my passion.
+                It&apos;s a journey of self-discovery, where I&apos;m open to
+                embracing new experiences that offer insights into my
+                capabilities. Lately, I&apos;ve found myself particularly drawn
+                to Statistics and Probability Theory.
                 <br></br>
                 <br></br>
                 Thank you for taking the time to read about my journey.
