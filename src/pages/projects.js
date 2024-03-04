@@ -11,7 +11,6 @@ import multiview from "../../public/images/projects/multiview.png";
 import moon from "../../public/images/projects/moon.png";
 import signal from "../../public/images/projects/signal.png";
 import protein from "../../public/images/projects/protein.png";
-
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
@@ -221,10 +220,10 @@ export default function Projects() {
               <FeaturedProject
                 type="JavaScript, TypeScript"
                 title="Personal Website"
-                summary="A bespoke professional portfolio, crafted with Next JS, utilizing the dynamic capabilities of Framer-motion and the styled-components library. It features seamless page transitions, engaging background animations, and a distinctive design, all optimized for a responsive mobile experience."
+                summary="This is a Next.js project bootstrapped with create-next-app"
                 img={proj4}
-                link="https://github.com/yiyaozzz/portfolio"
-                github="https://github.com/yiyaozzz/portfolio"
+                link="https://github.com/senthilcaesar/portfolio"
+                github="https://github.com/senthilcaesar/portfolio"
               />
             </div>
             {/*}
