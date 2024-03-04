@@ -61,11 +61,7 @@ export default function About() {
               <p className="font-medium">
                 Hi👋 I&apos;m <strong>Senthil Palanivelu</strong>, a graduate
                 with a background in Computer Science from{" "}
-                <strong>University of Massachusetts Boston</strong>. I am
-                interested in developing predictive models that combines
-                physiological, behavioral, clinical, imaging, genetics,
-                epidemiological, lab and behavioral measures with the goal of
-                improving outcome predictions in various diseases.
+                <strong>University of Massachusetts Boston</strong>.
               </p>
               <p className="my-4 font-medium">
                 <ul>
