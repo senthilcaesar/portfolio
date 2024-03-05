@@ -200,6 +200,21 @@ export default function Articles() {
               date="March, 2024"
               link="https://woolly-revolve-fec.notion.site/Building-Docker-images-for-multiple-platforms-7a84ad5b58194c3b859c1a41a11708d0?pvs=4"
             />
+            <Article
+              title="Git Tutorial"
+              date="March, 2024"
+              link="https://woolly-revolve-fec.notion.site/Git-Tutorial-dca4aaaf46f2456ba95208b3c41ff31a?pvs=4"
+            />
+            <Article
+              title="Questions to ask before a purchase"
+              date="March, 2024"
+              link="https://woolly-revolve-fec.notion.site/Questions-to-ask-before-making-any-purchase-9fe8fc6d23d54b8b82f2942ca8300745?pvs=4"
+            />
+            <Article
+              title="What is the purpose of life ?"
+              date="March, 2024"
+              link="https://woolly-revolve-fec.notion.site/What-is-the-purpose-of-life-77e18ad6dac44790a25bc086ebdc7728?pvs=4"
+            />
           </ul>
         </Layout>
       </main>
