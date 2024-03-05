@@ -146,7 +146,7 @@ const Navbar = () => {
 
           <motion.a
             target={"_blank"}
-            className="w-7 mr-4"
+            className="w-7 mr-1"
             href="https://github.com/SenthilCaesar"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 2 }}
@@ -154,15 +154,30 @@ const Navbar = () => {
           >
             <GithubIcon />
           </motion.a>
+
           <motion.a
             target={"_blank"}
-            className="w-7 mx-4"
+            className="w-7 mx-3"
             href="https://www.linkedin.com/in/senthil-palanivelu-0ba38844/"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 2 }}
             aria-label="Checkout my linkedin profile"
           >
             <LinkedInIcon />
+          </motion.a>
+
+          <motion.a
+            href="https://www.instagram.com/senthil_p89/"
+            className="w-12 h-7 ease ml-2 flex items-center justify-center
+            font-semibold bg-dark text-light py-1 px-3 rounded-full dark:bg-light dark:text-dark
+                  lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 xs:font-bold
+                  "
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 2 }}
+          >
+            Insta
           </motion.a>
 
           {/*
@@ -189,7 +204,7 @@ const Navbar = () => {
           */}
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
-            className={`w-7 h-7 ease ml-4 flex items-center justify-center rounded-full p-1  
+            className={`w-7 h-7 ease ml-6 flex items-center justify-center rounded-full p-1  
             ${mode === "light" ? "bg-dark  text-light" : "bg-light  text-dark"}
             `}
             aria-label="theme-switcher"
