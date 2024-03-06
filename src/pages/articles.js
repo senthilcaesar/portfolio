@@ -215,6 +215,11 @@ export default function Articles() {
               date="March, 2024"
               link="https://woolly-revolve-fec.notion.site/What-is-the-purpose-of-life-77e18ad6dac44790a25bc086ebdc7728?pvs=4"
             />
+            <Article
+              title="What principles organize my day "
+              date="March, 2024"
+              link="https://woolly-revolve-fec.notion.site/What-principles-organize-my-day-54caca69b2c247c9ba4f1454c2efe36d?pvs=4"
+            />
           </ul>
         </Layout>
       </main>
