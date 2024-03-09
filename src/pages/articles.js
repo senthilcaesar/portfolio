@@ -171,6 +171,11 @@ export default function Articles() {
 
           <ul className="flex flex-col items-center relative">
             <Article
+              title="Random Forest"
+              date="March, 2024"
+              link="https://woolly-revolve-fec.notion.site/Random-Forest-608b2dc8e2cb4986bb38dcfa0a71284e?pvs=4"
+            />
+            <Article
               title="My readings"
               date="March, 2024"
               link="https://woolly-revolve-fec.notion.site/2fdf26a029464252b2ef134f1e81a9dc?v=0ccf1606485e42899e3f534acf249694&pvs=4"
