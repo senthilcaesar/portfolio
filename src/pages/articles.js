@@ -4,12 +4,8 @@ import Head from "next/head";
 import Image from "next/image";
 import pca from "../../public/images/articles/pca.png";
 import corr from "../../public/images/articles/corr.png";
-import blog3 from "../../public/images/articles/AIFundemental.webp";
-import blog4 from "../../public/images/articles/RSStoHTML.jpg";
-import blog5 from "../../public/images/articles/mathProof.png";
-import blog6 from "../../public/images/articles/abnormalPsy.png";
-import blog7 from "../../public/images/articles/quantumMechanics.jpeg";
-import blog8 from "../../public/images/articles/What is higher order component in React.jpg";
+import rf from "../../public/images/articles/rf.png";
+import nl from "../../public/images/articles/nl.png";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -164,17 +160,24 @@ export default function Articles() {
               summary="Relationship between salt intake and systolic blood pressure."
               link="https://woolly-revolve-fec.notion.site/Pearson-correlation-b856f2519fa445aa8c037d6b2e78f8f5?pvs=4"
             />
+            <FeaturedArticle
+              img={rf}
+              title="Random Forest"
+              time="5 min read"
+              link="https://woolly-revolve-fec.notion.site/Random-Forest-608b2dc8e2cb4986bb38dcfa0a71284e?pvs=4"
+            />
+            <FeaturedArticle
+              img={nl}
+              title="Non-Linear SVM"
+              time="5 min read"
+              link="https://woolly-revolve-fec.notion.site/Non-Linear-SVM-1d9658b121404e73a73be996f2e542f4?pvs=4"
+            />
           </ul>
           <h2 className="font-bold text-4xl w-full text-center mt-32 my-16">
             All Articles
           </h2>
 
           <ul className="flex flex-col items-center relative">
-            <Article
-              title="Random Forest"
-              date="March, 2024"
-              link="https://woolly-revolve-fec.notion.site/Random-Forest-608b2dc8e2cb4986bb38dcfa0a71284e?pvs=4"
-            />
             <Article
               title="My readings"
               date="March, 2024"
