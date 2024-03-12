@@ -137,11 +137,14 @@ export default function Articles() {
         <Layout className="pt-16">
           <AnimatedText
             text="Welcome!😄
-            This is a personal journey that I have embarked upon, one that I am documenting through my blog. 
-            This endeavor is not just a means for expression but a quest for a deeper understanding of myself. 
-            It is a reflection of my reading program, which exposes me to a wide array of subjects including education, science, economics, and leadership, and through which I aim to achieve a broad intellectual exploration. 
-            I'm currently exploring different interests to see what truly excites me. I'm open to experiences that will
-             help me learn more about myself."
+            I share a personal narrative on how reading books has become a transformative element in my life. 
+            It's not merely about gathering information; it's an immersive experience that elevates my thought 
+            processes, dissipates my ignorance, and introduces me to a multitude of perspectives and truths. 
+            This journey through literature has become a form of meditation for me, connecting me deeply with 
+            characters and ideas, and often leading to introspection about my own identity and existence. 
+            Through this post, I invite you to explore how reading has enriched my life, offering wisdom, joy, 
+            and a profound appreciation for the small yet significant aspects of our daily lives. 
+            Let's unravel together how the act of reading can change us in the most unexpected and beautiful ways."
             className="no-capitalize !text-base !font-normal !text-left !leading-tight mb-16 lg:!text-lg sm:!text-md xs:!text-sm sm:mb-8"
           />
           <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
