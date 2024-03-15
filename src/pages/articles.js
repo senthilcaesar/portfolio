@@ -6,6 +6,7 @@ import pca from "../../public/images/articles/pca.png";
 import corr from "../../public/images/articles/corr.png";
 import rf from "../../public/images/articles/rf.png";
 import nl from "../../public/images/articles/nl.png";
+import lg from "../../public/images/articles/lg.png";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -174,6 +175,12 @@ export default function Articles() {
               title="Non-Linear SVM"
               time="5 min read"
               link="https://woolly-revolve-fec.notion.site/Non-Linear-SVM-1d9658b121404e73a73be996f2e542f4?pvs=4"
+            />
+            <FeaturedArticle
+              img={lg}
+              title="Logistic Regression"
+              time="10 min read"
+              link="https://woolly-revolve-fec.notion.site/The-Logic-of-Logistic-Regression-d2213374b5a942b5ad8a0a54b5f23317?pvs=4"
             />
           </ul>
           <h2 className="font-bold text-4xl w-full text-center mt-32 my-16">
