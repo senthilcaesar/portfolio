@@ -103,7 +103,7 @@ const Experience = () => {
             company="Brigham and Women's Hospital"
             location="United States"
             companyLink="https://www.brighamandwomens.org/"
-            time="Sep 2020 - Present"
+            time="Sep 2022 - Present"
             work={bwhWorkProp}
           />
 
