@@ -243,6 +243,11 @@ export default function Articles() {
               date="March, 2024"
               link="https://woolly-revolve-fec.notion.site/Embracing-the-Journey-e01bb1117ce041c8a5eed5a943e36776?pvs=4"
             />
+            <Article
+              title="Presentation tips"
+              date="March, 2024"
+              link="https://woolly-revolve-fec.notion.site/Presentation-Tips-873287297fad496b86fd606a6fc3bb1b?pvs=4"
+            />
           </ul>
         </Layout>
       </main>
