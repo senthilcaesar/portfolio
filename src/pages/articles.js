@@ -139,10 +139,11 @@ export default function Articles() {
           <AnimatedText
             text="Welcome!😄
             I share a personal narrative on how reading books has become a transformative element in my life. 
-            It's not merely about gathering information; it's an immersive experience that elevates my thought 
-            processes, dissipates my ignorance, and introduces me to a multitude of perspectives and truths. 
+            It's not merely about gathering information; it's an experience that elevates my thought 
+            processes, dissipates my ignorance, and introduces me to a multitude of perspectives, novel ideas and truths. 
             This journey through literature has become a form of meditation for me, connecting me deeply with 
-            characters and ideas, and often leading to introspection about my own identity and existence. 
+            characters and ideas. It feels like a real privilege to have the time to immerse myself in reading.
+
             Through this post, I invite you to explore how reading has enriched my life, offering wisdom, joy, 
             and a profound appreciation for the small yet significant aspects of our daily lives. 
             Let's unravel together how the act of reading can change us in the most unexpected and beautiful ways."
