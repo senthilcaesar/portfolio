@@ -7,6 +7,7 @@ import corr from "../../public/images/articles/corr.png";
 import rf from "../../public/images/articles/rf.png";
 import nl from "../../public/images/articles/nl.png";
 import lg from "../../public/images/articles/lg.png";
+import ttest from "../../public/images/articles/ttest2.png";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -182,6 +183,12 @@ export default function Articles() {
               title="Logistic Regression"
               time="10 min read"
               link="https://woolly-revolve-fec.notion.site/The-Logic-of-Logistic-Regression-d2213374b5a942b5ad8a0a54b5f23317?pvs=4"
+            />
+            <FeaturedArticle
+              img={ttest}
+              title="Two-Sample T-Test"
+              time="5 min read"
+              link="https://woolly-revolve-fec.notion.site/Two-Sample-T-Test-8d37782b853a40b6a77da3d9605e7b81?pvs=4"
             />
           </ul>
           <h2 className="font-bold text-4xl w-full text-center mt-32 my-16">
