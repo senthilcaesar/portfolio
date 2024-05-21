@@ -8,6 +8,7 @@ import rf from "../../public/images/articles/rf.png";
 import nl from "../../public/images/articles/nl.png";
 import lg from "../../public/images/articles/lg.png";
 import ttest from "../../public/images/articles/ttest2.png";
+import ss from "../../public/images/articles/thermal_distress_plot1.png";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -151,6 +152,13 @@ export default function Articles() {
             className="no-capitalize !text-base !font-normal !text-left !leading-tight mb-16 lg:!text-lg sm:!text-md xs:!text-sm sm:mb-8"
           />
           <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
+            <FeaturedArticle
+              img={ss}
+              title="Challenger USA Space Shuttle O-Ring"
+              time="5 min read"
+              link="https://woolly-revolve-fec.notion.site/Challenger-USA-Space-Shuttle-O-Ring-a96168b3c1934551b159fa709e585367?pvs=4"
+            />
+
             <FeaturedArticle
               img={pca}
               title="Principal Component Analysis"
