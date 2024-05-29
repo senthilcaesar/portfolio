@@ -8,6 +8,7 @@ import rf from "../../public/images/articles/rf.png";
 import nl from "../../public/images/articles/nl.png";
 import lg from "../../public/images/articles/lg.png";
 import ttest from "../../public/images/articles/ttest2.png";
+import eigen from "../../public/images/articles/eigen.png";
 import ss from "../../public/images/articles/thermal_distress_plot1.png";
 
 import Layout from "@/components/Layout";
@@ -151,11 +152,12 @@ export default function Articles() {
             Let's unravel together how the act of reading can change us in the most unexpected and beautiful ways."
             className="no-capitalize !text-base !font-normal !text-left !leading-tight mb-16 lg:!text-lg sm:!text-md xs:!text-sm sm:mb-8"
           />
-          <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
+          <ul className="grid grid-cols-4 gap-8 lg:gap-8 md:grid-cols-1 md:gap-y-16">
             <FeaturedArticle
               img={ss}
               title="Challenger USA Space Shuttle O-Ring"
               time="5 min read"
+              summary="Predict the number of O-rings that experience thermal distress on a flight at 31 degrees F given data on the previous 23 shuttle flights"
               link="https://woolly-revolve-fec.notion.site/Challenger-USA-Space-Shuttle-O-Ring-a96168b3c1934551b159fa709e585367?pvs=4"
             />
 
@@ -173,6 +175,13 @@ export default function Articles() {
               time="5 min read"
               summary="Relationship between salt intake and systolic blood pressure."
               link="https://woolly-revolve-fec.notion.site/Pearson-correlation-b856f2519fa445aa8c037d6b2e78f8f5?pvs=4"
+            />
+            <FeaturedArticle
+              img={eigen}
+              title="Application of Eigenvalues and Eigenvectors"
+              time="10 min read"
+              summary="Image Compression"
+              link="https://woolly-revolve-fec.notion.site/Application-of-Eigenvalues-and-Eigenvectors-87613972af0b4138bcd8779f9a429cd0?pvs=4"
             />
             <FeaturedArticle
               img={rf}
