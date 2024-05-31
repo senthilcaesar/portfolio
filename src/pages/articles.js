@@ -9,6 +9,7 @@ import nl from "../../public/images/articles/nl.png";
 import lg from "../../public/images/articles/lg.png";
 import ttest from "../../public/images/articles/ttest2.png";
 import eigen from "../../public/images/articles/eigen.png";
+import ml from "../../public/images/articles/ml.png";
 import ss from "../../public/images/articles/thermal_distress_plot1.png";
 
 import Layout from "@/components/Layout";
@@ -206,6 +207,12 @@ export default function Articles() {
               title="Two-Sample T-Test"
               time="5 min read"
               link="https://woolly-revolve-fec.notion.site/Two-Sample-T-Test-8d37782b853a40b6a77da3d9605e7b81?pvs=4"
+            />
+            <FeaturedArticle
+              img={ml}
+              title="Machine Learning Math Concepts"
+              time="5 min read"
+              link="https://woolly-revolve-fec.notion.site/ML-Math-concepts-3277f5cfdcf54463869a32aa639b05c0?pvs=4"
             />
           </ul>
           <h2 className="font-bold text-4xl w-full text-center mt-32 my-16">
