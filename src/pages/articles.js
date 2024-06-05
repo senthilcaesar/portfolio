@@ -10,6 +10,7 @@ import lg from "../../public/images/articles/lg.png";
 import ttest from "../../public/images/articles/ttest2.png";
 import eigen from "../../public/images/articles/eigen.png";
 import ml from "../../public/images/articles/ml.png";
+import costfunc from "../../public/images/articles/costfunc.png";
 import ss from "../../public/images/articles/thermal_distress_plot1.png";
 
 import Layout from "@/components/Layout";
@@ -185,6 +186,30 @@ export default function Articles() {
               link="https://woolly-revolve-fec.notion.site/Application-of-Eigenvalues-and-Eigenvectors-87613972af0b4138bcd8779f9a429cd0?pvs=4"
             />
             <FeaturedArticle
+              img={costfunc}
+              title="Optimizing Functions"
+              time="10 min read"
+              link="https://woolly-revolve-fec.notion.site/Optimizing-Functions-4138080cbe1f42b4a3c2d2438561ac8e?pvs=4"
+            />
+            <FeaturedArticle
+              img={ttest}
+              title="Two-Sample T-Test"
+              time="5 min read"
+              link="https://woolly-revolve-fec.notion.site/Two-Sample-T-Test-8d37782b853a40b6a77da3d9605e7b81?pvs=4"
+            />
+            <FeaturedArticle
+              img={lg}
+              title="Logistic Regression"
+              time="10 min read"
+              link="https://woolly-revolve-fec.notion.site/The-Logic-of-Logistic-Regression-d2213374b5a942b5ad8a0a54b5f23317?pvs=4"
+            />
+            <FeaturedArticle
+              img={ml}
+              title="Machine Learning Math Concepts"
+              time="5 min read"
+              link="https://woolly-revolve-fec.notion.site/ML-Math-concepts-3277f5cfdcf54463869a32aa639b05c0?pvs=4"
+            />
+            <FeaturedArticle
               img={rf}
               title="Random Forest"
               time="5 min read"
@@ -195,24 +220,6 @@ export default function Articles() {
               title="Non-Linear SVM"
               time="5 min read"
               link="https://woolly-revolve-fec.notion.site/Non-Linear-SVM-1d9658b121404e73a73be996f2e542f4?pvs=4"
-            />
-            <FeaturedArticle
-              img={lg}
-              title="Logistic Regression"
-              time="10 min read"
-              link="https://woolly-revolve-fec.notion.site/The-Logic-of-Logistic-Regression-d2213374b5a942b5ad8a0a54b5f23317?pvs=4"
-            />
-            <FeaturedArticle
-              img={ttest}
-              title="Two-Sample T-Test"
-              time="5 min read"
-              link="https://woolly-revolve-fec.notion.site/Two-Sample-T-Test-8d37782b853a40b6a77da3d9605e7b81?pvs=4"
-            />
-            <FeaturedArticle
-              img={ml}
-              title="Machine Learning Math Concepts"
-              time="5 min read"
-              link="https://woolly-revolve-fec.notion.site/ML-Math-concepts-3277f5cfdcf54463869a32aa639b05c0?pvs=4"
             />
           </ul>
           <h2 className="font-bold text-4xl w-full text-center mt-32 my-16">
