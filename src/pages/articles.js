@@ -206,7 +206,8 @@ export default function Articles() {
             <FeaturedArticle
               img={ml}
               title="Machine Learning Math Concepts"
-              time="5 min read"
+              time="15 min read"
+              summary="Three areas of mathematics lie at the heart of machine learning: linear algebra, multivariate calculus and probability theory"
               link="https://woolly-revolve-fec.notion.site/ML-Math-concepts-3277f5cfdcf54463869a32aa639b05c0?pvs=4"
             />
             <FeaturedArticle
