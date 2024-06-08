@@ -10,6 +10,7 @@ import lg from "../../public/images/articles/lg.png";
 import ttest from "../../public/images/articles/ttest2.png";
 import eigen from "../../public/images/articles/eigen.png";
 import ml from "../../public/images/articles/ml.png";
+import gdlinear from "../../public/images/articles/gdlinear.png";
 import costfunc from "../../public/images/articles/costfunc.png";
 import ss from "../../public/images/articles/thermal_distress_plot1.png";
 
@@ -198,10 +199,11 @@ export default function Articles() {
               link="https://woolly-revolve-fec.notion.site/Two-Sample-T-Test-8d37782b853a40b6a77da3d9605e7b81?pvs=4"
             />
             <FeaturedArticle
-              img={lg}
-              title="Logistic Regression"
+              img={gdlinear}
+              title="Optimization Using Gradient Descent"
               time="10 min read"
-              link="https://woolly-revolve-fec.notion.site/The-Logic-of-Logistic-Regression-d2213374b5a942b5ad8a0a54b5f23317?pvs=4"
+              summary="Linear Regression"
+              link="https://woolly-revolve-fec.notion.site/Optimization-Using-Gradient-Descent-0c0fb2c0505b432195d163dbd7ff80f6?pvs=4"
             />
             <FeaturedArticle
               img={ml}
@@ -209,6 +211,12 @@ export default function Articles() {
               time="15 min read"
               summary="Three areas of mathematics lie at the heart of machine learning: linear algebra, multivariate calculus and probability theory"
               link="https://woolly-revolve-fec.notion.site/ML-Math-concepts-3277f5cfdcf54463869a32aa639b05c0?pvs=4"
+            />
+            <FeaturedArticle
+              img={lg}
+              title="Logistic Regression"
+              time="10 min read"
+              link="https://woolly-revolve-fec.notion.site/The-Logic-of-Logistic-Regression-d2213374b5a942b5ad8a0a54b5f23317?pvs=4"
             />
             <FeaturedArticle
               img={rf}
