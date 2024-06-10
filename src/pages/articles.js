@@ -12,6 +12,7 @@ import eigen from "../../public/images/articles/eigen.png";
 import ml from "../../public/images/articles/ml.png";
 import gdlinear from "../../public/images/articles/gdlinear.png";
 import costfunc from "../../public/images/articles/costfunc.png";
+import perceptron from "../../public/images/articles/perceptron.png";
 import ss from "../../public/images/articles/thermal_distress_plot1.png";
 
 import Layout from "@/components/Layout";
@@ -204,6 +205,13 @@ export default function Articles() {
               time="10 min read"
               summary="Linear Regression"
               link="https://woolly-revolve-fec.notion.site/Optimization-Using-Gradient-Descent-0c0fb2c0505b432195d163dbd7ff80f6?pvs=4"
+            />
+            <FeaturedArticle
+              img={perceptron}
+              title="Regression with Perceptron"
+              time="10 min read"
+              summary="Neural network corresponding to a simple linear regression model"
+              link="https://woolly-revolve-fec.notion.site/Regression-with-Perceptron-3d15ece5a08f4c3d88dcf1d686804294?pvs=4"
             />
             <FeaturedArticle
               img={ml}
