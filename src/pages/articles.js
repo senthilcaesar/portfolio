@@ -13,6 +13,8 @@ import ml from "../../public/images/articles/ml.png";
 import gdlinear from "../../public/images/articles/gdlinear.png";
 import costfunc from "../../public/images/articles/costfunc.png";
 import perceptron from "../../public/images/articles/perceptron.png";
+import classify from "../../public/images/articles/classify.png";
+import svm from "../../public/images/articles/svm.png";
 import ss from "../../public/images/articles/thermal_distress_plot1.png";
 
 import Layout from "@/components/Layout";
@@ -219,6 +221,19 @@ export default function Articles() {
               time="15 min read"
               summary="Three areas of mathematics lie at the heart of machine learning: linear algebra, multivariate calculus and probability theory"
               link="https://woolly-revolve-fec.notion.site/ML-Math-concepts-3277f5cfdcf54463869a32aa639b05c0?pvs=4"
+            />
+            <FeaturedArticle
+              img={classify}
+              title="Classification with Perceptron"
+              time="10 min read"
+              summary="Single perceptron neural network model to solve a simple classification problem"
+              link="https://woolly-revolve-fec.notion.site/Classification-with-Perceptron-562735a8f1e5441c92ce6f9b5e6b898e?pvs=4"
+            />
+            <FeaturedArticle
+              img={svm}
+              title="Support Vector Machine"
+              time="5 min read"
+              link="https://woolly-revolve-fec.notion.site/Support-Vector-Machine-cdd763cc9fab4aadad1d7523966cdba5?pvs=4"
             />
             <FeaturedArticle
               img={lg}
