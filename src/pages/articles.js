@@ -199,6 +199,7 @@ export default function Articles() {
               img={ttest}
               title="Two-Sample T-Test"
               time="5 min read"
+              summary="Determine if the means of two independent groups are significantly different from one another."
               link="https://woolly-revolve-fec.notion.site/Two-Sample-T-Test-8d37782b853a40b6a77da3d9605e7b81?pvs=4"
             />
             <FeaturedArticle
