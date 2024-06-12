@@ -226,7 +226,7 @@ export default function Articles() {
               img={classify}
               title="Classification with Perceptron"
               time="10 min read"
-              summary="Single perceptron neural network model to solve a simple classification problem"
+              summary="Single perceptron neural network model to solve a linear classification problem. Finding a straight line in a plane that would serve as a decision boundary to separate two classes."
               link="https://woolly-revolve-fec.notion.site/Classification-with-Perceptron-562735a8f1e5441c92ce6f9b5e6b898e?pvs=4"
             />
             <FeaturedArticle
