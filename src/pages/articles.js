@@ -15,6 +15,7 @@ import costfunc from "../../public/images/articles/costfunc.png";
 import perceptron from "../../public/images/articles/perceptron.png";
 import classify from "../../public/images/articles/classify.png";
 import svm from "../../public/images/articles/svm.png";
+import Intervals from "../../public/images/articles/Intervals.png";
 import ss from "../../public/images/articles/thermal_distress_plot1.png";
 
 import Layout from "@/components/Layout";
@@ -253,6 +254,13 @@ export default function Articles() {
               title="Non-Linear SVM"
               time="5 min read"
               link="https://woolly-revolve-fec.notion.site/Non-Linear-SVM-1d9658b121404e73a73be996f2e542f4?pvs=4"
+            />
+            <FeaturedArticle
+              img={Intervals}
+              title="Data Representation"
+              summary="Histograms with more bins transition to a smooth probability distribution"
+              time="5 min read"
+              link="https://woolly-revolve-fec.notion.site/Data-Representation-6e3d44160efa4a32a0ce1562e6fe0357?pvs=4"
             />
           </ul>
           <h2 className="font-bold text-4xl w-full text-center mt-32 my-16">
