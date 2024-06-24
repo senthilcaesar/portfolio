@@ -17,7 +17,7 @@ const Footer = () => {
             target="_blank"
             className="underline underline-offset-2"
           >
-            May, {new Date().getFullYear()}
+            June, {new Date().getFullYear()}
           </Link>
         </span>
 

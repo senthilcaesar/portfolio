@@ -167,7 +167,13 @@ export default function Articles() {
               summary="Predict the number of O-rings that experience thermal distress on a flight at 31 degrees F given data on the previous 23 shuttle flights"
               link="https://woolly-revolve-fec.notion.site/Challenger-USA-Space-Shuttle-O-Ring-a96168b3c1934551b159fa709e585367?pvs=4"
             />
-
+            <FeaturedArticle
+              img={Intervals}
+              title="Data Representation"
+              summary="Mean, Median, Mode, Variance, Standard deviation, Skewness, IQR, Kurtosis, QQ plot"
+              time="10 min read"
+              link="https://woolly-revolve-fec.notion.site/Data-Representation-6e3d44160efa4a32a0ce1562e6fe0357?pvs=4"
+            />
             <FeaturedArticle
               img={pca}
               title="Principal Component Analysis"
@@ -255,13 +261,7 @@ export default function Articles() {
               time="5 min read"
               link="https://woolly-revolve-fec.notion.site/Non-Linear-SVM-1d9658b121404e73a73be996f2e542f4?pvs=4"
             />
-            <FeaturedArticle
-              img={Intervals}
-              title="Data Representation"
-              summary="Histograms with more bins transition to a smooth probability distribution"
-              time="5 min read"
-              link="https://woolly-revolve-fec.notion.site/Data-Representation-6e3d44160efa4a32a0ce1562e6fe0357?pvs=4"
-            />
+            
           </ul>
           <h2 className="font-bold text-4xl w-full text-center mt-32 my-16">
             All Articles
