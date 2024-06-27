@@ -17,6 +17,7 @@ import classify from "../../public/images/articles/classify.png";
 import svm from "../../public/images/articles/svm.png";
 import Intervals from "../../public/images/articles/Intervals.png";
 import ss from "../../public/images/articles/thermal_distress_plot1.png";
+import anscombe from "../../public/images/articles/anscombe.png";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -173,6 +174,13 @@ export default function Articles() {
               summary="Mean, Median, Mode, Variance, Standard deviation, Skewness, IQR, Kurtosis, QQ plot"
               time="10 min read"
               link="https://woolly-revolve-fec.notion.site/Data-Representation-6e3d44160efa4a32a0ce1562e6fe0357?pvs=4"
+            />
+            <FeaturedArticle
+              img={anscombe}
+              title="Anscombe's quartet"
+              summary="Descriptive statistics, Data visualization"
+              time="5 min read"
+              link="https://woolly-revolve-fec.notion.site/Anscombe-s-quartet-6a5b6d085f5349008c6b9e8fd286ac0a?pvs=4"
             />
             <FeaturedArticle
               img={pca}
