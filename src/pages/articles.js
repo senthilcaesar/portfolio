@@ -18,6 +18,7 @@ import svm from "../../public/images/articles/svm.png";
 import Intervals from "../../public/images/articles/Intervals.png";
 import ss from "../../public/images/articles/thermal_distress_plot1.png";
 import anscombe from "../../public/images/articles/anscombe.png";
+import dice from "../../public/images/articles/dice.png";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -246,6 +247,13 @@ export default function Articles() {
               link="https://woolly-revolve-fec.notion.site/Classification-with-Perceptron-562735a8f1e5441c92ce6f9b5e6b898e?pvs=4"
             />
             <FeaturedArticle
+              img={dice}
+              title="Simulate Dice Throws with NumPy"
+              time="10 min read"
+              summary="Python, NumPy"
+              link="https://woolly-revolve-fec.notion.site/Simulate-Dice-Throws-with-NumPy-e29fed1d1105458fa31aeae3e3456344?pvs=4"
+            />
+            <FeaturedArticle
               img={svm}
               title="Support Vector Machine"
               time="5 min read"
@@ -269,7 +277,6 @@ export default function Articles() {
               time="5 min read"
               link="https://woolly-revolve-fec.notion.site/Non-Linear-SVM-1d9658b121404e73a73be996f2e542f4?pvs=4"
             />
-            
           </ul>
           <h2 className="font-bold text-4xl w-full text-center mt-32 my-16">
             All Articles
