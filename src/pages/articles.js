@@ -19,6 +19,7 @@ import Intervals from "../../public/images/articles/Intervals.png";
 import ss from "../../public/images/articles/thermal_distress_plot1.png";
 import anscombe from "../../public/images/articles/anscombe.png";
 import dice from "../../public/images/articles/dice.png";
+import clt from "../../public/images/articles/clt.png";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -258,6 +259,13 @@ export default function Articles() {
               title="Support Vector Machine"
               time="5 min read"
               link="https://woolly-revolve-fec.notion.site/Support-Vector-Machine-cdd763cc9fab4aadad1d7523966cdba5?pvs=4"
+            />
+            <FeaturedArticle
+              img={clt}
+              title="Central Limit Theorem"
+              time="10 min read"
+              summary="Python, NumPy, Seaborn, Gaussian"
+              link="https://woolly-revolve-fec.notion.site/Central-Limit-Theorem-3dfcb77a12674111b98775b5ff122794?pvs=4"
             />
             <FeaturedArticle
               img={lg}
