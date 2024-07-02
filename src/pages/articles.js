@@ -20,6 +20,7 @@ import ss from "../../public/images/articles/thermal_distress_plot1.png";
 import anscombe from "../../public/images/articles/anscombe.png";
 import dice from "../../public/images/articles/dice.png";
 import clt from "../../public/images/articles/clt.png";
+import prob from "../../public/images/articles/prob.png";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -266,6 +267,13 @@ export default function Articles() {
               time="10 min read"
               summary="Python, NumPy, Seaborn, Gaussian"
               link="https://woolly-revolve-fec.notion.site/Central-Limit-Theorem-3dfcb77a12674111b98775b5ff122794?pvs=4"
+            />
+            <FeaturedArticle
+              img={prob}
+              title="Probability and Statistics"
+              time="10 min read"
+              summary="Regularization, Random noise, MLE, Gaussian Distribution"
+              link="https://woolly-revolve-fec.notion.site/Probability-and-Statistics-3a2fe4d606a24dea9bab76093b2bee68?pvs=4"
             />
             <FeaturedArticle
               img={lg}
