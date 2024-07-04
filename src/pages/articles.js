@@ -21,6 +21,7 @@ import anscombe from "../../public/images/articles/anscombe.png";
 import dice from "../../public/images/articles/dice.png";
 import clt from "../../public/images/articles/clt.png";
 import prob from "../../public/images/articles/prob.png";
+import happy from "../../public/images/articles/happy.png";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -184,6 +185,13 @@ export default function Articles() {
               summary="Descriptive statistics, Data visualization"
               time="5 min read"
               link="https://woolly-revolve-fec.notion.site/Anscombe-s-quartet-6a5b6d085f5349008c6b9e8fd286ac0a?pvs=4"
+            />
+            <FeaturedArticle
+              img={happy}
+              title="World Happiness"
+              time="10 min read"
+              summary="Use the World Happiness Report dataset for predicting the happiness. Exploratory data analysis, Random Forest, Linear Regression, Python"
+              link="https://woolly-revolve-fec.notion.site/Exploratory-Data-Analysis-Linear-Regression-99df93e03cde4cb9b3a876d2aa30380b?pvs=4"
             />
             <FeaturedArticle
               img={pca}
