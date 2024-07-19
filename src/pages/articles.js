@@ -22,6 +22,7 @@ import dice from "../../public/images/articles/dice.png";
 import clt from "../../public/images/articles/clt.png";
 import prob from "../../public/images/articles/prob.png";
 import happy from "../../public/images/articles/happy.png";
+import ND from "../../public/images/articles/ND.png";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -300,6 +301,13 @@ export default function Articles() {
               title="Non-Linear SVM"
               time="5 min read"
               link="https://woolly-revolve-fec.notion.site/Non-Linear-SVM-1d9658b121404e73a73be996f2e542f4?pvs=4"
+            />
+            <FeaturedArticle
+              img={ND}
+              title="Confidence Interval"
+              time="10 min read"
+              summary="Margin of error, Confidence level, Significance level, Normal distribution, Sample size"
+              link="https://woolly-revolve-fec.notion.site/Confidence-Interval-378bb08a609a4357b7fc81bff1841c42?pvs=4"
             />
           </ul>
           <h2 className="font-bold text-4xl w-full text-center mt-32 my-16">
