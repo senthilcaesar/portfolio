@@ -53,7 +53,7 @@ const Skills = () => {
         <Skill name="AWS" x="-8vw" y="-20vw" />
         <Skill name="C++" x="-22vw" y="8vw" />
         <Skill name="Shiny" x="-18vw" y="-10vw" />
-        <Skill name="Visualization" x="17vw" y="9vw" />
+        <Skill name="Visualization" x="17vw" y="10vw" />
         <Skill name="GitHub actions" x="-20vw" y="18vw" />
         <Skill name="Excel" x="-16vw" y="-15vw" />
         <Skill name="Optimization" x="15vw" y="-15vw" />
@@ -61,11 +61,13 @@ const Skills = () => {
         <Skill name="Feature selection" x="26vw" y="-8vw" />
         <Skill name="Clustering" x="15vw" y="-5vw" />
         <Skill name="Regression" x="15vw" y="0vw" />
+        <Skill name="Statistics" x="15vw" y="5vw" />
         <Skill name="Computer vision" x="15vw" y="-15vw" />
         <Skill name="Neuroscience" x="28vw" y="-15vw" />
         <Skill name="Signal Processing" x="29vw" y="4vw" />
         <Skill name="Predictive modelling" x="29vw" y="10vw" />
-        <Skill name="Data Analysis" x="10vw" y="-21vw" />
+        <Skill name="Data analysis" x="10vw" y="-21vw" />
+        <Skill name="Data science" x="20vw" y="-21vw" />
         <Skill name="GitHub" x="-29vw" y="-11vw" />
         <Skill name="HTML & CSS" x="-33vw" y="0vw" />
         <Skill name="VS code" x="-30vw" y="8vw" />
