@@ -72,12 +72,19 @@ const Experience = () => {
   `;
 
   const bwhWorkProp = `Validated, executed algorithms and deployed ML predictive model for automated sleep staging and brain age prediction 
-  Processing new sleep cohort studies that includes Initial reviews of signals and annotations, checking for PHI, alignment and checking of staging data and EDF signals, creation of the harmonized set of EDFs and annotation files, compiling, checking and distributing a final analysis-ready harmonized dataset
-  Developed and deployed a web-based interactive EDF viewer that captures real time user inputs, integrate with backend models and display analytical results
-  Built web applications/portals using Shiny, ShinyServer, AWS App runner
-  Implement best practices and methods for building efficient docker container images
-  Create documentation for projects e.g Data gathering and processing methodology, results, etc
-  Manage lab website using HTML, CSS and JavaScript
+   Experience using Random forest and Gradient boosting framework (LightGBM, XGBoost)
+   Experience with statistical methods such as hypothesis testing, linear regression
+   Processing new sleep cohort studies that includes Initial reviews of signals and annotations, checking for PHI, alignment and checking of staging data and EDF signals, creation of the harmonized set of EDFs and annotation files, compiling, checking and distributing a final analysis-ready harmonized dataset.
+   Developed and deployed a web-based interactive EDF viewer that captures real time user inputs, integrate with backend models and display analytical results.
+   Built web applications using R and deployed R Shiny applications on AWS EC2 using ShinyProxy and Docker containers.
+   Implemented best practices and methods for building efficient docker container images
+   Setup optimized computing infrastructure including compute and storage environments
+   Provided ongoing support to investigate application issues and apply incremental enhancements to existing applications based on user feedback.
+   Manage lab tools website using HTML and CSS
+   Experience in Machine Learning, including predictive modeling, clustering, feature selection methods, and regularization techniques.
+   Created GitHub actions workflow triggers on the creation of new releases and build Python package into distributions before publishing them to PyPI using Twine.
+   Automated the process of building and distributing Python packages across different platforms using GitHub Actions
+   Conducted a detailed statistical analysis of SpO2 levels above 90% during sleep, utilizing data visualization and predictive modeling to assess respiratory health across 1000 individuals.
   `;
 
   const { scrollYProgress } = useScroll({

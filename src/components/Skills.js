@@ -42,27 +42,35 @@ const Skills = () => {
       </motion.div>
   {*/}
         💡
-        <Skill name="Python" x="-5vw" y="-2vw" />
-        <Skill name="MATLAB" x="7vw" y="-6vw" />
-        <Skill name="Linux" x="2vw" y="9vw" />
-        <Skill name="Docker" x="0vw" y="-10vw" />
-        <Skill name="R" x="-16vw" y="-5vw" />
+        <Skill name="Python" x="-8vw" y="-2vw" />
+        <Skill name="MATLAB" x="-25vw" y="-6vw" />
+        <Skill name="Linux" x="-5vw" y="9vw" />
+        <Skill name="Docker" x="-10vw" y="-10vw" />
+        <Skill name="R" x="-22vw" y="0vw" />
         <Skill name="SQL" x="-16vw" y="-5vw" />
         <Skill name="Data Engineering" x="-14vw" y="12vw" />
         <Skill name="Jupyter Lab" x="-16vw" y="5vw" />
-        <Skill name="AWS" x="0vw" y="-17vw" />
-        <Skill name="C++" x="18vw" y="2vw" />
-        <Skill name="R-Shiny" x="18vw" y="2vw" />
-        <Skill name="JavaScript" x="17vw" y="9vw" />
-        <Skill name="Git Actions" x="-2vw" y="20vw" />
-        <Skill name="NextJS" x="-16vw" y="-15vw" />
-        <Skill name="EEG" x="28vw" y="-5vw" />
+        <Skill name="AWS" x="-8vw" y="-20vw" />
+        <Skill name="C++" x="-22vw" y="8vw" />
+        <Skill name="Shiny" x="-18vw" y="-10vw" />
+        <Skill name="Visualization" x="17vw" y="9vw" />
+        <Skill name="GitHub actions" x="-20vw" y="18vw" />
+        <Skill name="Excel" x="-16vw" y="-15vw" />
+        <Skill name="Optimization" x="15vw" y="-15vw" />
+        <Skill name="Classification" x="15vw" y="-10vw" />
+        <Skill name="Feature selection" x="26vw" y="-8vw" />
+        <Skill name="Clustering" x="15vw" y="-5vw" />
+        <Skill name="Regression" x="15vw" y="0vw" />
+        <Skill name="Computer vision" x="15vw" y="-15vw" />
+        <Skill name="Neuroscience" x="28vw" y="-15vw" />
         <Skill name="Signal Processing" x="29vw" y="4vw" />
+        <Skill name="Predictive modelling" x="29vw" y="10vw" />
         <Skill name="Data Analysis" x="10vw" y="-21vw" />
         <Skill name="GitHub" x="-29vw" y="-11vw" />
         <Skill name="HTML & CSS" x="-33vw" y="0vw" />
-        <Skill name="Machine Learning" x="9vw" y="16vw" />
-        <Skill name="Algorithm development" x="28vw" y="-1vw" />
+        <Skill name="VS code" x="-30vw" y="8vw" />
+        <Skill name="Machine Learning" x="15vw" y="16vw" />
+        <Skill name="Algorithms development" x="28vw" y="-1vw" />
       </div>
     </>
   );
