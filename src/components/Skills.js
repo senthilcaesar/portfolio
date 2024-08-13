@@ -48,7 +48,8 @@ const Skills = () => {
         <Skill name="Docker" x="-10vw" y="-10vw" />
         <Skill name="R" x="-22vw" y="0vw" />
         <Skill name="SQL" x="-16vw" y="-5vw" />
-        <Skill name="PyTorch" x="-16vw" y="3vw" />
+        <Skill name="PyTorch" x="-16vw" y="2vw" />
+        <Skill name="Numpy" x="-14vw" y="8vw" />
         <Skill name="Data Engineering" x="-14vw" y="12vw" />
         <Skill name="AWS" x="-8vw" y="-20vw" />
         <Skill name="Jupyter Lab" x="-18vw" y="-20vw" />

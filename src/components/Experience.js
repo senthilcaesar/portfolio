@@ -49,11 +49,15 @@ const Details = ({ position, company, location, companyLink, time, work }) => {
 const Experience = () => {
   const ref = useRef(null);
 
-  const mghWorkProp = `Developed Image processing pipelines in Python 
-  Trained an encoder-decoder deep learning model for diffusion brain MRI segmentation
-  Deployed deep learning semantic segmentation model production code in AWS EC2
-  Prepare data for analysis across research sites for 200+ clinical, behavioral, and imaging measures
-  Hands on experience in image processing and analysis tools like 3D slicer, Free surfer, FSL and SPM`;
+  const mghWorkProp = `Part of Center for Computational Imaging Anatomy at Massachusetts General Hospital and Psychiatry Neuroimaging Laboratory at Brigham and Women's Hospital
+Developed image processing pipelines in Python
+Trained an encoder-decoder deep learning model for diffusion brain MRI segmentation
+Deployed deep learning semantic segmentation model production code in AWS EC2
+Visualized and analyzed fiber track data from diffusion MR tractography
+Performed technical duties for clinical studies in the field of mental illness
+Utilize bash scripting and Python for organization of datasets in Neuroimaging data lab
+Prepare data for analysis across research sites for 200+ clinical, behavioral, and imaging measures
+Hands on experience in image processing and analysis tools like 3D slicer, Free surfer, FSL and SPM`;
 
   const buWorkProp = `Implemented and supported statistical analyses and processing pipelines/scripts in Python for behavioral, EEG and multimodal neuroimaging analysis, including resting ‐ state and task-based fMRI and volumetric data
   Performed correlation analysis at the brain source level using beamforming
@@ -86,6 +90,35 @@ const Experience = () => {
    Automated the process of building and distributing Python packages across different platforms using GitHub Actions
    Conducted a detailed statistical analysis of SpO2 levels above 90% during sleep, utilizing data visualization and predictive modeling to assess respiratory health across 1000 individuals.
   `;
+
+  const raWorkProp = `Developed Computational pipelines in Python and UNIX Shell Scripting
+Implemented custom ganglia Python metric modules
+Optimized code in C for Parallel Computing
+Maintained Distributed Resource Management - Son of Grid Engine
+Configured DMTCP Check Point/Restart
+Configured, Installing and Monitoring Nagios and Ganglia
+Data Center Operations - Cent OS Installation and configurations
+Setting up Remote Job Submission with the configure Schrodinger Software Application
+linux clustering and storage management
+Creating job Schedule bash scripts for SLURM and Oracle Grid Engine
+Green High Performance Computing Cluster
+Install and configure Linux on end-user workstations.
+Assist users with installation and use of scientific applications.`;
+
+  const assistantWorkProp = `Part of The William Joiner Institute for the Study of War and Social Consequences
+Managed Website using HTML and Expression engine Tool ( CMS )
+Designed poster, Created brochures and Flyers using Adobe In Design, Photoshop, Illustrator and Microsoft Publisher.
+Organized events with fellow staff members`;
+
+  const itWorkProp = `Backup and Restore (BUR): Part of HP Storage Services Management System (SSMS) that does BI reporting and billing for BUR division, Supporting and managing the backup and restore activities for more than 100 clients globally.
+User and password administration, OS Hardening and working with security related settings Working with ACLs, and other file and directory level security settings.
+Performance tuning, networking, system security, IO monitoring and analysis.
+PLSQL, SQL server 2005, SQL Server Reporting Services.
+Unix Shell scripting, Failure data collection analysis on Linux machines.
+Upgrading EMC DPA collector agent on linux , Solaris and HP-UX servers.
+Monitoring the DPA service health on daily basis and ensure the data backup has success.
+Integrating new servers/clients and the storage pools into Data Protection Advisor and scheduling backups.
+Identify, diagnose and resolve network and firewall issues with regards to the connectivity issue between the client servers/collectors and Data Protection Advisor server.`;
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -139,6 +172,31 @@ const Experience = () => {
             companyLink="https://www.massgeneral.org/"
             time="Jan 2019 - Mar 2022"
             work={mghWorkProp}
+          />
+
+          <Details
+            position="Research Assistant"
+            company="University of Massachusetts Boston"
+            location="United States"
+            companyLink="https://www.umb.edu/rc/"
+            time="Jul 2016 - Aug 2017"
+            work={raWorkProp}
+          />
+          <Details
+            position="IT Assistant"
+            company="William Joiner Institute"
+            location="United States"
+            companyLink="https://www.umb.edu/joinerinstitute/"
+            time="Sep 2015 - May 2016"
+            work={assistantWorkProp}
+          />
+          <Details
+            position="IT Specialist"
+            company="Mphasis"
+            location="India"
+            companyLink="https://www.mphasis.com/home.html"
+            time="Oct 2012 - Feb 2014"
+            work={itWorkProp}
           />
 
           {/*}
