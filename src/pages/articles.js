@@ -23,6 +23,7 @@ import clt from "../../public/images/articles/clt.png";
 import prob from "../../public/images/articles/prob.png";
 import happy from "../../public/images/articles/happy.png";
 import ND from "../../public/images/articles/ND.png";
+import understand from "../../public/images/articles/understand.png";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -308,6 +309,13 @@ export default function Articles() {
               time="10 min read"
               summary="Margin of error, Confidence level, Significance level, Normal distribution, Sample size"
               link="https://woolly-revolve-fec.notion.site/Confidence-Interval-378bb08a609a4357b7fc81bff1841c42?pvs=4"
+            />
+            <FeaturedArticle
+              img={understand}
+              title="Pearson Correlation and Linear Regression"
+              time="10 min read"
+              summary="Understanding Pearson Correlation and Linear Regression through a Practical Example"
+              link="https://woolly-revolve-fec.notion.site/Understanding-Pearson-Correlation-and-Linear-Regression-through-a-Practical-Example-10ebdfa1611d80b08eabd9e6af0a7f9a?pvs=4"
             />
           </ul>
           <h2 className="font-bold text-4xl w-full text-center mt-32 my-16">
