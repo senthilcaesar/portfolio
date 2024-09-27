@@ -174,8 +174,14 @@ export default function Projects() {
               <FeaturedProject
                 type="Python"
                 title="CNN-Diffusion-MRIBrain-Segmentation"
-                summary="A challenging problem in neuroscience is to create brain mask of an MRI. The problem becomes more challenging when the MRI is a diffusion MRI (dMRI) since it has less contrast between brain and non-brain regions. Researchers all over the world have to spent many hours drawing dMRI brain masks manually. In order to automate that process, 
-                we come up with a convolutional neural network (CNN) based approach for creating dMRI brain mask automatically."
+                summary="In the rapidly advancing field of neuroscience, we heavily rely on brain MRI scans to diagnose diseases, assess injuries, 
+                and deepen our research. A key technique in our work is brain masking, where we isolate the brain tissue from surrounding structures 
+                such as the skull and skin. This isolation is crucial, as it allows us to focus our analysis exclusively on the brain, enabling more 
+                precise studies. Despite its critical role, brain masking has traditionally been a manual process. This method is slow and carries a
+                 high risk of human error, creating a significant bottleneck in our workflows. Furthermore, the existing automated tools available were 
+                 unreliable, often failing because they relied on overly simplistic methods of geometric detection or outdated algorithms. 
+                Faced with these challenges, we turned to a more innovative solution: Convolutional Neural Networks (CNNs), a technology that has been 
+                successful in various industries for quick and accurate image segmentation."
                 img={multiview}
                 link="https://github.com/pnlbwh/CNN-Diffusion-MRIBrain-Segmentation"
                 github="https://github.com/pnlbwh/CNN-Diffusion-MRIBrain-Segmentation"
