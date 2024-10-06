@@ -24,6 +24,7 @@ import prob from "../../public/images/articles/prob.png";
 import happy from "../../public/images/articles/happy.png";
 import ND from "../../public/images/articles/ND.png";
 import understand from "../../public/images/articles/understand.png";
+import linear_regress from "../../public/images/articles/linear_regress.png";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -216,6 +217,13 @@ export default function Articles() {
               time="10 min read"
               summary="Image Compression"
               link="https://woolly-revolve-fec.notion.site/Application-of-Eigenvalues-and-Eigenvectors-87613972af0b4138bcd8779f9a429cd0?pvs=4"
+            />
+            <FeaturedArticle
+              img={linear_regress}
+              title="Regression"
+              time="10 min read"
+              summary="simple linear regression"
+              link="https://woolly-revolve-fec.notion.site/Linear-Regression-b7c2c908f0e6484c97979f0e6fc43c67?pvs=4"
             />
             <FeaturedArticle
               img={costfunc}
