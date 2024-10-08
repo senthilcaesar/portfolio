@@ -75,10 +75,10 @@ Hands on experience in image processing and analysis tools like 3D slicer, Free 
   Implemented Mölle2011 spindle detection algorithm in MATLAB
   `;
 
-  const bwhWorkProp = `Validated, executed algorithms and deployed ML predictive model for automated sleep staging and brain age prediction 
+  const bwhWorkProp = `Led data harmonization projects to produce an analysis-ready dataset by standardizing EMG, ECG, and EEG channel configurations, units and sample rates across cohorts and delivered a reproducible HTML workflow with scripts, facilitating future audits and replication efforts.
+   Validated, executed algorithms and deployed ML predictive model for automated sleep staging and brain age prediction 
    Experience using Random forest and Gradient boosting framework (LightGBM, XGBoost)
    Experience with statistical methods such as hypothesis testing, linear regression
-   Processing new sleep cohort studies that includes Initial reviews of signals and annotations, checking for PHI, alignment and checking of staging data and EDF signals, creation of the harmonized set of EDFs and annotation files, compiling, checking and distributing a final analysis-ready harmonized dataset.
    Developed and deployed a web-based interactive EDF viewer that captures real time user inputs, integrate with backend models and display analytical results.
    Built web applications using R and deployed R Shiny applications on AWS EC2 using ShinyProxy and Docker containers.
    Implemented best practices and methods for building efficient docker container images

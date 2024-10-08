@@ -131,7 +131,7 @@ const Navbar = () => {
         */}
 
           <motion.a
-            href="https://www.dropbox.com/scl/fi/gmbe4pb64lomr4gvekf9s/Senthil-Resume.pdf?rlkey=jdtl31whekwlch89prcznt96f&st=0ec02ant&dl=0"
+            href="https://www.dropbox.com/scl/fi/2nenktfkxpdtuhagjzxut/Senthil-Resume.pdf?rlkey=b9v2ejz183sqmoqz8fx27jk7m&st=afhxgyrg&dl=0"
             className="mr-80 cursor-pointer w-max origin-center absolute 
                   font-semibold bg-dark text-light py-1 px-3 rounded-full dark:bg-light dark:text-dark
                   lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3  xs:bg-transparent xs:dark:bg-transparent xs:text-dark xs:dark:text-light xs:font-bold
