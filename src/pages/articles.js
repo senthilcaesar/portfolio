@@ -24,6 +24,7 @@ import prob from "../../public/images/articles/prob.png";
 import happy from "../../public/images/articles/happy.png";
 import ND from "../../public/images/articles/ND.png";
 import understand from "../../public/images/articles/understand.png";
+import obese from "../../public/images/articles/obese.png";
 import linear_regress from "../../public/images/articles/linear_regress.png";
 
 import Layout from "@/components/Layout";
@@ -278,6 +279,13 @@ export default function Articles() {
               title="Support Vector Machine"
               time="5 min read"
               link="https://woolly-revolve-fec.notion.site/Support-Vector-Machine-cdd763cc9fab4aadad1d7523966cdba5?pvs=4"
+            />
+            <FeaturedArticle
+              img={obese}
+              title="Perceptron learning from mistakes"
+              time="10 min read"
+              summary="A classification approach where individuals are categorized as Obese or Not-Obese based on their body weight and height."
+              link="https://woolly-revolve-fec.notion.site/Perceptron-learning-from-mistakes-119bdfa1611d8098b614da177ab54d8e?pvs=4"
             />
             <FeaturedArticle
               img={clt}
