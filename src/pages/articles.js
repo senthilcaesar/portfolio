@@ -25,6 +25,8 @@ import happy from "../../public/images/articles/happy.png";
 import ND from "../../public/images/articles/ND.png";
 import understand from "../../public/images/articles/understand.png";
 import obese from "../../public/images/articles/obese.png";
+import hyperplane from "../../public/images/articles/hyperplane.png";
+import decision from "../../public/images/articles/decision.png";
 import linear_regress from "../../public/images/articles/linear_regress.png";
 
 import Layout from "@/components/Layout";
@@ -198,6 +200,12 @@ export default function Articles() {
               link="https://woolly-revolve-fec.notion.site/Exploratory-Data-Analysis-Linear-Regression-99df93e03cde4cb9b3a876d2aa30380b?pvs=4"
             />
             <FeaturedArticle
+              img={hyperplane}
+              title="Understanding Hyperplanes"
+              time="10 min read"
+              link="https://woolly-revolve-fec.notion.site/Understanding-Hyperplanes-and-Weight-Vectors-in-2D-Space-11bbdfa1611d8038b1a3de56f8aa614e?pvs=4"
+            />
+            <FeaturedArticle
               img={pca}
               title="Principal Component Analysis"
               time="10 min read"
@@ -231,6 +239,12 @@ export default function Articles() {
               title="Optimizing Functions"
               time="10 min read"
               link="https://woolly-revolve-fec.notion.site/Optimizing-Functions-4138080cbe1f42b4a3c2d2438561ac8e?pvs=4"
+            />
+            <FeaturedArticle
+              img={decision}
+              title="Classify Blood Pressure Categories"
+              time="10 min read"
+              link="https://woolly-revolve-fec.notion.site/Logistic-Regression-and-SVM-to-Classify-Blood-Pressure-Categories-11cbdfa1611d80c598c1ee896ecac985?pvs=4"
             />
             <FeaturedArticle
               img={ttest}
