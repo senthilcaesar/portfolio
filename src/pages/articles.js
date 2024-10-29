@@ -371,7 +371,7 @@ export default function Articles() {
             <Article
               title="Win friends & Influence people"
               date="October, 2024"
-              link="https://woolly-revolve-fec.notion.site/Senthil-Notes-d0fa589828194bd18a5e7b5867170ca6?pvs=4"
+              link="https://woolly-revolve-fec.notion.site/How-to-Win-Friends-Influence-People-129bdfa1611d800796a6f66508697387?pvs=4"
             />
             <Article
               title="What is a dollar ?"
