@@ -369,6 +369,11 @@ export default function Articles() {
               link="https://woolly-revolve-fec.notion.site/My-simple-life-philosophy-dc5a4134163f4f58bae92392a80b6a85?pvs=4"
             />
             <Article
+              title="Win friends & Influence people"
+              date="October, 2024"
+              link="https://woolly-revolve-fec.notion.site/Senthil-Notes-d0fa589828194bd18a5e7b5867170ca6?pvs=4"
+            />
+            <Article
               title="What is a dollar ?"
               date="March, 2024"
               link="https://woolly-revolve-fec.notion.site/What-is-a-dollar-0a99fb50230a4a7cb7cc877198e322e7?pvs=4"
