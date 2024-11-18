@@ -203,7 +203,7 @@ export default function Projects() {
               <FeaturedProject
                 type="Shiny"
                 title="Moonlight"
-                summary="Moonlight is a interactive viewer for EDF signal and annotation data, specifically designed for polysomnographic data."
+                summary="Moonlight is an interactive web viewer for EDF signal and annotation data, specifically designed for polysomnographic data."
                 img={moon}
                 link="https://remnrem.net/"
                 github="https://github.com/remnrem/moonlight"
