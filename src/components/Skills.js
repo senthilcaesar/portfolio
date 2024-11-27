@@ -43,6 +43,7 @@ const Skills = () => {
   {*/}
         💡
         <Skill name="Python" x="-8vw" y="-2vw" />
+        <Skill name="CI/CD" x="-35vw" y="-6vw" />
         <Skill name="MATLAB" x="-25vw" y="-6vw" />
         <Skill name="Linux" x="-5vw" y="9vw" />
         <Skill name="Docker" x="-10vw" y="-10vw" />
@@ -71,9 +72,11 @@ const Skills = () => {
         <Skill name="Predictive modelling" x="29vw" y="10vw" />
         <Skill name="Data analysis" x="10vw" y="-21vw" />
         <Skill name="Data science" x="20vw" y="-21vw" />
+        <Skill name="Shell scripting" x="-29vw" y="-16vw" />
         <Skill name="GitHub" x="-29vw" y="-11vw" />
         <Skill name="HTML & CSS" x="-33vw" y="0vw" />
-        <Skill name="VS code" x="-30vw" y="8vw" />
+        <Skill name="Containerization" x="-33vw" y="5vw" />
+        <Skill name="VS code" x="-30vw" y="9vw" />
         <Skill name="Software development" x="-30vw" y="14vw" />
         <Skill name="Machine Learning" x="15vw" y="16vw" />
         <Skill name="Time series analysis" x="28vw" y="16vw" />
