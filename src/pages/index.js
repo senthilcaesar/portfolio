@@ -1,5 +1,5 @@
 import AnimatedText from "@/components/AnimatedText";
-import { HireMe } from "@/components/HireMe";
+// import { HireMe } from "@/components/HireMe";
 import { LinkArrow } from "@/components/Icons";
 import Layout from "@/components/Layout";
 import Head from "next/head";
@@ -65,21 +65,12 @@ export default function Home() {
                   Resume <LinkArrow className="ml-1 !w-6 md:!w-4" />
                 </Link>
 
-                <Link
-                  href="mailto:senthilcaesar@gmail.com"
-                  className="mt-5 ml-4 text-lg font-medium capitalize text-dark underline 
-                  dark:text-light md:text-base"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Contact
-                </Link>
+               
               </div>
             </div>
           </div>
         </Layout>
 
-        <HireMe />
       </article>
     </>
   );

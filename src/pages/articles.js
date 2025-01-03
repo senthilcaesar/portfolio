@@ -28,6 +28,7 @@ import obese from "../../public/images/articles/obese.png";
 import hyperplane from "../../public/images/articles/hyperplane.png";
 import decision from "../../public/images/articles/decision.png";
 import linear_regress from "../../public/images/articles/linear_regress.png";
+import vector from "../../public/images/articles/vector.png";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -157,19 +158,7 @@ export default function Articles() {
         className={`w-full mb-16 flex flex-col items-center justify-center dark:text-light overflow-hidden`}
       >
         <Layout className="pt-16">
-          <AnimatedText
-            text="Welcome!😄
-            I share a personal narrative on how reading books has become a transformative element in my life. 
-            It's not merely about gathering information; it's an experience that elevates my thought 
-            processes, dissipates my ignorance, and introduces me to a multitude of perspectives, novel ideas and truths. 
-            This journey through literature has become a form of meditation for me, connecting me deeply with 
-            characters and ideas. It feels like a real privilege to have the time to immerse myself in reading.
-
-            Through this post, I invite you to explore how reading has enriched my life, offering wisdom, joy, 
-            and a profound appreciation for the small yet significant aspects of our daily lives. 
-            Let's unravel together how the act of reading can change us in the most unexpected and beautiful ways."
-            className="no-capitalize !text-base !font-normal !text-left !leading-tight mb-16 lg:!text-lg sm:!text-md xs:!text-sm sm:mb-8"
-          />
+         
           <ul className="grid grid-cols-3 gap-4 lg:gap-6 md:grid-cols-2 sm:grid-cols-1 sm:gap-y-8">
             <FeaturedArticle
               img={ss}
@@ -347,77 +336,22 @@ export default function Articles() {
               summary="Understanding Pearson Correlation and Linear Regression through a Practical Example"
               link="https://woolly-revolve-fec.notion.site/Understanding-Pearson-Correlation-and-Linear-Regression-through-a-Practical-Example-10ebdfa1611d80b08eabd9e6af0a7f9a?pvs=4"
             />
+
+           <FeaturedArticle
+              img={vector}
+              title="Vectorization in Python"
+              time="5 min read"
+              summary="Understanding the Performance of For Loops vs. Vectorization in Python"
+              link="https://woolly-revolve-fec.notion.site/Vectorization-in-Python-165bdfa1611d8062ab58ff7edbdac0a8?pvs=4"
+            />
+
           </ul>
-          <h2 className="font-bold text-4xl w-full text-center mt-32 my-16">
-            All Articles
-          </h2>
+  
 
           <ul className="flex flex-col items-center relative">
-            <Article
-              title="My readings"
-              date="March, 2024"
-              link="https://woolly-revolve-fec.notion.site/2fdf26a029464252b2ef134f1e81a9dc?v=0ccf1606485e42899e3f534acf249694&pvs=4"
-            />
-            <Article
-              title="Attention Problems"
-              date="March, 2024"
-              link="https://woolly-revolve-fec.notion.site/Attention-Problems-750e95ef18a2444f8c67ae157fa73920?pvs=4"
-            />
-            <Article
-              title="My Philosophy"
-              date="March, 2024"
-              link="https://woolly-revolve-fec.notion.site/My-simple-life-philosophy-dc5a4134163f4f58bae92392a80b6a85?pvs=4"
-            />
-            <Article
-              title="Win friends & Influence people"
-              date="October, 2024"
-              link="https://woolly-revolve-fec.notion.site/How-to-Win-Friends-Influence-People-129bdfa1611d800796a6f66508697387?pvs=4"
-            />
-            <Article
-              title="What is a dollar ?"
-              date="March, 2024"
-              link="https://woolly-revolve-fec.notion.site/What-is-a-dollar-0a99fb50230a4a7cb7cc877198e322e7?pvs=4"
-            />
-            <Article
-              title="Dynamic and Static libraries"
-              date="March, 2024"
-              link="https://woolly-revolve-fec.notion.site/Static-and-Dynamic-libraries-17972aff571b41438fdb99b87f9d6838?pvs=4"
-            />
-            <Article
-              title="Building Docker images for multiple platforms"
-              date="March, 2024"
-              link="https://woolly-revolve-fec.notion.site/Building-Docker-images-for-multiple-platforms-7a84ad5b58194c3b859c1a41a11708d0?pvs=4"
-            />
-            <Article
-              title="Git Tutorial"
-              date="March, 2024"
-              link="https://woolly-revolve-fec.notion.site/Git-Tutorial-dca4aaaf46f2456ba95208b3c41ff31a?pvs=4"
-            />
-            <Article
-              title="Questions to ask before a purchase"
-              date="March, 2024"
-              link="https://woolly-revolve-fec.notion.site/Questions-to-ask-before-making-any-purchase-9fe8fc6d23d54b8b82f2942ca8300745?pvs=4"
-            />
-            <Article
-              title="What is the purpose of life ?"
-              date="March, 2024"
-              link="https://woolly-revolve-fec.notion.site/What-is-the-purpose-of-life-77e18ad6dac44790a25bc086ebdc7728?pvs=4"
-            />
-            <Article
-              title="What principles organize my day ?"
-              date="March, 2024"
-              link="https://woolly-revolve-fec.notion.site/What-principles-organize-my-day-54caca69b2c247c9ba4f1454c2efe36d?pvs=4"
-            />
-            <Article
-              title="Embracing the Journey"
-              date="March, 2024"
-              link="https://woolly-revolve-fec.notion.site/Embracing-the-Journey-e01bb1117ce041c8a5eed5a943e36776?pvs=4"
-            />
-            <Article
-              title="Presentation tips"
-              date="March, 2024"
-              link="https://woolly-revolve-fec.notion.site/Presentation-Tips-873287297fad496b86fd606a6fc3bb1b?pvs=4"
-            />
+           
+          
+         
           </ul>
         </Layout>
       </main>
