@@ -29,6 +29,7 @@ import hyperplane from "../../public/images/articles/hyperplane.png";
 import decision from "../../public/images/articles/decision.png";
 import linear_regress from "../../public/images/articles/linear_regress.png";
 import vector from "../../public/images/articles/vector.png";
+import mlr from "../../public/images/articles/mlr.png";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -343,6 +344,14 @@ export default function Articles() {
               time="5 min read"
               summary="Understanding the Performance of For Loops vs. Vectorization in Python"
               link="https://woolly-revolve-fec.notion.site/Vectorization-in-Python-165bdfa1611d8062ab58ff7edbdac0a8?pvs=4"
+            />
+
+          <FeaturedArticle
+              img={mlr}
+              title="Multiple linear regression in Python"
+              time="5 min read"
+              summary="Multiple linear regression in Python to predict house prices"
+              link="https://woolly-revolve-fec.notion.site/Multiple-linear-regression-in-Python-173bdfa1611d806382a9ee34d36e5497?pvs=4"
             />
 
           </ul>
