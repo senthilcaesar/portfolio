@@ -159,7 +159,6 @@ export default function Articles() {
         className={`w-full mb-16 flex flex-col items-center justify-center dark:text-light overflow-hidden`}
       >
         <Layout className="pt-16">
-         
           <ul className="grid grid-cols-3 gap-4 lg:gap-6 md:grid-cols-2 sm:grid-cols-1 sm:gap-y-8">
             <FeaturedArticle
               img={ss}
@@ -338,7 +337,7 @@ export default function Articles() {
               link="https://woolly-revolve-fec.notion.site/Understanding-Pearson-Correlation-and-Linear-Regression-through-a-Practical-Example-10ebdfa1611d80b08eabd9e6af0a7f9a?pvs=4"
             />
 
-           <FeaturedArticle
+            <FeaturedArticle
               img={vector}
               title="Vectorization in Python"
               time="5 min read"
@@ -346,22 +345,16 @@ export default function Articles() {
               link="https://woolly-revolve-fec.notion.site/Vectorization-in-Python-165bdfa1611d8062ab58ff7edbdac0a8?pvs=4"
             />
 
-          <FeaturedArticle
+            <FeaturedArticle
               img={mlr}
               title="Multiple linear regression in Python"
               time="5 min read"
               summary="Multiple linear regression in Python to predict house prices"
               link="https://woolly-revolve-fec.notion.site/Multiple-linear-regression-in-Python-173bdfa1611d806382a9ee34d36e5497?pvs=4"
             />
-
           </ul>
-  
 
-          <ul className="flex flex-col items-center relative">
-           
-          
-         
-          </ul>
+          <ul className="flex flex-col items-center relative"></ul>
         </Layout>
       </main>
     </>

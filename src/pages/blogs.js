@@ -144,10 +144,8 @@ export default function Articles() {
             Let's unravel together how the act of reading can change us in the most unexpected and beautiful ways."
             className="no-capitalize !text-base !font-normal !text-left !leading-tight mb-16 lg:!text-lg sm:!text-md xs:!text-sm sm:mb-8"
           />
-          <ul className="grid grid-cols-3 gap-4 lg:gap-6 md:grid-cols-2 sm:grid-cols-1 sm:gap-y-8">
-            
-          </ul>
-   
+          <ul className="grid grid-cols-3 gap-4 lg:gap-6 md:grid-cols-2 sm:grid-cols-1 sm:gap-y-8"></ul>
+
           <ul className="flex flex-col items-center relative">
             <Article
               title="My readings"

@@ -64,13 +64,10 @@ export default function Home() {
                 >
                   Resume <LinkArrow className="ml-1 !w-6 md:!w-4" />
                 </Link>
-
-               
               </div>
             </div>
           </div>
         </Layout>
-
       </article>
     </>
   );
