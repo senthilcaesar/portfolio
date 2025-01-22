@@ -30,6 +30,7 @@ import decision from "../../public/images/articles/decision.png";
 import linear_regress from "../../public/images/articles/linear_regress.png";
 import vector from "../../public/images/articles/vector.png";
 import mlr from "../../public/images/articles/mlr.png";
+import gdp from "../../public/images/articles/gdp.png";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -200,6 +201,14 @@ export default function Articles() {
               time="10 min read"
               summary="Comprehensive overview of PCA."
               link="https://woolly-revolve-fec.notion.site/Principal-Component-Analysis-8835793315b04b48b59509ac6e0ee6c2?pvs=4"
+            />
+
+            <FeaturedArticle
+              img={gdp}
+              title="Gradient descent in Practice"
+              time="10 min read"
+              summary="Feature scaling and Learning Rate"
+              link="https://woolly-revolve-fec.notion.site/Gradient-descent-in-Practice-183bdfa1611d8074bc82cb0f43e35a63?pvs=4"
             />
 
             <FeaturedArticle
