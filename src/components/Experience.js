@@ -143,7 +143,7 @@ Identify, diagnose and resolve network and firewall issues with regards to the c
             company="Brigham and Women's Hospital"
             location="United States"
             companyLink="https://www.brighamandwomens.org/"
-            time="Sep 2022 - Present"
+            time="Sep 2022 - Dec 2024"
             work={bwhWorkProp}
           />
 
@@ -170,7 +170,7 @@ Identify, diagnose and resolve network and firewall issues with regards to the c
             company="Massachusetts General Hospital"
             location="United States"
             companyLink="https://www.massgeneral.org/"
-            time="Jan 2019 - Mar 2022"
+            time="Jan 2019 - Mar 2020"
             work={mghWorkProp}
           />
 
