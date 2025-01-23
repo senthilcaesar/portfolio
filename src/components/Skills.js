@@ -42,38 +42,38 @@ const Skills = () => {
       </motion.div>
   {*/}
         💡
-        <Skill name="Python" x="-8vw" y="-2vw" />
+        <Skill name="Python" x="-10vw" y="-2vw" />
         <Skill name="CI/CD" x="-35vw" y="-6vw" />
         <Skill name="MATLAB" x="-25vw" y="-6vw" />
-        <Skill name="Linux" x="-5vw" y="9vw" />
+        <Skill name="Linux" x="-9vw" y="-15vw" />
         <Skill name="Docker" x="-10vw" y="-10vw" />
-        <Skill name="R" x="-22vw" y="0vw" />
+        <Skill name="R" x="-24vw" y="0vw" />
         <Skill name="SQL" x="-16vw" y="-5vw" />
         <Skill name="PyTorch" x="-16vw" y="2vw" />
-        <Skill name="Numpy" x="-14vw" y="8vw" />
+        <Skill name="Numpy" x="-14vw" y="7vw" />
         <Skill name="Data Engineering" x="-14vw" y="12vw" />
         <Skill name="AWS" x="-8vw" y="-20vw" />
         <Skill name="Jupyter Lab" x="-18vw" y="-20vw" />
         <Skill name="C++" x="-22vw" y="8vw" />
-        <Skill name="Shiny" x="-18vw" y="-10vw" />
-        <Skill name="Visualization" x="17vw" y="10vw" />
+        <Skill name="R Shiny" x="-18vw" y="-10vw" />
+        <Skill name="Data visualization" x="16vw" y="10vw" />
         <Skill name="GitHub actions" x="-20vw" y="18vw" />
-        <Skill name="Excel" x="-16vw" y="-15vw" />
-        <Skill name="Optimization" x="15vw" y="-15vw" />
+        <Skill name="Excel" x="-18vw" y="-15vw" />
+        <Skill name="Optimization" x="12vw" y="-17vw" />
         <Skill name="Classification" x="15vw" y="-10vw" />
-        <Skill name="Feature selection" x="26vw" y="-11vw" />
-        <Skill name="Neural networks" x="28vw" y="-7vw" />
+        <Skill name="Feature selection/engineering" x="30vw" y="-11vw" />
+        <Skill name="Neural networks" x="28vw" y="-6vw" />
         <Skill name="Clustering" x="15vw" y="-5vw" />
         <Skill name="Regression" x="15vw" y="0vw" />
         <Skill name="Statistical modeling" x="15vw" y="5vw" />
-        <Skill name="Computer vision" x="15vw" y="-15vw" />
-        <Skill name="Neuroscience" x="28vw" y="-15vw" />
+        <Skill name="Computer vision" x="18vw" y="-14vw" />
+        <Skill name="Neuroscience" x="28vw" y="-17vw" />
         <Skill name="Signal Processing" x="29vw" y="4vw" />
         <Skill name="Predictive modelling" x="29vw" y="10vw" />
         <Skill name="Data analysis" x="10vw" y="-21vw" />
         <Skill name="Data science" x="20vw" y="-21vw" />
         <Skill name="Shell scripting" x="-29vw" y="-16vw" />
-        <Skill name="GitHub" x="-29vw" y="-11vw" />
+        <Skill name="GitHub/Version control" x="-30vw" y="-11vw" />
         <Skill name="HTML & CSS" x="-33vw" y="0vw" />
         <Skill name="Containerization" x="-33vw" y="5vw" />
         <Skill name="VS code" x="-30vw" y="9vw" />
