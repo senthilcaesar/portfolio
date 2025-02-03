@@ -327,7 +327,7 @@ export default function Articles() {
               link="https://woolly-revolve-fec.notion.site/Random-Forest-608b2dc8e2cb4986bb38dcfa0a71284e?pvs=4"
             />
             <FeaturedArticle
-              img={rf}
+              img={zscore}
               title="Building a Linear regression model with Scikit-learn Gradient Descent"
               time="5 min read"
               summary="SGDRegressor(gradient descent regression model), StandardScaler(z-score normalization)"
