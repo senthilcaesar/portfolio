@@ -31,6 +31,7 @@ import linear_regress from "../../public/images/articles/linear_regress.png";
 import vector from "../../public/images/articles/vector.png";
 import mlr from "../../public/images/articles/mlr.png";
 import gdp from "../../public/images/articles/gdp.png";
+import zscore from "../../public/images/articles/z-score.png";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -324,6 +325,13 @@ export default function Articles() {
               title="Random Forest"
               time="5 min read"
               link="https://woolly-revolve-fec.notion.site/Random-Forest-608b2dc8e2cb4986bb38dcfa0a71284e?pvs=4"
+            />
+            <FeaturedArticle
+              img={rf}
+              title="Building a Linear regression model with Scikit-learn Gradient Descent"
+              time="5 min read"
+              summary="SGDRegressor(gradient descent regression model), StandardScaler(z-score normalization)"
+              link="https://woolly-revolve-fec.notion.site/Building-a-Linear-regression-model-with-Scikit-learn-Gradient-Descent-18fbdfa1611d808b866dd847d63e7bd3?pvs=4"
             />
             <FeaturedArticle
               img={nl}
