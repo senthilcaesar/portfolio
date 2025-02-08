@@ -309,7 +309,7 @@ export default function Articles() {
               link="https://woolly-revolve-fec.notion.site/Central-Limit-Theorem-3dfcb77a12674111b98775b5ff122794?pvs=4"
             />
             <FeaturedArticle
-              img={clt}
+              img={lrgd}
               title="Implementing Batch Gradient Descent from Scratch in Python"
               time="10 min read"
               summary="Linear regression, Cost function, Model prediction"
