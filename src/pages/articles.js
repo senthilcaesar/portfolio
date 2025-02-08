@@ -32,6 +32,7 @@ import vector from "../../public/images/articles/vector.png";
 import mlr from "../../public/images/articles/mlr.png";
 import gdp from "../../public/images/articles/gdp.png";
 import zscore from "../../public/images/articles/z-score.png";
+import lrgd from "../../public/images/articles/lrgd.png";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -306,6 +307,13 @@ export default function Articles() {
               time="10 min read"
               summary="Python, NumPy, Seaborn, Gaussian"
               link="https://woolly-revolve-fec.notion.site/Central-Limit-Theorem-3dfcb77a12674111b98775b5ff122794?pvs=4"
+            />
+            <FeaturedArticle
+              img={clt}
+              title="Implementing Batch Gradient Descent from Scratch in Python"
+              time="10 min read"
+              summary="Linear regression, Cost function, Model prediction"
+              link="https://woolly-revolve-fec.notion.site/Linear-Regression-Implementing-Batch-Gradient-Descent-from-Scratch-in-Python-193bdfa1611d806db2ebf950778ccfe1?pvs=4"
             />
             <FeaturedArticle
               img={prob}
