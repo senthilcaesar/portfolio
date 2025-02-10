@@ -33,6 +33,7 @@ import mlr from "../../public/images/articles/mlr.png";
 import gdp from "../../public/images/articles/gdp.png";
 import zscore from "../../public/images/articles/z-score.png";
 import lrgd from "../../public/images/articles/lrgd.png";
+import lrsig from "../../public/images/articles/lrsig.png";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -321,6 +322,12 @@ export default function Articles() {
               time="10 min read"
               summary="Regularization, Random noise, MLE, Gaussian Distribution"
               link="https://woolly-revolve-fec.notion.site/Probability-and-Statistics-3a2fe4d606a24dea9bab76093b2bee68?pvs=4"
+            />
+            <FeaturedArticle
+              img={lrsig}
+              title="Sigmoid function and logistic regression"
+              time="10 min read"
+              link="https://woolly-revolve-fec.notion.site/Sigmoid-function-and-logistic-regression-196bdfa1611d80129490efac1e587719?pvs=4"
             />
             <FeaturedArticle
               img={lg}

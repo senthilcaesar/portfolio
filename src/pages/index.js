@@ -46,10 +46,10 @@ export default function Home() {
               />
   {*/}
               <p className="mt-7 my-4 text-base font-medium md:text-sm sm:!text-xs">
-                Background in computer science. Interested in developing
-                predictive models which combine physiological, behavioral,
-                clinical, imaging, genetic, and epidemiological measures with
-                the goal of improving outcome predictions in various diseases.
+                Background in computer science with a keen interest in AI
+                Engineering and Machine Learning. Passionate about applying
+                these technologies to healthcare and personalized medicine to
+                tackle real-world challenges.
               </p>
               <div className="mt-2 flex items-center self-start lg:self-center">
                 <Link
