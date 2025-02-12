@@ -34,6 +34,7 @@ import gdp from "../../public/images/articles/gdp.png";
 import zscore from "../../public/images/articles/z-score.png";
 import lrgd from "../../public/images/articles/lrgd.png";
 import lrsig from "../../public/images/articles/lrsig.png";
+import dblr from "../../public/images/articles/dblr.png";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -334,6 +335,12 @@ export default function Articles() {
               title="Logistic Regression"
               time="10 min read"
               link="https://woolly-revolve-fec.notion.site/The-Logic-of-Logistic-Regression-d2213374b5a942b5ad8a0a54b5f23317?pvs=4"
+            />
+            <FeaturedArticle
+              img={dblr}
+              title="Decision boundary in the context of logistic regression"
+              time="10 min read"
+              link="https://woolly-revolve-fec.notion.site/Decision-boundary-in-the-context-of-logistic-regression-198bdfa1611d8025bae7d88df891d06f?pvs=4"
             />
             <FeaturedArticle
               img={rf}
