@@ -42,14 +42,16 @@ const Skills = () => {
       </motion.div>
   {*/}
         💡
-        <Skill name="Python" x="-10vw" y="-2vw" />
+        <Skill name="Python" x="-18vw" y="-2vw" />
+        <Skill name="scikit-learn" x="-10vw" y="-2vw" />
         <Skill name="CI/CD" x="-35vw" y="-6vw" />
         <Skill name="MATLAB" x="-25vw" y="-6vw" />
         <Skill name="Linux" x="-9vw" y="-15vw" />
         <Skill name="Docker" x="-10vw" y="-10vw" />
-        <Skill name="R" x="-24vw" y="0vw" />
-        <Skill name="SQL" x="-16vw" y="-5vw" />
+        <Skill name="R" x="-24vw" y="-1vw" />
+        <Skill name="SQL" x="-16vw" y="-6vw" />
         <Skill name="PyTorch" x="-16vw" y="2vw" />
+        <Skill name="Pandas" x="-23vw" y="4vw" />
         <Skill name="Numpy" x="-14vw" y="7vw" />
         <Skill name="Data Engineering" x="-14vw" y="12vw" />
         <Skill name="AWS" x="-8vw" y="-20vw" />
@@ -57,7 +59,8 @@ const Skills = () => {
         <Skill name="C++" x="-22vw" y="8vw" />
         <Skill name="R Shiny" x="-18vw" y="-10vw" />
         <Skill name="Data visualization" x="16vw" y="10vw" />
-        <Skill name="GitHub actions" x="-20vw" y="18vw" />
+        <Skill name="GitHub actions" x="-28vw" y="18vw" />
+        <Skill name="matplotlib" x="-16vw" y="18vw" />
         <Skill name="Excel" x="-18vw" y="-15vw" />
         <Skill name="Optimization" x="12vw" y="-17vw" />
         <Skill name="Classification" x="15vw" y="-10vw" />
@@ -67,7 +70,7 @@ const Skills = () => {
         <Skill name="Regression" x="15vw" y="0vw" />
         <Skill name="Statistical modeling" x="15vw" y="5vw" />
         <Skill name="Computer vision" x="18vw" y="-14vw" />
-        <Skill name="Neuroscience" x="28vw" y="-17vw" />
+        <Skill name="Bayesian statistics" x="28vw" y="-17vw" />
         <Skill name="Signal Processing" x="29vw" y="4vw" />
         <Skill name="Predictive modelling" x="29vw" y="10vw" />
         <Skill name="Data analysis" x="10vw" y="-21vw" />
@@ -77,10 +80,16 @@ const Skills = () => {
         <Skill name="HTML & CSS" x="-33vw" y="0vw" />
         <Skill name="Containerization" x="-33vw" y="5vw" />
         <Skill name="VS code" x="-30vw" y="9vw" />
-        <Skill name="Software development" x="-30vw" y="14vw" />
+        <Skill name="Software development" x="-30vw" y="13vw" />
         <Skill name="Machine Learning" x="15vw" y="16vw" />
         <Skill name="Time series analysis" x="28vw" y="16vw" />
         <Skill name="Algorithms development" x="28vw" y="-1vw" />
+        <Skill name="GitHub Copilot" x="2vw" y="0vw" />
+        <Skill name="AI agents" x="2vw" y="-5vw" />
+        <Skill name="Prompt Engineering" x="2vw" y="-10vw" />
+        <Skill name="RAG" x="2vw" y="5vw" />
+        <Skill name="Finetuning" x="2vw" y="10vw" />
+        <Skill name="LLM" x="2vw" y="15vw" />
       </div>
     </>
   );
