@@ -212,6 +212,11 @@ export default function Articles() {
               date="March, 2024"
               link="https://woolly-revolve-fec.notion.site/Presentation-Tips-873287297fad496b86fd606a6fc3bb1b?pvs=4"
             />
+            <Article
+              title="Get the most out of AI with the prompt framework"
+              date="Feb, 2025"
+              link="https://woolly-revolve-fec.notion.site/Get-the-most-out-of-AI-with-the-prompt-framework-199bdfa1611d802388a4ecf7842e8732?pvs=4"
+            />
           </ul>
         </Layout>
       </main>
