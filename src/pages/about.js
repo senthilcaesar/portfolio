@@ -64,49 +64,23 @@ export default function About() {
                 <strong>University of Massachusetts Boston</strong>.
               </p>
               <p className="my-4 font-medium">
-                <ul>
-                  <li>
-                    I have been fortunate to start my career at{" "}
-                    <strong>Massachusetts General Hospital</strong> as a
-                    Research coordinator developing Image procesing pipeline.
-                  </li>
-                  <br></br>
-                  <li>
-                    My second job at <strong>Boston University</strong> as a
-                    Data Analyst where I built computing tools for multimodal
-                    analysis of the brain&apos;s connectivity structure.
-                  </li>
-                  <br></br>
-                  <li>
-                    My third job at{" "}
-                    <strong>Nationwide Children’s Hospital</strong> as a
-                    Research Associate where I developed MATLAB programs for
-                    analyzing sleep rhythms.
-                  </li>
-                  <br></br>
-                  <li>
-                    At present I am at{" "}
-                    <strong> Brigham and Women’s Hospital</strong> as a
-                    Bioinformatician where I&apos;m involved in the development
-                    of open-source C/C++ software package for analyzing
-                    polysomnographic recordings, focusing on sleep EEG.
-                  </li>
-                </ul>
-              </p>
-              <p className="font-medium">
-                Working across different institutions has been an invaluable
-                experience. This diverse exposure has not only broadened my
-                understanding but has also sharpened my ability to appreciate
-                the complexities of data analysis, processing and engineering.
-                In this phase of my career, I&apos;m consciously exploring
-                various interests to discover what truly ignites my passion.
-                It&apos;s a journey of self-discovery, where I&apos;m open to
-                embracing new experiences that offer insights into my
-                capabilities. Lately, I&apos;ve found myself particularly drawn
-                to Statistics and Probability Theory.
-                <br></br>
-                <br></br>
-                Thank you for taking the time to read about my journey.
+                I am a data-driven AI/ML professional with expertise in machine
+                learning, data analytics, and software development, specializing
+                in healthcare and biomedical research. With over six years of
+                experience, I have led data harmonization projects, developed
+                predictive models for clinical applications, and built scalable
+                web applications using Python, R, AWS, and Docker. My technical
+                proficiency includes statistical modeling, classification,
+                regression, clustering, deep learning (CNN), and AI-driven
+                automation. I have contributed to neuroimaging research,
+                implemented EEG and ECG analysis pipelines, and optimized
+                high-throughput computing workflows. Additionally, my skills in
+                prompt engineering, RAG, fine-tuning AI models, and chatbot
+                development allow me to bridge the gap between AI and real-world
+                applications. Passionate about leveraging technology for
+                impactful solutions, I am committed to advancing AI in
+                healthcare, improving predictive analytics, and streamlining
+                data-driven decision-making.
               </p>
             </div>
             <div
