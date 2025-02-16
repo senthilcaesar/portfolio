@@ -148,6 +148,11 @@ export default function Articles() {
 
           <ul className="flex flex-col items-center relative">
             <Article
+              title="Decoding the Transformer: How These AI Models Understand Language"
+              date="February, 2025"
+              link="https://woolly-revolve-fec.notion.site/Decoding-the-Transformer-How-These-AI-Models-Understand-Language-19cbdfa1611d80dba97ce368d977d506?pvs=4"
+            />
+            <Article
               title="My readings"
               date="March, 2024"
               link="https://woolly-revolve-fec.notion.site/2fdf26a029464252b2ef134f1e81a9dc?v=0ccf1606485e42899e3f534acf249694&pvs=4"
