@@ -147,11 +147,13 @@ export default function Articles() {
           <ul className="grid grid-cols-3 gap-4 lg:gap-6 md:grid-cols-2 sm:grid-cols-1 sm:gap-y-8"></ul>
 
           <ul className="flex flex-col items-center relative">
+            {/*
             <Article
               title="Decoding the Transformer: How These AI Models Understand Language"
               date="February, 2025"
               link="https://woolly-revolve-fec.notion.site/Decoding-the-Transformer-How-These-AI-Models-Understand-Language-19cbdfa1611d80dba97ce368d977d506?pvs=4"
             />
+            */}
             <Article
               title="My readings"
               date="March, 2024"
