@@ -155,6 +155,16 @@ export default function Articles() {
             />
             */}
             <Article
+              title="Ideas for AI agents"
+              date="February, 2025"
+              link="https://woolly-revolve-fec.notion.site/Ideas-for-AI-agents-1a0bdfa1611d807595cff969d055412c?pvs=4"
+            />
+            <Article
+              title="Get the most out of AI with the prompt framework"
+              date="Feb, 2025"
+              link="https://woolly-revolve-fec.notion.site/Get-the-most-out-of-AI-with-the-prompt-framework-199bdfa1611d802388a4ecf7842e8732?pvs=4"
+            />
+            <Article
               title="My readings"
               date="March, 2024"
               link="https://woolly-revolve-fec.notion.site/2fdf26a029464252b2ef134f1e81a9dc?v=0ccf1606485e42899e3f534acf249694&pvs=4"
@@ -218,11 +228,6 @@ export default function Articles() {
               title="Presentation tips"
               date="March, 2024"
               link="https://woolly-revolve-fec.notion.site/Presentation-Tips-873287297fad496b86fd606a6fc3bb1b?pvs=4"
-            />
-            <Article
-              title="Get the most out of AI with the prompt framework"
-              date="Feb, 2025"
-              link="https://woolly-revolve-fec.notion.site/Get-the-most-out-of-AI-with-the-prompt-framework-199bdfa1611d802388a4ecf7842e8732?pvs=4"
             />
           </ul>
         </Layout>
