@@ -142,7 +142,7 @@ export default function Articles() {
             Through this post, I invite you to explore how reading has enriched my life, offering wisdom, joy, 
             and a profound appreciation for the small yet significant aspects of our daily lives. 
             Let's unravel together how the act of reading can change us in the most unexpected and beautiful ways."
-            className="no-capitalize !text-base !font-normal !text-left !leading-tight mb-16 lg:!text-lg sm:!text-md xs:!text-sm sm:mb-8"
+            className="mt-0 my-5 text-base !text-left font-medium md:text-sm sm:!text-xs font-helvetica !leading-relaxed !normal-case"
           />
           <ul className="grid grid-cols-3 gap-4 lg:gap-6 md:grid-cols-2 sm:grid-cols-1 sm:gap-y-8"></ul>
 

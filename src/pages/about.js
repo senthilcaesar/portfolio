@@ -47,12 +47,6 @@ export default function About() {
         className={`flex w-full flex-col items-center justify-center dark:text-light`}
       >
         <Layout className="pt-16">
-          {/*}
-        <AnimatedText
-            text="About Me"
-            className="mb-16 !text-4xl !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
-          />
-        {*/}
           <div className="flex flex-wrap justify-center gap-8">
             <div className="flex flex-col w-full max-w-lg md:order-2">
               <h2 className="mb-4 text-2xl font-bold uppercase text-dark/75 dark:text-light/75">
@@ -63,8 +57,8 @@ export default function About() {
                 with a background in Computer Science from{" "}
                 <strong>University of Massachusetts Boston</strong>.
               </p>
-              <p className="my-4 font-medium">
-                I am a data-driven AI/ML professional with expertise in machine
+              <AnimatedText
+                text="I am a data-driven AI/ML professional with expertise in machine
                 learning, data analytics, and software development, specializing
                 in healthcare and biomedical research. With over six years of
                 experience, I have led data harmonization projects, developed
@@ -80,8 +74,9 @@ export default function About() {
                 applications. Passionate about leveraging technology for
                 impactful solutions, I am committed to advancing AI in
                 healthcare, improving predictive analytics, and streamlining
-                data-driven decision-making.
-              </p>
+                data-driven decision-making."
+                className="mt-7 my-4 text-base !text-left font-medium md:text-sm sm:!text-xs font-helvetica !leading-relaxed !normal-case"
+              />
             </div>
             <div
               className="relative w-full max-w-lg rounded-2xl border-2 border-solid border-dark 

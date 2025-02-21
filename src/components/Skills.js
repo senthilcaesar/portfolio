@@ -86,6 +86,7 @@ const Skills = () => {
         <Skill name="Algorithms development" x="28vw" y="-1vw" />
         <Skill name="GitHub Copilot" x="2vw" y="0vw" />
         <Skill name="AI agents" x="2vw" y="-5vw" />
+        <Skill name="LangChain" x="2vw" y="-15vw" />
         <Skill name="Prompt Engineering" x="2vw" y="-10vw" />
         <Skill name="RAG" x="2vw" y="5vw" />
         <Skill name="Finetuning" x="2vw" y="10vw" />

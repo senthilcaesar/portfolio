@@ -7,6 +7,7 @@ import {
   GithubIcon,
   LinkedInIcon,
   MoonIcon,
+  InstagramIcon,
   //PinterestIcon,
   SunIcon,
   //TwitterIcon,
@@ -131,7 +132,7 @@ const Navbar = () => {
         </motion.a>
         */}
 
-          <motion.a
+          {/*<motion.a
             href="https://www.dropbox.com/scl/fi/3s6gb7f572d5asu7asv1u/Senthil-Resume.pdf?rlkey=3ztftpu8b4luwqsp5d3jrf4ld&st=ipxnpq9g&dl=0"
             className="mr-80 cursor-pointer w-max origin-center absolute 
                   font-semibold bg-dark text-light py-1 px-3 rounded-full dark:bg-light dark:text-dark
@@ -143,11 +144,11 @@ const Navbar = () => {
             whileTap={{ scale: 2 }}
           >
             Resume
-          </motion.a>
+          </motion.a>*/}
 
           <motion.a
             target={"_blank"}
-            className="w-7 mr-1"
+            className="w-7 mr-4"
             href="https://github.com/SenthilCaesar"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 2 }}
@@ -169,16 +170,13 @@ const Navbar = () => {
 
           <motion.a
             href="https://www.instagram.com/senthil_p89/"
-            className="w-12 h-7 ease ml-2 flex items-center justify-center
-            font-semibold bg-dark text-light py-1 px-3 rounded-full dark:bg-light dark:text-dark
-                  lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 xs:font-bold
-                  "
+            className="w-12 h-7 ease ml-2 flex items-center justify-center rounded-full p-1"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 2 }}
           >
-            Insta
+            <InstagramIcon />
           </motion.a>
 
           {/*
