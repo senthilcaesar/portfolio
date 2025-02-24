@@ -35,6 +35,7 @@ import zscore from "../../public/images/articles/z-score.png";
 import lrgd from "../../public/images/articles/lrgd.png";
 import lrsig from "../../public/images/articles/lrsig.png";
 import dblr from "../../public/images/articles/dblr.png";
+import logitreg from "../../public/images/articles/logitreg.png";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -350,10 +351,16 @@ export default function Articles() {
             />
             <FeaturedArticle
               img={zscore}
-              title="Building a Linear regression model with Scikit-learn Gradient Descent"
+              title="Linear regression model with Scikit-learn Gradient Descent"
               time="5 min read"
               summary="SGDRegressor(gradient descent regression model), StandardScaler(z-score normalization)"
               link="https://woolly-revolve-fec.notion.site/Building-a-Linear-regression-model-with-Scikit-learn-Gradient-Descent-18fbdfa1611d808b866dd847d63e7bd3?pvs=4"
+            />
+            <FeaturedArticle
+              img={logitreg}
+              title="Logistic Regression using Scikit-Learn"
+              time="5 min read"
+              link="https://woolly-revolve-fec.notion.site/Logistic-Regression-using-Scikit-Learn-1a4bdfa1611d8013b625cdf707f975fa?pvs=4"
             />
             <FeaturedArticle
               img={nl}
