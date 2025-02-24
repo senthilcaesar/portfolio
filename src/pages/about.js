@@ -58,23 +58,9 @@ export default function About() {
                 <strong>University of Massachusetts Boston</strong>.
               </p>
               <AnimatedText
-                text="I am a data-driven AI/ML professional with expertise in machine
-                learning, data analytics, and software development, specializing
-                in healthcare and biomedical research. With over six years of
-                experience, I have led data harmonization projects, developed
-                predictive models for clinical applications, and built scalable
-                web applications using Python, R, AWS, and Docker. My technical
-                proficiency includes statistical modeling, classification,
-                regression, clustering, deep learning (CNN), and AI-driven
-                automation. I have contributed to neuroimaging research,
-                implemented EEG and ECG analysis pipelines, and optimized
-                high-throughput computing workflows. Additionally, my skills in
-                prompt engineering, RAG, fine-tuning AI models, and chatbot
-                development allow me to bridge the gap between AI and real-world
-                applications. Passionate about leveraging technology for
-                impactful solutions, I am committed to advancing AI in
-                healthcare, improving predictive analytics, and streamlining
-                data-driven decision-making."
+                text="I am a dedicated AI Engineer with a strong passion for researching, designing, implementing, and 
+                delivering cutting-edge prediction models for complex biomedical challenges. Leveraging state-of-the-art AI/ML technologies, 
+                I aim to advance personalized medicine and transform healthcare solutions."
                 className="mt-7 my-4 text-base !text-left font-medium md:text-sm sm:!text-xs font-helvetica !leading-relaxed !normal-case"
               />
             </div>
