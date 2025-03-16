@@ -8,6 +8,7 @@ import Link from "next/link";
 
 import proj4 from "../../public/images/projects/personalWebProj.png";
 import multiview from "../../public/images/projects/multiview.png";
+import nutrition_app from "../../public/images/projects/nutrition_app.png";
 import moon from "../../public/images/projects/moon.png";
 import signal from "../../public/images/projects/signal.png";
 import protein from "../../public/images/projects/protein.png";
@@ -185,6 +186,17 @@ export default function Projects() {
                 img={multiview}
                 link="https://github.com/pnlbwh/CNN-Diffusion-MRIBrain-Segmentation"
                 github="https://github.com/pnlbwh/CNN-Diffusion-MRIBrain-Segmentation"
+              />
+            </div>
+
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Python"
+                title="Personalized Diabetes Nutrition Plan"
+                summary="This application aims to improve healthcare accessibility for individuals with diabetes by providing tailored nutrition guidance that considers not just medical factors, but also socioeconomic realities, cultural contexts, and literacy levels. It was designed specifically to support underserved populations and make diabetes management more accessible across diverse communities."
+                img={nutrition_app}
+                link=" https://diabetes-nutrition.streamlit.app/"
+                github="https://github.com/senthilcaesar/diabetes-nutrition-app"
               />
             </div>
 
