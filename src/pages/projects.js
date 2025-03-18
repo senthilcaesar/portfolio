@@ -173,6 +173,17 @@ export default function Projects() {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
+                type="Python, OpenAI, Streamlit"
+                title="Personalized Diabetes Nutrition Plan"
+                summary="This application aims to improve healthcare accessibility for individuals with diabetes by providing tailored nutrition guidance that considers not just medical factors, but also socioeconomic realities, cultural contexts, and literacy levels. It was designed specifically to support underserved populations and make diabetes management more accessible across diverse communities."
+                img={nutrition_app}
+                link=" https://diabetes-nutrition.streamlit.app/"
+                github="https://github.com/senthilcaesar/diabetes-nutrition-app"
+              />
+            </div>
+
+            <div className="col-span-12">
+              <FeaturedProject
                 type="Python"
                 title="CNN-Diffusion-MRIBrain-Segmentation"
                 summary="In the rapidly advancing field of neuroscience, we heavily rely on brain MRI scans to diagnose diseases, assess injuries, 
@@ -186,17 +197,6 @@ export default function Projects() {
                 img={multiview}
                 link="https://github.com/pnlbwh/CNN-Diffusion-MRIBrain-Segmentation"
                 github="https://github.com/pnlbwh/CNN-Diffusion-MRIBrain-Segmentation"
-              />
-            </div>
-
-            <div className="col-span-12">
-              <FeaturedProject
-                type="Python"
-                title="Personalized Diabetes Nutrition Plan"
-                summary="This application aims to improve healthcare accessibility for individuals with diabetes by providing tailored nutrition guidance that considers not just medical factors, but also socioeconomic realities, cultural contexts, and literacy levels. It was designed specifically to support underserved populations and make diabetes management more accessible across diverse communities."
-                img={nutrition_app}
-                link=" https://diabetes-nutrition.streamlit.app/"
-                github="https://github.com/senthilcaesar/diabetes-nutrition-app"
               />
             </div>
 
