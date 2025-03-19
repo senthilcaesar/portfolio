@@ -175,7 +175,11 @@ export default function Projects() {
               <FeaturedProject
                 type="Python, OpenAI, Streamlit"
                 title="Personalized Diabetes Nutrition Plan"
-                summary="This application aims to improve healthcare accessibility for individuals with diabetes by providing tailored nutrition guidance that considers not just medical factors, but also socioeconomic realities, cultural contexts, and literacy levels. It was designed specifically to support underserved populations and make diabetes management more accessible across diverse communities."
+                summary="An AI-powered application that creates personalized nutrition plans for individuals 
+                with diabetes. The system integrates multiple health-related factors (medical analyses, weight, 
+                height, age, dietary habits, health conditions) along with socioeconomic factors (income, location, 
+                education, literacy levels) to ensure plans are accessible and effective for diverse populations, 
+                including those in rural or underserved communities."
                 img={nutrition_app}
                 link=" https://diabetes-nutrition.streamlit.app/"
                 github="https://github.com/senthilcaesar/diabetes-nutrition-app"
