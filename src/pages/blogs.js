@@ -170,6 +170,11 @@ export default function Articles() {
               link="https://woolly-revolve-fec.notion.site/Get-the-most-out-of-AI-with-the-prompt-framework-199bdfa1611d802388a4ecf7842e8732?pvs=4"
             />
             <Article
+              title="Essential cores for Personal Growth"
+              date="April, 2025"
+              link="https://woolly-revolve-fec.notion.site/The-Architecture-of-Character-Essential-cores-for-Personal-Growth-1d7bdfa1611d80e7beebe52e63b8ed42?pvs=4"
+            />
+            <Article
               title="The Power and Peril of Turning Experience into Stories"
               date="March, 2025"
               link="https://woolly-revolve-fec.notion.site/The-Power-and-Peril-of-Turning-Experience-into-Stories-1a9bdfa1611d804fb672eb253e81e054?pvs=4"
