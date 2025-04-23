@@ -240,6 +240,11 @@ export default function Articles() {
               link="https://woolly-revolve-fec.notion.site/Embracing-the-Journey-e01bb1117ce041c8a5eed5a943e36776?pvs=4"
             />
             <Article
+              title="The Last Man: Nietzsche's Warning About Comfortable Mediocrity"
+              date="April, 2025"
+              link="https://woolly-revolve-fec.notion.site/The-Last-Man-Nietzsche-s-Warning-About-Comfortable-Mediocrity-1debdfa1611d8022a175ede860b05bdb?pvs=4"
+            />
+            <Article
               title="Presentation tips"
               date="March, 2024"
               link="https://woolly-revolve-fec.notion.site/Presentation-Tips-873287297fad496b86fd606a6fc3bb1b?pvs=4"
