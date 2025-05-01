@@ -173,7 +173,7 @@ export default function Projects() {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                type="Python, OpenAI, Streamlit, ChromaDB vector database"
+                type="Python, OpenAI, Streamlit, Pinecone vector database"
                 title="Neuro Nutrition"
                 summary="An AI-powered application that creates personalized nutrition plans for individuals 
                 with diabetes. The system integrates multiple health-related factors (medical analyses, weight, 
