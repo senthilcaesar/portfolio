@@ -173,7 +173,7 @@ export default function Projects() {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                type="Python, OpenAI, Streamlit"
+                type="Python, OpenAI, Streamlit, ChromaDB vector database"
                 title="Neuro Nutrition"
                 summary="An AI-powered application that creates personalized nutrition plans for individuals 
                 with diabetes. The system integrates multiple health-related factors (medical analyses, weight, 
@@ -188,7 +188,7 @@ export default function Projects() {
 
             <div className="col-span-12">
               <FeaturedProject
-                type="Python"
+                type="Python, Computer Vision, Deep Learning"
                 title="CNN-Diffusion-MRIBrain-Segmentation"
                 summary="In the rapidly advancing field of neuroscience, we heavily rely on brain MRI scans to diagnose diseases, assess injuries, 
                 and deepen our research. A key technique in our work is brain masking, where we isolate the brain tissue from surrounding structures 
