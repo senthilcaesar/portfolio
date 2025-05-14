@@ -9,6 +9,7 @@ import Link from "next/link";
 import proj4 from "../../public/images/projects/personalWebProj.png";
 import multiview from "../../public/images/projects/multiview.png";
 import nutrition_app from "../../public/images/projects/nutrition_app.png";
+import virtual_doctor from "../../public/images/projects/virtual_doctor.png";
 import moon from "../../public/images/projects/moon.png";
 import signal from "../../public/images/projects/signal.png";
 import protein from "../../public/images/projects/protein.png";
@@ -181,8 +182,23 @@ export default function Projects() {
                 education, literacy levels) to ensure plans are accessible and effective for diverse populations, 
                 including those in rural or underserved communities."
                 img={nutrition_app}
-                link=" https://diabetes-nutrition.streamlit.app/"
+                link="https://diabetes-nutrition.streamlit.app/"
                 github="https://github.com/senthilcaesar/diabetes-nutrition-app"
+              />
+            </div>
+
+            <div className="col-span-12">
+              <FeaturedProject
+                type="LLM, Python, OpenAI, Streamlit"
+                title="Virutal Doctor Assistant"
+                summary="An advanced virtual doctor assistant powered by artificial 
+                intelligence, developed using Python, Streamlit and leveraging OpenAI's 
+                GPT models. The application provides an interactive healthcare companion 
+                that gathers comprehensive patient information through intake forms and 
+                enables natural conversations about medical concerns."
+                img={virtual_doctor}
+                link="https://ai-doctor-v1.streamlit.app/"
+                github="https://github.com/senthilcaesar/ai-doctor"
               />
             </div>
 
