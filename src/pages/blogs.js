@@ -1,4 +1,3 @@
-import AnimatedText from "@/components/AnimatedText";
 import { motion, useMotionValue } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
@@ -131,19 +130,21 @@ export default function Articles() {
         className={`w-full mb-16 flex flex-col items-center justify-center dark:text-light overflow-hidden`}
       >
         <Layout className="pt-16">
-          <AnimatedText
-            text="Welcome!😄
-            I share a personal narrative on how reading books has become a transformative element in my life. 
-            It's not merely about gathering information; it's an experience that elevates my thought 
-            processes, dissipates my ignorance, and introduces me to a multitude of perspectives, novel ideas and truths. 
-            This journey through literature has become a form of meditation for me, connecting me deeply with 
-            characters and ideas. It feels like a real privilege to have the time to immerse myself in reading.
-
-            Through this post, I invite you to explore how reading has enriched my life, offering wisdom, joy, 
-            and a profound appreciation for the small yet significant aspects of our daily lives. 
-            Let's unravel together how the act of reading can change us in the most unexpected and beautiful ways."
-            className="mt-0 my-5 text-base !text-left font-medium md:text-sm sm:!text-xs font-helvetica !leading-relaxed !normal-case"
-          />
+          <p className="mt-0 my-5 text-base font-medium md:text-sm sm:text-xs font-helvetica leading-relaxed">
+            Welcome!😄 I share a personal narrative on how reading books has
+            become a transformative element in my life. It's not merely about
+            gathering information; it's an experience that elevates my thought
+            processes, dissipates my ignorance, and introduces me to a multitude
+            of perspectives, novel ideas and truths. This journey through
+            literature has become a form of meditation for me, connecting me
+            deeply with characters and ideas. It feels like a real privilege to
+            have the time to immerse myself in reading. Through this post, I
+            invite you to explore how reading has enriched my life, offering
+            wisdom, joy, and a profound appreciation for the small yet
+            significant aspects of our daily lives. Let's unravel together how
+            the act of reading can change us in the most unexpected and
+            beautiful ways.
+          </p>
           <ul className="grid grid-cols-3 gap-4 lg:gap-6 md:grid-cols-2 sm:grid-cols-1 sm:gap-y-8"></ul>
 
           <ul className="flex flex-col items-center relative">

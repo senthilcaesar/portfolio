@@ -191,11 +191,10 @@ export default function Projects() {
               <FeaturedProject
                 type="LLM, Python, OpenAI, Streamlit"
                 title="Virutal Doctor Assistant"
-                summary="An advanced virtual doctor assistant powered by artificial 
-                intelligence, developed using Python, Streamlit and leveraging OpenAI's 
-                GPT models. The application provides an interactive healthcare companion 
-                that gathers comprehensive patient information through intake forms and 
-                enables natural conversations about medical concerns."
+                summary="The AI Doctor is a virtual healthcare assistant application that provides a 
+                medical consultation experience. Built with Python, Streamlit and powered by 
+                OpenAI's GPT models, it provides personalized data-driven medical guidance through an 
+                interactive interface."
                 img={virtual_doctor}
                 link="https://ai-doctor-v1.streamlit.app/"
                 github="https://github.com/senthilcaesar/ai-doctor"

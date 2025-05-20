@@ -8,7 +8,6 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import Extracurricular from "@/components/Extracurricular";
-import AnimatedText from "@/components/AnimatedText";
 import TransitionEffect from "@/components/TransitionEffect";
 
 function AnimatedNumberFramerMotion({ value }) {
@@ -57,12 +56,14 @@ export default function About() {
                 with a background in Computer Science from{" "}
                 <strong>University of Massachusetts Boston</strong>.
               </p>
-              <AnimatedText
-                text="I am a dedicated AI Engineer with a strong passion for researching, designing, implementing, and 
-                delivering cutting-edge prediction models for complex biomedical challenges. Leveraging state-of-the-art AI/ML technologies, 
-                I aim to advance personalized medicine and transform healthcare solutions."
-                className="mt-7 my-4 text-base !text-left font-medium md:text-sm sm:!text-xs font-helvetica !leading-relaxed !normal-case"
-              />
+              <p className="mt-7 my-4 text-base font-medium md:text-sm sm:text-xs font-helvetica leading-relaxed">
+                I am a dedicated AI Engineer with a strong passion for
+                researching, designing, implementing, and delivering
+                cutting-edge prediction models for complex biomedical
+                challenges. Leveraging state-of-the-art AI/ML technologies, I
+                aim to advance personalized medicine and transform healthcare
+                solutions.
+              </p>
             </div>
             <div
               className="relative w-full max-w-lg rounded-2xl border-2 border-solid border-dark 
