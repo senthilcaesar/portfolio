@@ -132,18 +132,18 @@ export default function Articles() {
         <Layout className="pt-16">
           <p className="mt-0 my-5 text-base font-medium md:text-sm sm:text-xs font-helvetica leading-relaxed">
             Welcome!😄 I share a personal narrative on how reading books has
-            become a transformative element in my life. It's not merely about
-            gathering information; it's an experience that elevates my thought
-            processes, dissipates my ignorance, and introduces me to a multitude
-            of perspectives, novel ideas and truths. This journey through
-            literature has become a form of meditation for me, connecting me
-            deeply with characters and ideas. It feels like a real privilege to
-            have the time to immerse myself in reading. Through this post, I
-            invite you to explore how reading has enriched my life, offering
-            wisdom, joy, and a profound appreciation for the small yet
-            significant aspects of our daily lives. Let's unravel together how
-            the act of reading can change us in the most unexpected and
-            beautiful ways.
+            become a transformative element in my life. It&apos;s not merely
+            about gathering information; it&apos;s an experience that elevates
+            my thought processes, dissipates my ignorance, and introduces me to
+            a multitude of perspectives, novel ideas and truths. This journey
+            through literature has become a form of meditation for me,
+            connecting me deeply with characters and ideas. It&apos;s feels like
+            a real privilege to have the time to immerse myself in reading.
+            Through this post, I invite you to explore how reading has enriched
+            my life, offering wisdom, joy, and a profound appreciation for the
+            small yet significant aspects of our daily lives. Let&apos;s unravel
+            together how the act of reading can change us in the most unexpected
+            and beautiful ways.
           </p>
           <ul className="grid grid-cols-3 gap-4 lg:gap-6 md:grid-cols-2 sm:grid-cols-1 sm:gap-y-8"></ul>
 
