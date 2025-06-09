@@ -13,6 +13,8 @@ import virtual_doctor from "../../public/images/projects/virtual_doctor.png";
 import moon from "../../public/images/projects/moon.png";
 import signal from "../../public/images/projects/signal.png";
 import protein from "../../public/images/projects/protein.png";
+import medical_record from "../../public/images/projects/medical_record.png"
+
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
@@ -198,6 +200,17 @@ export default function Projects() {
                 img={virtual_doctor}
                 link="https://ai-doctor-v1.streamlit.app/"
                 github="https://github.com/senthilcaesar/ai-doctor"
+              />
+            </div>
+
+             <div className="col-span-12">
+              <FeaturedProject
+                type="Python FastAPI, OpenAI AP, PyMuPDF"
+                title="MyLabResults"
+                summary="A web application that translates complex medical documents into plain English using AI, helping patients better understand their lab result."
+                img={medical_record}
+                link="https://github.com/senthilcaesar/medical-record-translator"
+                github="https://github.com/senthilcaesar/medical-record-translator"
               />
             </div>
 
