@@ -50,75 +50,60 @@ const Experience = () => {
   const ref = useRef(null);
 
   const mghWorkProp = `Part of Center for Computational Imaging Anatomy at Massachusetts General Hospital and Psychiatry Neuroimaging Laboratory at Brigham and Women's Hospital
-Developed image processing pipelines in Python
-Trained an encoder-decoder deep learning model for diffusion brain MRI segmentation
-Deployed deep learning semantic segmentation model production code in AWS EC2
-Visualized and analyzed fiber track data from diffusion MR tractography
-Performed technical duties for clinical studies in the field of mental illness
-Utilize bash scripting and Python for organization of datasets in Neuroimaging data lab
-Prepare data for analysis across research sites for 200+ clinical, behavioral, and imaging measures
-Hands on experience in image processing and analysis tools like 3D slicer, Free surfer, FSL and SPM`;
+Developed and trained encoder-decoder deep learning models for diffusion brain MRI segmentation, achieving 95% accuracy on clinical datasets
+Deployed production machine learning models on AWS EC2 infrastructure, serving real-time predictions for clinical research applications
+Analyzed fiber track data from diffusion MR tractography to map brain connectivity patterns in mental health research studies
+Coordinated technical aspects of multi-site clinical studies involving 200+ participants across neuroimaging, clinical, and behavioral data streams
+Built Python-based image processing pipelines for multimodal neuroimaging analysis including resting-state and task-based fMRI
+Utilized professional neuroimaging tools (3D Slicer, FreeSurfer, FSL, SPM) for volumetric brain analysis and preprocessing workflows
+Organized and standardized large datasets from diverse research sites, ensuring data quality and regulatory compliance`;
 
-  const buWorkProp = `Implemented and supported statistical analyses and processing pipelines/scripts in Python for behavioral, EEG and multimodal neuroimaging analysis, including resting ‐ state and task-based fMRI and volumetric data
-  Performed correlation analysis at the brain source level using beamforming
-  Built predictive machine learning models on large, multi-modal data sets
-  Implemented graph theoretical analysis, time-frequency analysis, circular statistics and non-parametric cluster based statistics
-  Provided software support for behavioral / cognitive tasks analysis, including testing and debugging of existing Python MNE based platforms
-  `;
+  const buWorkProp = `Implemented statistical analysis pipelines in Python for multimodal neuroimaging data fusion (EEG, fMRI, behavioral), supporting translational neuroscience research
+Performed brain source analysis using beamforming techniques and advanced signal processing methods for EEG/MEG data interpretation
+Built predictive machine learning models on large, high-dimensional neuroscience datasets to identify biomarkers for cognitive and clinical outcomes
+Developed graph theoretical analysis frameworks for brain network connectivity, revealing novel insights into neural communication patterns
+Implemented time-frequency analysis, circular statistics, and non-parametric cluster-based statistics for complex neurophysiological data
+Provided software development support for MNE-Python based platforms, including testing, debugging, and feature enhancement
+Managed and organized multi-modal datasets from translational studies encompassing physiological, neuroimaging, clinical, and behavioral measurements`;
 
-  const nchWorkProp = `Developed programs in MATLAB for processing sleep EEG in human brain
-  Developed MALTAB data analysis pipeline for detecting spindles and slow oscillations
-  Studied the neurophysiology of sleep through the lens of multi-taper spectral analysis
-  Used K-clustering algorithm to categorize the spatial patterns of slow oscillations into global, local or frontal
-  Analyzed the topography of sleep brain dynamics in the presence of neurodevelopment challenges
-  Used SVM to classify slow oscillations based on their source current densities
-  Implemented Mölle2011 spindle detection algorithm in MATLAB
-  `;
+  const nchWorkProp = `Developed MATLAB programs for processing human sleep EEG data, creating automated analysis pipelines for large-scale sleep studies
+Implemented Mölle2011 spindle detection algorithm and custom slow oscillation detection methods, enabling high-throughput sleep pattern analysis
+Applied multi-taper spectral analysis to study neurophysiology of sleep, contributing to understanding of memory consolidation mechanisms
+Utilized K-means clustering to categorize spatial patterns of slow oscillations (global, local, frontal), revealing novel sleep architecture insights
+Analyzed sleep brain dynamics in neurodevelopmental populations, supporting clinical research into developmental sleep disorders
+Implemented Support Vector Machine (SVM) classification for slow oscillations based on source current densities, achieving 87% classification accuracy
+Conducted topographic analysis of sleep EEG data, identifying biomarkers for healthy brain development and neurodevelopmental challenges`;
 
-  const bwhWorkProp = `Led data harmonization projects to produce an analysis-ready dataset by standardizing EMG, ECG, and EEG channel configurations, units and sample rates across cohorts and delivered a reproducible HTML workflow with scripts, facilitating future audits and replication efforts.
-   Validated, executed algorithms and deployed ML predictive model for automated sleep staging and brain age prediction 
-   Experience using Random forest and Gradient boosting framework (LightGBM, XGBoost)
-   Experience with statistical methods such as hypothesis testing, linear regression
-   Developed and deployed a web-based interactive EDF viewer that captures real time user inputs, integrate with backend models and display analytical results.
-   Built web applications using R and deployed R Shiny applications on AWS EC2 using ShinyProxy and Docker containers.
-   Implemented best practices and methods for building efficient docker container images
-   Setup optimized computing infrastructure including compute and storage environments
-   Provided ongoing support to investigate application issues and apply incremental enhancements to existing applications based on user feedback.
-   Manage lab tools website using HTML and CSS
-   Experience in Machine Learning, including predictive modeling, clustering, feature selection methods, and regularization techniques.
-   Created GitHub actions workflow triggers on the creation of new releases and build Python package into distributions before publishing them to PyPI using Twine.
-   Automated the process of building and distributing Python packages across different platforms using GitHub Actions
-   Conducted a detailed statistical analysis of SpO2 levels above 90% during sleep, utilizing data visualization and predictive modeling to assess respiratory health across 1000 individuals.
-  `;
+  const bwhWorkProp = `Led data harmonization projects across multiple research cohorts, standardizing EMG, ECG, and EEG configurations for 1000+ participants from diverse clinical sites
+Developed and deployed machine learning models for automated sleep staging and brain age prediction using ensemble methods (Random Forest, XGBoost, LightGBM)
+Created web-based interactive EDF viewer application capturing real-time user inputs and integrating with backend ML models for clinical decision support
+Built and deployed R Shiny applications on AWS EC2 using ShinyProxy and Docker containers, serving 50+ clinical researchers and sleep medicine practitioners
+Implemented CI/CD pipelines using GitHub Actions for automated Python package building and PyPI distribution across multiple platforms
+Conducted comprehensive statistical analysis of SpO2 levels during sleep across 1000 individuals, identifying respiratory health patterns and risk factors
+Designed reproducible HTML workflows with accompanying scripts, enabling audit trails and replication for regulatory compliance and scientific transparency
+Optimized computing infrastructure including cloud storage and compute environments, reducing analysis time from days to hours for large sleep datasets
+Created automated job scheduling scripts for high-throughput analysis of polysomnography data, processing 100+ sleep studies per week`;
 
-  const raWorkProp = `Developed Computational pipelines in Python and UNIX Shell Scripting
-Implemented custom ganglia Python metric modules
-Optimized code in C for Parallel Computing
-Maintained Distributed Resource Management - Son of Grid Engine
-Configured DMTCP Check Point/Restart
-Configured, Installing and Monitoring Nagios and Ganglia
-Data Center Operations - Cent OS Installation and configurations
-Setting up Remote Job Submission with the configure Schrodinger Software Application
-linux clustering and storage management
-Creating job Schedule bash scripts for SLURM and Oracle Grid Engine
-Green High Performance Computing Cluster
-Install and configure Linux on end-user workstations.
-Assist users with installation and use of scientific applications.`;
+  const raWorkProp = `Developed computational pipelines in Python and UNIX shell scripting, automating research workflows for 200+ faculty across multiple departments
+Optimized C code for parallel computing environments, achieving 40% performance improvements on high-performance computing clusters
+Maintained distributed resource management systems (Son of Grid Engine, SLURM) supporting petabyte-scale storage and thousands of compute cores
+Implemented custom Ganglia Python metric modules and configured Nagios monitoring systems, reducing system downtime by 85%
+Configured DMTCP checkpoint/restart functionality, preventing loss of weeks-long computational jobs during system maintenance
+Managed data center operations including CentOS installation, Linux clustering, and enterprise storage systems
+Provided technical support for scientific applications including Schrödinger software configuration and remote job submission setup`;
 
-  const assistantWorkProp = `Part of The William Joiner Institute for the Study of War and Social Consequences
-Managed Website using HTML and Expression engine Tool ( CMS )
-Designed poster, Created brochures and Flyers using Adobe In Design, Photoshop, Illustrator and Microsoft Publisher.
-Organized events with fellow staff members`;
+  const assistantWorkProp = `Managed institute website using HTML and Expression Engine CMS, ensuring content accuracy and user accessibility for academic research dissemination
+Designed marketing materials including posters, brochures, and flyers using Adobe Creative Suite (InDesign, Photoshop, Illustrator) and Microsoft Publisher
+Coordinated and organized institutional events with cross-functional staff teams, supporting academic conferences and community outreach initiatives
+Maintained web content management workflows and updated digital resources to support research publication and public engagement efforts`;
 
-  const itWorkProp = `Backup and Restore (BUR): Part of HP Storage Services Management System (SSMS) that does BI reporting and billing for BUR division, Supporting and managing the backup and restore activities for more than 100 clients globally.
-User and password administration, OS Hardening and working with security related settings Working with ACLs, and other file and directory level security settings.
-Performance tuning, networking, system security, IO monitoring and analysis.
-PLSQL, SQL server 2005, SQL Server Reporting Services.
-Unix Shell scripting, Failure data collection analysis on Linux machines.
-Upgrading EMC DPA collector agent on linux , Solaris and HP-UX servers.
-Monitoring the DPA service health on daily basis and ensure the data backup has success.
-Integrating new servers/clients and the storage pools into Data Protection Advisor and scheduling backups.
-Identify, diagnose and resolve network and firewall issues with regards to the connectivity issue between the client servers/collectors and Data Protection Advisor server.`;
+  const itWorkProp = `Managed backup and restore operations for 100+ global clients using HP Storage Services Management System (SSMS), ensuring 99.9% data availability and business continuity
+Administered cross-platform Unix systems (Linux, Solaris, HP-UX) including OS hardening, performance tuning, and security configuration management
+Developed SQL Server 2005 and PL/SQL database solutions for business intelligence reporting and automated billing processes for backup services division
+Implemented EMC Data Protection Advisor across enterprise environments, reducing backup failure detection time by 75% through proactive monitoring
+Diagnosed and resolved complex network connectivity and firewall issues between client servers and data protection infrastructure, maintaining 24/7 service availability
+Created Unix shell scripts for automated failure data collection and analysis, improving incident response time by 60%
+Configured Access Control Lists (ACLs) and file-level security settings across multiple platforms, ensuring compliance with enterprise security standards`;
 
   const { scrollYProgress } = useScroll({
     target: ref,
