@@ -156,6 +156,11 @@ export default function Articles() {
             />
             */}
             <Article
+              title="My Professional Journey"
+              date="June, 2025"
+              link="https://woolly-revolve-fec.notion.site/My-Professional-Journey-218bdfa1611d80f78d36e4c1813866b6"
+            />
+            <Article
               title="The Power of Affirmation"
               date="March, 2025"
               link="https://woolly-revolve-fec.notion.site/The-Power-of-Affirmation-1aebdfa1611d80ea9676ec65d7af41fb?pvs=4"
