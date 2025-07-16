@@ -192,6 +192,17 @@ export default function Projects() {
 
             <div className="col-span-12">
               <FeaturedProject
+                type="HTML, CSS, Vanilla JavaScript, Netlify"
+                title="Amudham Naturals"
+                summary="Your trusted source for premium organic and natural products."
+                img={amudham}
+                link="https://amudhamnaturals.com/"
+                github="https://github.com/senthilcaesar/amudham-naturals-website"
+              />
+            </div>
+
+            <div className="col-span-12">
+              <FeaturedProject
                 type="LLM, Python, OpenAI, Streamlit"
                 title="Virutal Doctor Assistant"
                 summary="The AI Doctor is a virtual healthcare assistant application that provides a 
@@ -204,16 +215,7 @@ export default function Projects() {
               />
             </div>
 
-             <div className="col-span-12">
-              <FeaturedProject
-                type="Python FastAPI, OpenAI AP, PyMuPDF"
-                title="MyLabResults"
-                summary="A web application that translates complex medical documents into plain English using AI, helping patients better understand their lab result."
-                img={medical_record}
-                link="https://github.com/senthilcaesar/medical-record-translator"
-                github="https://github.com/senthilcaesar/medical-record-translator"
-              />
-            </div>
+   
 
             <div className="col-span-12">
               <FeaturedProject
@@ -255,14 +257,14 @@ export default function Projects() {
               />
             </div>
 
-            <div className="col-span-12">
+          <div className="col-span-12">
               <FeaturedProject
-                type="HTML, CSS, Vanilla JavaScript, Netlify"
-                title="Amudham Naturals"
-                summary="Your trusted source for premium organic and natural products."
-                img={amudham}
-                link="https://amudhamnaturals.com/"
-                github="https://github.com/senthilcaesar/amudham-naturals-website"
+                type="Python FastAPI, OpenAI AP, PyMuPDF"
+                title="MyLabResults"
+                summary="A web application that translates complex medical documents into plain English using AI, helping patients better understand their lab result."
+                img={medical_record}
+                link="https://github.com/senthilcaesar/medical-record-translator"
+                github="https://github.com/senthilcaesar/medical-record-translator"
               />
             </div>
 
