@@ -14,7 +14,7 @@ import moon from "../../public/images/projects/moon.png";
 import signal from "../../public/images/projects/signal.png";
 import protein from "../../public/images/projects/protein.png";
 import medical_record from "../../public/images/projects/medical_record.png"
-import amudham from "../../public/images/projects/amudham.png"
+import amudham from "../../public/images/projects/amudham_new.png"
 
 import TransitionEffect from "@/components/TransitionEffect";
 

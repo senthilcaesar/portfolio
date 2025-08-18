@@ -156,6 +156,16 @@ export default function Articles() {
             />
             */}
             <Article
+              title="Imitation & Trial and Error: How AI Models Learn to Think"
+              date="August, 2025"
+              link="https://woolly-revolve-fec.notion.site/Imitation-Trial-and-Error-How-AI-Models-Learn-to-Think-253bdfa1611d808bbe3de0b885167468?source=copy_link"
+            />
+            <Article
+              title="Context engineering explained"
+              date="August, 2025"
+              link="https://woolly-revolve-fec.notion.site/Context-engineering-explained-243bdfa1611d80e89b4ceed3d46b9532?source=copy_link"
+            />
+            <Article
               title="My Professional Journey"
               date="June, 2025"
               link="https://woolly-revolve-fec.notion.site/My-Professional-Journey-218bdfa1611d80f78d36e4c1813866b6"
