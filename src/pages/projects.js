@@ -14,7 +14,7 @@ import moon from "../../public/images/projects/moon.png";
 import signal from "../../public/images/projects/signal.png";
 import protein from "../../public/images/projects/protein.png";
 import medical_record from "../../public/images/projects/medical_record.png"
-import amudham from "../../public/images/projects/amudham_new.png"
+import amudham from "../../public/images/projects/agri.png"
 
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -194,7 +194,7 @@ export default function Projects() {
               <FeaturedProject
                 type="HTML, CSS, Vanilla JavaScript, Netlify"
                 title="Amudham Naturals"
-                summary="Your trusted source for premium organic and natural products."
+                summary="Your trusted source for premium organic and natural food products."
                 img={amudham}
                 link="https://amudhamnaturals.com/"
                 github="https://github.com/senthilcaesar/amudham-naturals-website"
