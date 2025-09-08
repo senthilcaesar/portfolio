@@ -1,4 +1,14 @@
 import Link from "next/link";
+
+import {
+  FaBook, // Simple book
+  FaBookOpen, // Open book
+  FaBookReader, // Person reading
+  FaBookmark, // Bookmark
+  FaBookDead, // Book with skull (gothic)
+  FaBookMedical, // Medical book
+} from "react-icons/fa";
+
 import React, { useState } from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
@@ -10,10 +20,12 @@ import {
   InstagramIcon,
   //PinterestIcon,
   SunIcon,
+  DribbbleIcon,
   //TwitterIcon,
 } from "./Icons";
 import { motion } from "framer-motion";
 import { useThemeSwitch } from "./Hooks/useThemeSwitch";
+import LiIcon from "./LiIcon";
 
 export const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -115,13 +127,13 @@ const Navbar = () => {
           <CustomLink className="mx-8" href="/projects" title="Projects" />
           <CustomLink className="mx-8" href="/articles" title="Articles" />
           <CustomLink className="mx-8" href="/blogs" title="Blogs" />
-          <CustomLink
+          {/* <CustomLink
             className="mx-8"
             href="https://senthilcaesar.github.io/my-reading/"
             target="_blank"
             rel="noopener noreferrer"
             title="Readings"
-          ></CustomLink>
+          ></CustomLink> */}
         </nav>
         <nav
           className="flex items-center justify-center flex-wrap lg:mt-2
@@ -153,6 +165,17 @@ const Navbar = () => {
           >
             Resume
           </motion.a>*/}
+
+          <motion.a
+            target={"_blank"}
+            className="w-7 mr-8"
+            href="https://senthilcaesar.github.io/my-reading/"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 2 }}
+            aria-label="Checkout my Readings"
+          >
+            <FaBookReader className="w-7 h-7" />
+          </motion.a>
 
           <motion.a
             target={"_blank"}
@@ -267,14 +290,14 @@ const Navbar = () => {
               title="Blogs"
             />
 
-            <CustomMobileLink
+            {/* <CustomMobileLink
               toggle={handleClick}
               className="ml-4 lg:m-0 lg:my-2"
               href="https://senthilcaesar.github.io/my-reading/"
               target="_blank"
               rel="noopener noreferrer"
               title="Readings"
-            />
+            /> */}
           </nav>
 
           <nav
