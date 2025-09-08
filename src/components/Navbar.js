@@ -15,23 +15,24 @@ import {
 import { motion } from "framer-motion";
 import { useThemeSwitch } from "./Hooks/useThemeSwitch";
 
-const CustomLink = ({ href, title, className = "" }) => {
+export const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
+  const isExternal = href.startsWith("http");
 
   return (
     <Link
       href={href}
-      className={`${className}  rounded relative group lg:text-light lg:dark:text-dark`}
+      className={`${className} rounded relative group lg:text-light lg:dark:text-dark`}
+      {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
     >
       {title}
       <span
         className={`
-              inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
-              group-hover:w-full transition-[width] ease duration-300 dark:bg-light
-              ${
-                router.asPath === href ? "w-full" : " w-0"
-              } lg:bg-light lg:dark:bg-dark
-              `}
+          inline-block h-[1px] bg-dark absolute left-0 -bottom-0.5 
+          group-hover:w-full transition-[width] ease duration-300 dark:bg-light
+          ${router.asPath === href ? "w-full" : "w-0"}
+          lg:bg-light lg:dark:bg-dark
+        `}
       >
         &nbsp;
       </span>
@@ -114,6 +115,13 @@ const Navbar = () => {
           <CustomLink className="mx-8" href="/projects" title="Projects" />
           <CustomLink className="mx-8" href="/articles" title="Articles" />
           <CustomLink className="mx-8" href="/blogs" title="Blogs" />
+          <CustomLink
+            className="mx-8"
+            href="https://senthilcaesar.github.io/my-reading/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Readings"
+          ></CustomLink>
         </nav>
         <nav
           className="flex items-center justify-center flex-wrap lg:mt-2
@@ -257,6 +265,15 @@ const Navbar = () => {
               className="ml-4 lg:m-0 lg:my-2"
               href="/blogs"
               title="Blogs"
+            />
+
+            <CustomMobileLink
+              toggle={handleClick}
+              className="ml-4 lg:m-0 lg:my-2"
+              href="https://senthilcaesar.github.io/my-reading/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Readings"
             />
           </nav>
 
