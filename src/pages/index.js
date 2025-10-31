@@ -23,21 +23,21 @@ export default function Home() {
       <article
         className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start`}
       >
-        <Layout className="!pt-0 md:!pt-16 sm:!pt-16">
-          <div className="flex w-full items-start justify-between md:flex-col">
-            <div className="w-1/3 lg:hidden md:inline-block md:w-full ml-15">
+        <Layout className="pt-0 md:pt-16 sm:pt-8">
+          <div className="flex w-full flex-col items-center justify-center">
+            <div className="w-2/2 md:w-2/3 sm:w-full">
               <Image
                 src={profilePic}
                 alt="Senthil Palanivelu"
-                className="h-auto w-full"
+                className="h-auto w-full rounded-full"
                 sizes="100vw"
                 priority
               />
             </div>
-            <div className="mt-5 flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center">
+            <div className="mt-4 flex w-full flex-col items-center self-center text-center">
               <AnimatedText
                 text="👋 I'm Senthil"
-                className="!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
+                className="!text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
               {/*}
               <AnimatedText
@@ -45,13 +45,13 @@ export default function Home() {
                 className="!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
   {*/}
-              <p className="mt-7 my-4 text-base font-medium md:text-sm sm:!text-xs">
-                Background in computer science with a keen interest in AI
-                Engineering and Machine Learning. Passionate about applying
-                these technologies to healthcare and personalized medicine to
-                tackle real-world challenges.
+              <p className="mt-7 my-4 text-lg font-medium md:text-base sm:text-sm">
+                Background in computer science with a strong interest in AI
+                Engineering and Machine Learning. Committed to leveraging AI and
+                data-driven insights to develop solutions that create meaningful
+                and measurable business value.
               </p>
-              <div className="mt-2 flex items-center self-start lg:self-center">
+              <div className="mt-2 flex items-center self-center">
                 <Link
                   href="/documents/Senthil.pdf"
                   target="_blank"

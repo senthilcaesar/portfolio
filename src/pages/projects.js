@@ -13,8 +13,8 @@ import virtual_doctor from "../../public/images/projects/virtual_doctor.png";
 import moon from "../../public/images/projects/moon.png";
 import signal from "../../public/images/projects/signal.png";
 import protein from "../../public/images/projects/protein.png";
-import medical_record from "../../public/images/projects/medical_record.png"
-import amudham from "../../public/images/projects/agri.png"
+import medical_record from "../../public/images/projects/medical_record.png";
+import amudham from "../../public/images/projects/agri.png";
 
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -177,6 +177,17 @@ export default function Projects() {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
+                type="HTML, CSS, Vanilla JavaScript, Tailwind CSS, Netlify"
+                title="Amudham Naturals"
+                summary="Your trusted source for premium organic and natural food products."
+                img={amudham}
+                link="https://amudhamnaturals.com/"
+                github="https://github.com/senthilcaesar/amudham-naturals-website"
+              />
+            </div>
+
+            <div className="col-span-12">
+              <FeaturedProject
                 type="Python, OpenAI, Streamlit, Pinecone vector database"
                 title="Neuro Nutrition"
                 summary="An AI-powered application that creates personalized nutrition plans for individuals 
@@ -187,17 +198,6 @@ export default function Projects() {
                 img={nutrition_app}
                 link="https://diabetes-nutrition.streamlit.app/"
                 github="https://github.com/senthilcaesar/diabetes-nutrition-app"
-              />
-            </div>
-
-            <div className="col-span-12">
-              <FeaturedProject
-                type="HTML, CSS, Vanilla JavaScript, Netlify"
-                title="Amudham Naturals"
-                summary="Your trusted source for premium organic and natural food products."
-                img={amudham}
-                link="https://amudhamnaturals.com/"
-                github="https://github.com/senthilcaesar/amudham-naturals-website"
               />
             </div>
 
@@ -214,8 +214,6 @@ export default function Projects() {
                 github="https://github.com/senthilcaesar/ai-doctor"
               />
             </div>
-
-   
 
             <div className="col-span-12">
               <FeaturedProject
@@ -257,7 +255,7 @@ export default function Projects() {
               />
             </div>
 
-          <div className="col-span-12">
+            <div className="col-span-12">
               <FeaturedProject
                 type="Python FastAPI, OpenAI AP, PyMuPDF"
                 title="MyLabResults"
