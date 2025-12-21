@@ -188,13 +188,15 @@ export default function Projects() {
 
             <div className="col-span-12">
               <FeaturedProject
-                type="Python, OpenAI, Streamlit, Pinecone vector database"
+                type="Python, OpenAI, Streamlit, RAG, Pinecone vector database"
                 title="Neuro Nutrition"
                 summary="An AI-powered application that creates personalized nutrition plans for individuals 
                 with diabetes. The system integrates multiple health-related factors (medical analyses, weight, 
                 height, age, dietary habits, health conditions) along with socioeconomic factors (income, location, 
                 education, literacy levels) to ensure plans are accessible and effective for diverse populations, 
-                including those in rural or underserved communities."
+                including those in rural or underserved communities. The Q&A system uses Retrieval-Augmented Generation (RAG) with 
+                Pinecone vector database to answer your questions about diabetes and nutrition. 
+                All information comes from verified medical sources in our database."
                 img={nutrition_app}
                 link="https://diabetes-nutrition.streamlit.app/"
                 github="https://github.com/senthilcaesar/diabetes-nutrition-app"
