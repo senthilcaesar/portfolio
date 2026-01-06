@@ -4,11 +4,11 @@ import Layout from "@/components/Layout";
 import Image from "next/image";
 import Link from "next/link";
 import TransitionEffect from "@/components/TransitionEffect";
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Senthil Palanivelu',
-  description: 'Senthil Palanivelu Personal Website',
+  title: "Senthil Palanivelu",
+  description: "Senthil Palanivelu Personal Website",
 };
 
 export default function Home() {
@@ -20,20 +20,9 @@ export default function Home() {
       >
         <Layout className="pt-0 md:pt-16 sm:pt-8">
           <div className="flex w-full flex-col items-center justify-center">
-            <div className="w-2/2 md:w-2/3 sm:w-full">
-              <Image
-                src="/images/profile/portfolioImage.png"
-                alt="Senthil Palanivelu"
-                width={400}
-                height={400}
-                className="h-auto w-full rounded-full"
-                sizes="100vw"
-                priority
-              />
-            </div>
             <div className="mt-4 flex w-full flex-col items-center self-center text-center">
               <AnimatedText
-                text="👋 I'm Senthil"
+                text="👋 I'm Senthil Palanivelu"
                 className="!text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
               <p className="mt-7 my-4 text-lg font-medium md:text-base sm:text-sm">

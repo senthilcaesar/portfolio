@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
@@ -8,6 +8,7 @@ import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import TransitionEffect from "@/components/TransitionEffect";
 import React from "react";
+import profilepic from "../../../public/images/profile/aboutProfile.jpeg";
 
 function AnimatedNumberFramerMotion({ value }: { value: number }) {
   const ref = useRef<HTMLSpanElement>(null);
@@ -53,22 +54,35 @@ export default function About() {
               </p>
               <div className="mt-7 my-4 text-base font-medium md:text-sm sm:text-xs font-helvetica leading-relaxed space-y-4">
                 <p>
-                  Healthcare AI Specialist passionate about transforming patient care through data science and machine learning.
+                  Healthcare AI Specialist passionate about transforming patient
+                  care through data science and machine learning.
                 </p>
                 <p>
-                  With 6+ years of experience across enterprise systems, research infrastructure, and clinical applications, I bridge the gap between cutting-edge technology and real-world healthcare impact.
+                  With 6+ years of experience across enterprise systems,
+                  research infrastructure, and clinical applications, I bridge
+                  the gap between cutting-edge technology and real-world
+                  healthcare impact.
                 </p>
                 <p>
-                  At leading institutions like MGH, BWH, and Boston University, I&apos;ve led projects that directly improve patient outcomes - from reducing sleep study analysis time by 90% to developing brain age prediction models that provide new clinical biomarkers.
+                  At leading institutions like MGH, BWH, and Boston University,
+                  I&apos;ve led projects that directly improve patient outcomes
+                  - from reducing sleep study analysis time by 90% to developing
+                  brain age prediction models that provide new clinical
+                  biomarkers.
                 </p>
                 <p>
-                  What drives me: Taking complex biomedical data and creating solutions that clinicians can actually use.
+                  What drives me: Taking complex biomedical data and creating
+                  solutions that clinicians can actually use.
                 </p>
                 <p>
-                  Technical expertise: Python, R, AWS, Docker, machine learning, deep learning, medical imaging, EEG/fMRI analysis, and full-stack development.
+                  Technical expertise: Python, R, AWS, Docker, machine learning,
+                  deep learning, medical imaging, EEG/fMRI analysis, and
+                  full-stack development.
                 </p>
                 <p>
-                  Looking to collaborate with teams pushing the boundaries of healthcare AI, precision medicine, and clinical decision support systems.
+                  Looking to collaborate with teams pushing the boundaries of
+                  healthcare AI, precision medicine, and clinical decision
+                  support systems.
                 </p>
               </div>
             </div>
@@ -83,7 +97,7 @@ export default function About() {
               />
               <Image
                 className="h-auto w-full rounded-2xl"
-                src="/images/profile/aboutProfile.jpeg"
+                src={profilepic}
                 alt="Senthil Palanivelu"
                 width={500}
                 height={500}

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import { motion } from "framer-motion";
@@ -6,6 +6,15 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import TransitionEffect from "@/components/TransitionEffect";
 import { Github } from "lucide-react";
+import agri from "../../../public/images/projects/agri.png";
+import nutritionApp from "../../../public/images/projects/nutrition_app.png";
+import virtualDoctor from "../../../public/images/projects/virtual_doctor.png";
+import multiview from "../../../public/images/projects/multiview.png";
+import signal from "../../../public/images/projects/signal.png";
+import moon from "../../../public/images/projects/moon.png";
+import medicalRecord from "../../../public/images/projects/medical_record.png";
+import protein from "../../../public/images/projects/protein.png";
+import personalWebProj from "../../../public/images/projects/personalWebProj.png";
 
 const FramerImage = motion.create(Image);
 
@@ -13,12 +22,19 @@ interface FeaturedProjectProps {
   type: string;
   title: string;
   summary: string;
-  img: string;
+  img: string | StaticImageData;
   link: string;
   github: string;
 }
 
-const FeaturedProject = ({ type, title, summary, img, link, github }: FeaturedProjectProps) => {
+const FeaturedProject = ({
+  type,
+  title,
+  summary,
+  img,
+  link,
+  github,
+}: FeaturedProjectProps) => {
   return (
     <article
       className="relative flex w-full items-center justify-between rounded-3xl rounded-br-2xl border
@@ -101,10 +117,10 @@ export default function Projects() {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                type="HTML, CSS, Vanilla JavaScript, Tailwind CSS, Netlify"
+                type="TypeScript, Next.js 15+, React 19, Tailwind CSS 4.0 , HTML, CSS, Netlify"
                 title="Amudham Naturals"
                 summary="Your trusted source for premium organic and natural food products."
-                img="/images/projects/agri.png"
+                img={agri}
                 link="https://amudhamnaturals.com/"
                 github="https://github.com/senthilcaesar/amudham-naturals-website"
               />
@@ -115,7 +131,7 @@ export default function Projects() {
                 type="Python, OpenAI, Streamlit, RAG, Pinecone vector database"
                 title="Neuro Nutrition"
                 summary="An AI-powered application that creates personalized nutrition plans for individuals with diabetes."
-                img="/images/projects/nutrition_app.png"
+                img={nutritionApp}
                 link="https://diabetes-nutrition.streamlit.app/"
                 github="https://github.com/senthilcaesar/diabetes-nutrition-app"
               />
@@ -126,7 +142,7 @@ export default function Projects() {
                 type="LLM, Python, OpenAI, Streamlit"
                 title="Virtual Doctor Assistant"
                 summary="The AI Doctor is a virtual healthcare assistant application that provides a medical consultation experience."
-                img="/images/projects/virtual_doctor.png"
+                img={virtualDoctor}
                 link="https://ai-doctor-v1.streamlit.app/"
                 github="https://github.com/senthilcaesar/ai-doctor"
               />
@@ -137,7 +153,7 @@ export default function Projects() {
                 type="Python, Computer Vision, Deep Learning"
                 title="CNN-Diffusion-MRIBrain-Segmentation"
                 summary="Convolutional Neural Networks (CNNs) for brain MRI segmentation, isolating brain tissue from surrounding structures."
-                img="/images/projects/multiview.png"
+                img={multiview}
                 link="https://github.com/pnlbwh/CNN-Diffusion-MRIBrain-Segmentation"
                 github="https://github.com/pnlbwh/CNN-Diffusion-MRIBrain-Segmentation"
               />
@@ -148,7 +164,7 @@ export default function Projects() {
                 type="C++"
                 title="Luna: software for the analysis of sleep signal data"
                 summary="Luna is an open-source C/C++ software package for manipulating and analyzing polysomnographic recordings."
-                img="/images/projects/signal.png"
+                img={signal}
                 link="https://zzz.bwh.harvard.edu/luna/"
                 github="https://github.com/remnrem/luna-base"
               />
@@ -159,7 +175,7 @@ export default function Projects() {
                 type="Shiny"
                 title="Moonlight"
                 summary="Moonlight is an interactive web viewer for EDF signal and annotation data."
-                img="/images/projects/moon.png"
+                img={moon}
                 link="https://remnrem.net/"
                 github="https://github.com/remnrem/moonlight"
               />
@@ -170,7 +186,7 @@ export default function Projects() {
                 type="Python FastAPI, OpenAI API, PyMuPDF"
                 title="MyLabResults"
                 summary="A web application that translates complex medical documents into plain English using AI."
-                img="/images/projects/medical_record.png"
+                img={medicalRecord}
                 link="https://github.com/senthilcaesar/medical-record-translator"
                 github="https://github.com/senthilcaesar/medical-record-translator"
               />
@@ -181,7 +197,7 @@ export default function Projects() {
                 type="C++"
                 title="Protein-Complex-Alpha-Shape"
                 summary="Using Computational Geometry to study the geometry of protein binding surfaces."
-                img="/images/projects/protein.png"
+                img={protein}
                 link="https://github.com/senthilcaesar/Protein-Complex-Alpha-Shape/blob/master/Final%20Report.pdf"
                 github="https://github.com/senthilcaesar/Protein-Complex-Alpha-Shape"
               />
@@ -192,7 +208,7 @@ export default function Projects() {
                 type="JavaScript, TypeScript"
                 title="Personal Website"
                 summary="This is a Next.js project bootstrapped with create-next-app"
-                img="/images/projects/personalWebProj.png"
+                img={personalWebProj}
                 link="https://github.com/senthilcaesar/portfolio"
                 github="https://github.com/senthilcaesar/portfolio"
               />
