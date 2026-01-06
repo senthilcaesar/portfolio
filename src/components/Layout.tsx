@@ -1,6 +1,11 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
-const Layout = ({ children, className = "" }) => {
+interface LayoutProps {
+  children: ReactNode;
+  className?: string;
+}
+
+const Layout = ({ children, className = "" }: LayoutProps) => {
   return (
     <div
       className={`z-0 inline-block h-full w-full bg-light p-32 dark:bg-dark xl:p-24 lg:p-16 

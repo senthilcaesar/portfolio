@@ -1,9 +1,19 @@
+'use client';
 import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import LiIcon from "./LiIcon";
 
-const Details = ({ position, company, location, companyLink, time, work }) => {
-  const ref = useRef(null);
+interface DetailsProps {
+  position: string;
+  company: string;
+  location: string;
+  companyLink: string;
+  time: string;
+  work: string;
+}
+
+const Details = ({ position, company, location, companyLink, time, work }: DetailsProps) => {
+  const ref = useRef<HTMLLIElement>(null);
   const workPoints = work.split("\n").filter((line) => line.trim() !== "");
   return (
     <li
@@ -28,12 +38,9 @@ const Details = ({ position, company, location, companyLink, time, work }) => {
         </h3>
         <span
           className="capitalize text-dark/75 font-medium dark:text-light/50 xs:text-sm ml-4"
-          href="https://www.osu.edu/"
         >
           {time} | {location}
         </span>
-        {/*}<p className="font-medium w-full md:text-sm"> {work}</p>
-        {*/}
         <ul className="list-disc list-inside space-y-2 ml-4">
           {workPoints.map((point, index) => (
             <li key={index} className="text-base font-medium">
@@ -47,7 +54,7 @@ const Details = ({ position, company, location, companyLink, time, work }) => {
 };
 
 const Experience = () => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   const mghWorkProp = `Part of Center for Computational Imaging Anatomy at Massachusetts General Hospital and Psychiatry Neuroimaging Laboratory at Brigham and Women's Hospital
 Developed and trained encoder-decoder deep learning models for diffusion brain MRI segmentation, achieving 95% accuracy on clinical datasets
@@ -119,7 +126,7 @@ Configured Access Control Lists (ACLs) and file-level security settings across m
       <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
         <motion.div
           className="absolute left-9 top-0 w-[4px] md:w-[2px] md:left-[30px] xs:left-[20px] h-full bg-dark 
-            origin-top  dark:bg-primaryDark dark:shadow-3xl"
+            origin-top dark:bg-primaryDark dark:shadow-3xl"
           style={{ scaleY: scrollYProgress }}
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
@@ -183,17 +190,6 @@ Configured Access Control Lists (ACLs) and file-level security settings across m
             time="Oct 2012 - Feb 2014"
             work={itWorkProp}
           />
-
-          {/*}
-            <Details
-              position="Bio-Hackthon"
-              company="Patient Safety Technology Challenge"
-              location="United States"
-              companyLink="https://www.patientsafetytech.com/"
-              time="2023"
-              work={aliWorkProp}
-            />
-  {*/}
         </ul>
       </div>
     </div>

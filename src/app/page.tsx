@@ -1,24 +1,19 @@
 import AnimatedText from "@/components/AnimatedText";
-// import { HireMe } from "@/components/HireMe";
 import { LinkArrow } from "@/components/Icons";
 import Layout from "@/components/Layout";
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import profilePic from "../../public/images/profile/portfolioImage.png";
 import TransitionEffect from "@/components/TransitionEffect";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Senthil Palanivelu',
+  description: 'Senthil Palanivelu Personal Website',
+};
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Senthil Palanivelu</title>
-        <meta
-          name="description"
-          content="Senthil Palanivelu's Personal Website"
-        />
-      </Head>
-
       <TransitionEffect />
       <article
         className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start`}
@@ -27,8 +22,10 @@ export default function Home() {
           <div className="flex w-full flex-col items-center justify-center">
             <div className="w-2/2 md:w-2/3 sm:w-full">
               <Image
-                src={profilePic}
+                src="/images/profile/portfolioImage.png"
                 alt="Senthil Palanivelu"
+                width={400}
+                height={400}
                 className="h-auto w-full rounded-full"
                 sizes="100vw"
                 priority
@@ -39,12 +36,6 @@ export default function Home() {
                 text="👋 I'm Senthil"
                 className="!text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
-              {/*}
-              <AnimatedText
-                text=""
-                className="!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
-              />
-  {*/}
               <p className="mt-7 my-4 text-lg font-medium md:text-base sm:text-sm">
                 Background in computer science with a strong interest in AI
                 Engineering and Machine Learning. Committed to leveraging AI and

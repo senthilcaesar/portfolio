@@ -1,62 +1,71 @@
+"use client";
 import AnimatedText from "@/components/AnimatedText";
 import { motion, useMotionValue } from "framer-motion";
-import Head from "next/head";
-import Image from "next/image";
-import pca from "../../public/images/articles/pca.png";
-import corr from "../../public/images/articles/corr.png";
-import rf from "../../public/images/articles/rf.png";
-import nl from "../../public/images/articles/nl.png";
-import lg from "../../public/images/articles/lg.png";
-import ttest from "../../public/images/articles/ttest2.png";
-import eigen from "../../public/images/articles/eigen.png";
-import ml from "../../public/images/articles/ml.png";
-import gdlinear from "../../public/images/articles/gdlinear.png";
-import costfunc from "../../public/images/articles/costfunc.png";
-import perceptron from "../../public/images/articles/perceptron.png";
-import classify from "../../public/images/articles/classify.png";
-import svm from "../../public/images/articles/svm.png";
-import Intervals from "../../public/images/articles/Intervals.png";
-import ss from "../../public/images/articles/thermal_distress_plot1.png";
-import anscombe from "../../public/images/articles/anscombe.png";
-import dice from "../../public/images/articles/dice.png";
-import clt from "../../public/images/articles/clt.png";
-import prob from "../../public/images/articles/prob.png";
-import happy from "../../public/images/articles/happy.png";
-import ND from "../../public/images/articles/ND.png";
-import understand from "../../public/images/articles/understand.png";
-import obese from "../../public/images/articles/obese.png";
-import hyperplane from "../../public/images/articles/hyperplane.png";
-import decision from "../../public/images/articles/decision.png";
-import linear_regress from "../../public/images/articles/linear_regress.png";
-import vector from "../../public/images/articles/vector.png";
-import mlr from "../../public/images/articles/mlr.png";
-import gdp from "../../public/images/articles/gdp.png";
-import zscore from "../../public/images/articles/z-score.png";
-import lrgd from "../../public/images/articles/lrgd.png";
-import lrsig from "../../public/images/articles/lrsig.png";
-import dblr from "../../public/images/articles/dblr.png";
-import logitreg from "../../public/images/articles/logitreg.png";
-
+import Image, { StaticImageData } from "next/image";
 import Layout from "@/components/Layout";
 import Link from "next/link";
 import { useRef } from "react";
 import TransitionEffect from "@/components/TransitionEffect";
+import pca from "../../../public/images/articles/pca.png";
+import corr from "../../../public/images/articles/corr.png";
+import rf from "../../../public/images/articles/rf.png";
+import nl from "../../../public/images/articles/nl.png";
+import lg from "../../../public/images/articles/lg.png";
+import ttest from "../../../public/images/articles/ttest2.png";
+import eigen from "../../../public/images/articles/eigen.png";
+import ml from "../../../public/images/articles/ml.png";
+import gdlinear from "../../../public/images/articles/gdlinear.png";
+import costfunc from "../../../public/images/articles/costfunc.png";
+import perceptron from "../../../public/images/articles/perceptron.png";
+import classify from "../../../public/images/articles/classify.png";
+import svm from "../../../public/images/articles/svm.png";
+import Intervals from "../../../public/images/articles/Intervals.png";
+import ss from "../../../public/images/articles/thermal_distress_plot1.png";
+import anscombe from "../../../public/images/articles/anscombe.png";
+import dice from "../../../public/images/articles/dice.png";
+import clt from "../../../public/images/articles/clt.png";
+import prob from "../../../public/images/articles/prob.png";
+import happy from "../../../public/images/articles/happy.png";
+import ND from "../../../public/images/articles/ND.png";
+import understand from "../../../public/images/articles/understand.png";
+import obese from "../../../public/images/articles/obese.png";
+import hyperplane from "../../../public/images/articles/hyperplane.png";
+import decision from "../../../public/images/articles/decision.png";
+import linear_regress from "../../../public/images/articles/linear_regress.png";
+import vector from "../../../public/images/articles/vector.png";
+import mlr from "../../../public/images/articles/mlr.png";
+import gdp from "../../../public/images/articles/gdp.png";
+import zscore from "../../../public/images/articles/z-score.png";
+import lrgd from "../../../public/images/articles/lrgd.png";
+import lrsig from "../../../public/images/articles/lrsig.png";
+import dblr from "../../../public/images/articles/dblr.png";
+import logitreg from "../../../public/images/articles/logitreg.png";
 
-const FramerImage = motion(Image);
+const FramerImage = motion.create(Image);
 
-const MovingImg = ({ title, img, link }) => {
+interface MovingImgProps {
+  title: string;
+  img: string;
+  link: string;
+}
+
+const MovingImg = ({ title, img, link }: MovingImgProps) => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
-  const imgRef = useRef(null);
+  const imgRef = useRef<HTMLImageElement>(null);
 
-  function handleMouse(event) {
-    imgRef.current.style.display = "inline-block";
+  function handleMouse(event: React.MouseEvent) {
+    if (imgRef.current) {
+      imgRef.current.style.display = "inline-block";
+    }
     x.set(event.pageX);
     y.set(-10);
   }
 
-  function handleMouseLeave(event) {
-    imgRef.current.style.display = "none";
+  function handleMouseLeave() {
+    if (imgRef.current) {
+      imgRef.current.style.display = "none";
+    }
     x.set(0);
     y.set(0);
   }
@@ -76,6 +85,8 @@ const MovingImg = ({ title, img, link }) => {
           src={img}
           ref={imgRef}
           alt={title}
+          width={400}
+          height={300}
           className="w-96 h-auto z-10 hidden absolute rounded-lg md:!hidden"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, transition: { duration: 0.2 } }}
@@ -83,46 +94,36 @@ const MovingImg = ({ title, img, link }) => {
             x: x,
             y: y,
           }}
-          sizes="(max-width: 768px) 60vw,
-              (max-width: 1200px) 40vw,
-              33vw"
+          sizes="(max-width: 768px) 60vw, (max-width: 1200px) 40vw, 33vw"
         />
       </Link>
     </>
   );
 };
 
-const Article = ({ img, title, date, link }) => {
-  return (
-    <motion.li
-      initial={{ y: 200 }}
-      whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
-      viewport={{ once: true }}
-      className="relative w-full p-4 py-6 my-2 rounded-xl flex sm:flex-col items-center justify-between 
-      bg-light text-dark first:mt-0 border border-solid border-dark
-      border-r-4 border-b-4 dark:bg-dark dark:border-light
-      "
-    >
-      <MovingImg img={img} title={title} link={link} />
-      <span
-        className="text-primary font-semibold dark:text-primaryDark min-w-max pl-4 sm:self-start 
-      sm:pl-0 xs:text-sm"
-      >
-        {date}
-      </span>
-    </motion.li>
-  );
-};
+interface FeaturedArticleProps {
+  img: string | StaticImageData;
+  title: string;
+  time: string;
+  summary?: string;
+  link: string;
+}
 
-const FeaturedArticle = ({ img, title, time, summary, link }) => {
+const FeaturedArticle = ({
+  img,
+  title,
+  time,
+  summary,
+  link,
+}: FeaturedArticleProps) => {
   return (
     <li
       className="relative w-full p-4 col-span-1 bg-light border border-dark border-solid rounded-2xl 
     dark:bg-dark dark:border-light"
     >
       <div
-        className="absolute  top-0 -right-3 w-[102%] h-[103%] rounded-[2rem]  rounded-br-3xl bg-dark 
-        -z-10  "
+        className="absolute top-0 -right-3 w-[102%] h-[103%] rounded-[2rem] rounded-br-3xl bg-dark 
+        -z-10"
       />
       <Link
         href={link}
@@ -132,6 +133,8 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
         <FramerImage
           src={img}
           alt={title}
+          width={400}
+          height={300}
           className="w-full h-auto"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
@@ -145,7 +148,7 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
           {title}
         </h2>
       </Link>
-      <p className="text-sm  mb-2">{summary}</p>
+      {summary && <p className="text-sm mb-2">{summary}</p>}
       <span className="text-primary font-semibold dark:text-primaryDark">
         {time}
       </span>
@@ -156,10 +159,6 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
 export default function Articles() {
   return (
     <>
-      <Head>
-        <title>Senthil Palanivelu | Articles</title>
-        <meta name="description" content="Senthil Palanivelu's portfolio." />
-      </Head>
       <TransitionEffect />
       <main
         className={`w-full mb-16 flex flex-col items-center justify-center dark:text-light overflow-hidden`}

@@ -1,17 +1,27 @@
+'use client';
 import React, { useRef } from "react";
-import AboutIcon from "./LiIcon";
 
-const Details = ({ type, time, place, info, link }) => {
-  const ref = useRef(null);
+interface DetailsProps {
+  type?: string;
+  time: string;
+  place: string;
+  info: string;
+  link?: string;
+}
+
+const Details = ({ type, time, place, info, link }: DetailsProps) => {
+  const ref = useRef<HTMLLIElement>(null);
   const infoPoints = info.split("\n").filter((line) => line.trim() !== "");
   return (
     <li
       ref={ref}
       className="my-8 first:mt-0 last:mb-0 w-full flex flex-col items-start justify-between"
     >
-      <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
-        {type}
-      </h3>
+      {type && (
+        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
+          {type}
+        </h3>
+      )}
       <span className="capitalize text-dark/75 font-medium dark:text-light/50 xs:text-sm">
         {time} | {place}
       </span>
@@ -41,8 +51,6 @@ const Details = ({ type, time, place, info, link }) => {
 };
 
 const Education = () => {
-  //const ref = useRef(null);
-
   return (
     <div className="my-64">
       <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
@@ -74,18 +82,6 @@ const Education = () => {
                 info="AI agent design, Multimodal prompting, Prompt chaining, Prompt Design, Prompt evaluation and iteration, Responsible AI."
                 link="https://coursera.org/share/af3d27b38f7b03039e89c2ff0703d84b"
               />
-              {/*<Details
-                time="September 2022"
-                place="Machine Learning by Stanford University on Coursera"
-                info="A foundational course covering supervised learning, unsupervised learning, best practices in machine learning, and practical advice for applying machine learning."
-                link="https://www.coursera.org/account/accomplishments/specialization/XYZ123456"
-              />
-              <Details
-                time="October 2021"
-                place="Data Science Specialization by Johns Hopkins University on Coursera"
-                info="A comprehensive course covering the concepts and tools needed throughout the data science pipeline, from asking the right kinds of questions to making inferences and publishing results."
-                link="https://www.coursera.org/account/accomplishments/specialization/LMNOP12345"
-              />*/}
             </ul>
           </li>
         </ul>

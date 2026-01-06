@@ -1,10 +1,15 @@
-import { motion, useScroll } from "framer-motion";
+'use client';
+import { motion, useScroll, MotionValue } from "framer-motion";
+import React, { RefObject } from "react";
 
-const LiIcon = ({ reference, time }) => {
+interface LiIconProps {
+  reference: RefObject<HTMLLIElement | null>;
+}
+
+const LiIcon = ({ reference }: LiIconProps) => {
   const { scrollYProgress } = useScroll({
     target: reference,
     offset: ["center end", "center center"],
-    layoutEffect: false,
   });
 
   return (
@@ -15,7 +20,7 @@ const LiIcon = ({ reference, time }) => {
           cy="50"
           r="20"
           pathLength="1"
-          className="stroke-primary  stroke-1 fill-none dark:stroke-primaryDark"
+          className="stroke-primary stroke-1 fill-none dark:stroke-primaryDark"
         />
         <motion.circle
           cx="75"

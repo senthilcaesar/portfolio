@@ -1,63 +1,16 @@
-import { motion, useMotionValue } from "framer-motion";
-import Head from "next/head";
-import Image from "next/image";
-
+'use client';
+import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import Link from "next/link";
-import { useRef } from "react";
 import TransitionEffect from "@/components/TransitionEffect";
 
-const FramerImage = motion(Image);
+interface ArticleProps {
+  title: string;
+  date: string;
+  link: string;
+}
 
-const MovingImg = ({ title, img, link }) => {
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-  const imgRef = useRef(null);
-
-  function handleMouse(event) {
-    imgRef.current.style.display = "inline-block";
-    x.set(event.pageX);
-    y.set(-10);
-  }
-
-  function handleMouseLeave(event) {
-    imgRef.current.style.display = "none";
-    x.set(0);
-    y.set(0);
-  }
-  return (
-    <>
-      <Link
-        href={link}
-        target={"_blank"}
-        className="relative"
-        // onMouseMove={handleMouse}
-        // onMouseLeave={handleMouseLeave}
-      >
-        <h2 className="capitalize text-xl font-semibold hover:underline dark:text-light md:text-lg xs:text-base">
-          {title}
-        </h2>
-        <FramerImage
-          src={img}
-          ref={imgRef}
-          alt={title}
-          className="w-96 h-auto z-10 hidden absolute rounded-lg md:!hidden"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, transition: { duration: 0.2 } }}
-          style={{
-            x: x,
-            y: y,
-          }}
-          sizes="(max-width: 768px) 60vw,
-              (max-width: 1200px) 40vw,
-              33vw"
-        />
-      </Link>
-    </>
-  );
-};
-
-const Article = ({ img, title, date, link }) => {
+const Article = ({ title, date, link }: ArticleProps) => {
   return (
     <motion.li
       initial={{ y: 200 }}
@@ -68,7 +21,11 @@ const Article = ({ img, title, date, link }) => {
       border-r-4 border-b-4 dark:bg-dark dark:border-light
       "
     >
-      <MovingImg img={img} title={title} link={link} />
+      <Link href={link} target={"_blank"} className="relative">
+        <h2 className="capitalize text-xl font-semibold hover:underline dark:text-light md:text-lg xs:text-base">
+          {title}
+        </h2>
+      </Link>
       <span
         className="text-primary font-semibold dark:text-primaryDark min-w-max pl-4 sm:self-start 
       sm:pl-0 xs:text-sm"
@@ -79,52 +36,9 @@ const Article = ({ img, title, date, link }) => {
   );
 };
 
-const FeaturedArticle = ({ img, title, time, summary, link }) => {
-  return (
-    <li
-      className="relative w-full p-4 col-span-1 bg-light border border-dark border-solid rounded-2xl 
-    dark:bg-dark dark:border-light"
-    >
-      <div
-        className="absolute  top-0 -right-3 w-[102%] h-[103%] rounded-[2rem]  rounded-br-3xl bg-dark 
-        -z-10  "
-      />
-      <Link
-        href={link}
-        target={"_blank"}
-        className="inline-block rounded-lg overflow-hidden w-full"
-      >
-        <FramerImage
-          src={img}
-          alt={title}
-          className="w-full h-auto"
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.2 }}
-          sizes="100vw"
-          priority
-        />
-      </Link>
-
-      <Link href={link} target={"_blank"}>
-        <h2 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline xs:text-lg">
-          {title}
-        </h2>
-      </Link>
-      <p className="text-sm  mb-2">{summary}</p>
-      <span className="text-primary font-semibold dark:text-primaryDark">
-        {time}
-      </span>
-    </li>
-  );
-};
-
-export default function Articles() {
+export default function Blogs() {
   return (
     <>
-      <Head>
-        <title>Senthil Palanivelu | Articles</title>
-        <meta name="description" content="Senthil Palanivelu's portfolio." />
-      </Head>
       <TransitionEffect />
       <main
         className={`w-full mb-16 flex flex-col items-center justify-center dark:text-light overflow-hidden`}
@@ -137,25 +51,12 @@ export default function Articles() {
             my thought processes, dissipates my ignorance, and introduces me to
             a multitude of perspectives, novel ideas and truths. This journey
             through literature has become a form of meditation for me,
-            connecting me deeply with characters and ideas. It&apos;s feels like
-            a real privilege to have the time to immerse myself in reading.
-            Through this post, I invite you to explore how reading has enriched
-            my life, offering wisdom, joy, and a profound appreciation for the
-            small yet significant aspects of our daily lives. Let&apos;s unravel
-            together how the act of reading can change us in the most unexpected
-            and beautiful ways.
+            connecting me deeply with characters and ideas.
           </p>
           <ul className="grid grid-cols-3 gap-4 lg:gap-6 md:grid-cols-2 sm:grid-cols-1 sm:gap-y-8"></ul>
 
           <ul className="flex flex-col items-center relative">
-            {/*
-            <Article
-              title="Decoding the Transformer: How These AI Models Understand Language"
-              date="February, 2025"
-              link="https://woolly-revolve-fec.notion.site/Decoding-the-Transformer-How-These-AI-Models-Understand-Language-19cbdfa1611d80dba97ce368d977d506?pvs=4"
-            />
-            */}
-            <Article
+        <Article
               title="Imitation & Trial and Error: How AI Models Learn to Think"
               date="August, 2025"
               link="https://woolly-revolve-fec.notion.site/Imitation-Trial-and-Error-How-AI-Models-Learn-to-Think-253bdfa1611d808bbe3de0b885167468?source=copy_link"

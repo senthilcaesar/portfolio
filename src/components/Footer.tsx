@@ -11,25 +11,15 @@ const Footer = () => {
     >
       <Layout className="py-8 flex items-center justify-between lg:flex-col lg:py-6">
         <span>
-          Last Updated:
+          Last Updated: 
           <Link
             href="https://www.onthisday.com/day"
             target="_blank"
-            className="underline underline-offset-2"
+            className="underline underline-offset-2 ml-1"
           >
             Oct, {new Date().getFullYear()}
           </Link>
         </span>
-
-        {/* 
-        <Link
-          href="https://devdreaming.com/about"
-          target="_blank"
-          className="underline underline-offset-2"
-        >
-          Say Hello
-        </Link>
-        */}
       </Layout>
     </footer>
   );

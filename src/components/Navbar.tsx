@@ -1,34 +1,30 @@
+'use client';
+
 import Link from "next/link";
-
-import {
-  FaBook, // Simple book
-  FaBookOpen, // Open book
-  FaBookReader, // Person reading
-  FaBookmark, // Bookmark
-  FaBookDead, // Book with skull (gothic)
-  FaBookMedical, // Medical book
-} from "react-icons/fa";
-
 import React, { useState } from "react";
 import Logo from "./Logo";
-import { useRouter } from "next/router";
+import { usePathname, useRouter } from "next/navigation";
 import {
-  //DribbbleIcon,
-  GithubIcon,
-  LinkedInIcon,
-  MoonIcon,
-  InstagramIcon,
-  //PinterestIcon,
-  SunIcon,
-  DribbbleIcon,
-  //TwitterIcon,
-} from "./Icons";
-import { motion } from "framer-motion";
-import { useThemeSwitch } from "./Hooks/useThemeSwitch";
-import LiIcon from "./LiIcon";
+  Github,
+  Linkedin,
+  Instagram,
+  Sun,
+  Moon,
+  BookOpenText,
+  Menu,
+  X
+} from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useThemeStore } from "@/store/useThemeStore";
 
-export const CustomLink = ({ href, title, className = "" }) => {
-  const router = useRouter();
+interface CustomLinkProps {
+  href: string;
+  title: string;
+  className?: string;
+}
+
+const CustomLink = ({ href, title, className = "" }: CustomLinkProps) => {
+  const pathname = usePathname();
   const isExternal = href.startsWith("http");
 
   return (
@@ -42,7 +38,7 @@ export const CustomLink = ({ href, title, className = "" }) => {
         className={`
           inline-block h-[1px] bg-dark absolute left-0 -bottom-0.5 
           group-hover:w-full transition-[width] ease duration-300 dark:bg-light
-          ${router.asPath === href ? "w-full" : "w-0"}
+          ${pathname === href ? "w-full" : "w-0"}
           lg:bg-light lg:dark:bg-dark
         `}
       >
@@ -52,8 +48,16 @@ export const CustomLink = ({ href, title, className = "" }) => {
   );
 };
 
-const CustomMobileLink = ({ href, title, className = "", toggle }) => {
+interface CustomMobileLinkProps {
+  href: string;
+  title: string;
+  className?: string;
+  toggle: () => void;
+}
+
+const CustomMobileLink = ({ href, title, className = "", toggle }: CustomMobileLinkProps) => {
   const router = useRouter();
+  const pathname = usePathname();
 
   const handleClick = () => {
     toggle();
@@ -62,17 +66,16 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
 
   return (
     <button
-      className={`${className}  rounded relative group lg:text-light lg:dark:text-dark`}
+      className={`${className} rounded relative group lg:text-light lg:dark:text-dark`}
       onClick={handleClick}
     >
       {title}
       <span
         className={`
-              inline-block h-[1px]  bg-dark absolute left-0 -bottom -0.5 
+              inline-block h-[1px] bg-dark absolute left-0 -bottom -0.5 
               group-hover:w-full transition-[width] ease duration-300 dark:bg-light
-              ${
-                router.asPath === href ? "w-full" : " w-0"
-              } lg:bg-light lg:dark:bg-dark
+              ${pathname === href ? "w-full" : "w-0"}
+              lg:bg-light lg:dark:bg-dark
               `}
       >
         &nbsp;
@@ -82,7 +85,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
 };
 
 const Navbar = () => {
-  const [mode, setMode] = useThemeSwitch();
+  const { mode, toggleMode } = useThemeStore();
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
@@ -97,12 +100,16 @@ const Navbar = () => {
     >
       <button
         type="button"
-        className=" flex-col items-center justify-center hidden lg:flex"
+        className="flex-col items-center justify-center hidden lg:flex"
         aria-controls="mobile-menu"
         aria-expanded={isOpen}
         onClick={handleClick}
       >
         <span className="sr-only">Open main menu</span>
+        {/* Simple hamburger using generic spans or Lucide icons. Original used spans for animation. 
+            Keeping logic but could replace with <Menu /> / <X /> if desired, 
+            but the original animation is specialized. Keeping spans for now. 
+        */}
         <span
           className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out ${
             isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
@@ -127,45 +134,11 @@ const Navbar = () => {
           <CustomLink className="mx-8" href="/projects" title="Projects" />
           <CustomLink className="mx-8" href="/articles" title="Articles" />
           <CustomLink className="mx-8" href="/blogs" title="Blogs" />
-          {/* <CustomLink
-            className="mx-8"
-            href="https://senthilcaesar.github.io/my-reading/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Readings"
-          ></CustomLink> */}
         </nav>
         <nav
           className="flex items-center justify-center flex-wrap lg:mt-2
       "
         >
-          {/* 
-        <motion.a
-          target={"_blank"}
-          className="w-6 mr-3"
-          href="#"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          aria-label="Checkout my twitter profile"
-        >
-          <TwitterIcon />
-        </motion.a>
-        */}
-
-          {/*<motion.a
-            href="https://www.dropbox.com/scl/fi/3s6gb7f572d5asu7asv1u/Senthil-Resume.pdf?rlkey=3ztftpu8b4luwqsp5d3jrf4ld&st=ipxnpq9g&dl=0"
-            className="mr-80 cursor-pointer w-max origin-center absolute 
-                  font-semibold bg-dark text-light py-1 px-3 rounded-full dark:bg-light dark:text-dark
-                  lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3  xs:bg-transparent xs:dark:bg-transparent xs:text-dark xs:dark:text-light xs:font-bold
-                  "
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 2 }}
-          >
-            Resume
-          </motion.a>*/}
-
           <motion.a
             target={"_blank"}
             className="w-7 mr-8"
@@ -174,7 +147,7 @@ const Navbar = () => {
             whileTap={{ scale: 2 }}
             aria-label="Checkout my Readings"
           >
-            <FaBookReader className="w-7 h-7" />
+            <BookOpenText className="w-7 h-7" />
           </motion.a>
 
           <motion.a
@@ -185,7 +158,7 @@ const Navbar = () => {
             whileTap={{ scale: 2 }}
             aria-label="Checkout my github profile"
           >
-            <GithubIcon />
+            <Github className="w-7 h-7" />
           </motion.a>
 
           <motion.a
@@ -196,53 +169,31 @@ const Navbar = () => {
             whileTap={{ scale: 2 }}
             aria-label="Checkout my linkedin profile"
           >
-            <LinkedInIcon />
+            <Linkedin className="w-7 h-7" />
           </motion.a>
 
           <motion.a
             href="https://www.instagram.com/senthil_p89/"
-            className="w-12 h-7 ease ml-2 flex items-center justify-center rounded-full p-1"
+            className="w-7 mx-3"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 2 }}
           >
-            <InstagramIcon />
+             <Instagram className="w-7 h-7" />
           </motion.a>
 
-          {/*
-        <motion.a
-          target={"_blank"}
-          className="w-6 mx-3 bg-light rounded-full"
-          href="#"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          aria-label="Checkout my pinterest profile"
-        >
-          <PinterestIcon />
-        </motion.a>
-        <motion.a
-          target={"_blank"}
-          className="w-6 mx-3"
-          href="#"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          aria-label="Checkout my dribbble profile"
-        >
-          <DribbbleIcon />
-        </motion.a>
-          */}
           <button
-            onClick={() => setMode(mode === "light" ? "dark" : "light")}
+            onClick={toggleMode}
             className={`w-7 h-7 ease ml-6 flex items-center justify-center rounded-full p-1  
-            ${mode === "light" ? "bg-dark  text-light" : "bg-light  text-dark"}
+            ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
             `}
             aria-label="theme-switcher"
           >
             {mode === "light" ? (
-              <SunIcon className={"fill-dark"} />
+              <Sun className={"fill-dark"} />
             ) : (
-              <MoonIcon className={"fill-dark"} />
+              <Moon className={"fill-dark"} />
             )}
           </button>
         </nav>
@@ -289,86 +240,66 @@ const Navbar = () => {
               href="/blogs"
               title="Blogs"
             />
-
-            {/* <CustomMobileLink
-              toggle={handleClick}
-              className="ml-4 lg:m-0 lg:my-2"
-              href="https://senthilcaesar.github.io/my-reading/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Readings"
-            /> */}
           </nav>
 
           <nav
-            className="flex items-center justify-center  mt-2
+            className="flex items-center justify-center mt-2
       "
           >
-            {/* 
-        <motion.a
-          target={"_blank"}
-          className="w-6 m-1 mr-3 sm:mx-1"
-          href="#"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          aria-label="Checkout my twitter profile"
-        >
-          <TwitterIcon />
-          
-        </motion.a>
-        <motion.a
-          target={"_blank"}
-          className="w-6 m-1 mx-3 bg-light rounded-full sm:mx-1"
-          href="#"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          aria-label="Checkout my pinterest profile"
-        >
-          <PinterestIcon />
-        </motion.a>
-        <motion.a
-          target={"_blank"}
-          className="w-6 m-1 mx-3 sm:mx-1"
-          href="#"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          aria-label="Checkout my dribbble profile"
-        >
-          <DribbbleIcon />
-        </motion.a>
-        */}
+            <motion.a
+              target={"_blank"}
+              className="w-6 m-1 mx-3 sm:mx-1"
+              href="https://senthilcaesar.github.io/my-reading/"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="Checkout my Readings"
+            >
+              <BookOpenText className="w-6 h-6" />
+            </motion.a>
+
             <motion.a
               target={"_blank"}
               className="w-6 m-1 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1"
-              href="#"
+              href="https://github.com/SenthilCaesar"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               aria-label="Checkout my github profile"
             >
-              <GithubIcon />
+              <Github className="w-6 h-6" />
             </motion.a>
             <motion.a
               target={"_blank"}
               className="w-6 m-1 mx-3 sm:mx-1"
-              href="#"
+              href="https://www.linkedin.com/in/senthil-palanivelu-0ba38844/"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               aria-label="Checkout my linkedin profile"
             >
-              <LinkedInIcon />
+              <Linkedin className="w-6 h-6" />
+            </motion.a>
+
+            <motion.a
+              target={"_blank"}
+              className="w-6 m-1 mx-3 sm:mx-1"
+              href="https://www.instagram.com/senthil_p89/"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="Checkout my instagram profile"
+            >
+              <Instagram className="w-6 h-6" />
             </motion.a>
 
             <button
-              onClick={() => setMode(mode === "light" ? "dark" : "light")}
+              onClick={toggleMode}
               className={`w-6 h-6 ease m-1 ml-3 sm:mx-1 flex items-center justify-center rounded-full p-1  
-            ${mode === "light" ? "bg-dark  text-light" : "bg-light  text-dark"}
+            ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
             `}
               aria-label="theme-switcher"
             >
               {mode === "light" ? (
-                <SunIcon className={"fill-dark"} />
+                <Sun className={"fill-dark"} />
               ) : (
-                <MoonIcon className={"fill-dark"} />
+                <Moon className={"fill-dark"} />
               )}
             </button>
           </nav>

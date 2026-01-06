@@ -3,6 +3,5 @@
 @tailwind utilities;
 
 .no-capitalize {
-    text-transform: none !important;
-  }
-  
+  text-transform: none !important;
+}
