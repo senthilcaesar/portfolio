@@ -13,12 +13,13 @@ interface ArticleProps {
 const Article = ({ title, date, link }: ArticleProps) => {
   return (
     <motion.li
-      initial={{ y: 200 }}
-      whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
+      initial={{ y: 50 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 0.5, type: "spring" }}
       viewport={{ once: true }}
-      className="relative w-full p-4 py-6 my-2 rounded-xl flex sm:flex-col items-center justify-between 
-      bg-light text-dark first:mt-0 border border-solid border-dark
-      border-r-4 border-b-4 dark:bg-dark dark:border-light
+      className="relative w-full p-4 py-6 my-2 rounded-2xl flex sm:flex-col items-center justify-between 
+      bg-light dark:bg-dark text-dark dark:text-light first:mt-0 border border-solid border-dark dark:border-light/25
+      shadow-xl dark:shadow-light/10
       "
     >
       <Link href={link} target={"_blank"} className="relative">

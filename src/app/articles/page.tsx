@@ -117,14 +117,13 @@ const FeaturedArticle = ({
   link,
 }: FeaturedArticleProps) => {
   return (
-    <li
-      className="relative w-full p-4 col-span-1 bg-light border border-dark border-solid rounded-2xl 
-    dark:bg-dark dark:border-light"
+    <motion.li
+      initial={{ y: 50 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 0.5, type: "spring" }}
+      className="relative w-full p-4 col-span-1 bg-light border border-solid border-dark rounded-2xl 
+    shadow-xl dark:bg-dark dark:border-light/25 dark:shadow-light/10"
     >
-      <div
-        className="absolute top-0 -right-3 w-[102%] h-[103%] rounded-[2rem] rounded-br-3xl bg-dark 
-        -z-10"
-      />
       <Link
         href={link}
         target={"_blank"}
@@ -152,7 +151,7 @@ const FeaturedArticle = ({
       <span className="text-primary font-semibold dark:text-primaryDark">
         {time}
       </span>
-    </li>
+    </motion.li>
   );
 };
 

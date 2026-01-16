@@ -18,15 +18,15 @@ const Details = ({ position, company, location, companyLink, time, work }: Detai
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-start justify-between md:w-[80%]"
+      className="my-8 first:mt-0 last:mb-0 w-[90%] mx-auto flex flex-col items-start justify-between md:w-[80%]"
     >
-      <LiIcon reference={ref} />
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
+        className="w-full bg-light border border-solid border-dark rounded-2xl p-6 shadow-xl dark:bg-dark dark:border-light/25 dark:shadow-light/10"
       >
-        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
+        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg mb-2">
           {position}{" "}
           <a
             className="capitalize text-primary dark:text-primaryDark"
@@ -37,13 +37,13 @@ const Details = ({ position, company, location, companyLink, time, work }: Detai
           </a>
         </h3>
         <span
-          className="capitalize text-dark/75 font-medium dark:text-light/50 xs:text-sm ml-4"
+          className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm block mb-4"
         >
           {time} | {location}
         </span>
-        <ul className="list-disc list-inside space-y-2 ml-4">
+        <ul className="list-disc list-inside space-y-2 text-justify">
           {workPoints.map((point, index) => (
-            <li key={index} className="text-base font-medium">
+            <li key={index} className="text-base font-medium md:text-sm">
               {point}
             </li>
           ))}
@@ -112,24 +112,32 @@ Diagnosed and resolved complex network connectivity and firewall issues between 
 Created Unix shell scripts for automated failure data collection and analysis, improving incident response time by 60%
 Configured Access Control Lists (ACLs) and file-level security settings across multiple platforms, ensuring compliance with enterprise security standards`;
 
+  const amudhamWorkProp = `Architected a high-performance e-commerce platform for a premium organic food brand, delivering a seamless shopping experience through modern web technologies and secure payment integration
+Built a high-performance e-commerce SPA using Next.js 15 (App Router), React 19, and TypeScript, achieving sub-second load times with Static Site Generation and strict typing
+Designed a modern, animated UI/UX with Tailwind CSS 4.0 and Framer Motion, implementing infinite-scroll product carousels, smooth multi-step checkout, and persistent cart state using Zustand with custom GST (5%) logic`;
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "center start"],
   });
 
   return (
-    <div className="my-64">
+    <div className="mt-32 mb-64">
       <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
         Experience
       </h2>
 
-      <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
-        <motion.div
-          className="absolute left-9 top-0 w-[4px] md:w-[2px] md:left-[30px] xs:left-[20px] h-full bg-dark 
-            origin-top dark:bg-primaryDark dark:shadow-3xl"
-          style={{ scaleY: scrollYProgress }}
-        />
+      <div ref={ref} className="relative w-[90%] mx-auto md:w-full">
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
+          <Details
+            position="Full Stack Developer/Frontend Engineer"
+            company="Amudham Naturals"
+            location="India"
+            companyLink="https://amudhamnaturals.com/"
+            time="Jul 2025 - Present"
+            work={amudhamWorkProp}
+          />
+          
           <Details
             position="Bioinformatician I"
             company="Brigham and Women's Hospital"

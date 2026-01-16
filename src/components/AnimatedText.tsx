@@ -32,11 +32,12 @@ const singleWord: Variants = {
 interface AnimatedTextProps {
   text: string;
   className?: string;
+  wrapperClassName?: string;
 }
 
-const AnimatedText = ({ text, className = "" }: AnimatedTextProps) => {
+const AnimatedText = ({ text, className = "", wrapperClassName = "" }: AnimatedTextProps) => {
   return (
-    <div className="py-2 w-full mx-auto flex flex-col items-center justify-center text-center overflow-hidden sm:py-0">
+    <div className={`py-2 w-full mx-auto flex flex-col items-center justify-center text-center overflow-hidden sm:py-0 ${wrapperClassName}`}>
       <motion.h1
         className={`inline-block text-dark dark:text-light text-8xl font-bold w-full capitalize ${className} xl:text-6xl`}
         variants={quote}

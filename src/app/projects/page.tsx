@@ -36,17 +36,15 @@ const FeaturedProject = ({
   github,
 }: FeaturedProjectProps) => {
   return (
-    <article
-      className="relative flex w-full items-center justify-between rounded-3xl rounded-br-2xl border
-border-solid border-dark bg-light p-12 shadow-2xl dark:border-light dark:bg-dark lg:flex-col 
-lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 
+    <motion.article
+      initial={{ y: 50 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 0.5, type: "spring" }}
+      className="relative flex w-full items-center justify-between rounded-2xl border
+border-solid border-dark bg-light p-12 shadow-xl dark:border-light/25 dark:shadow-light/10 dark:bg-dark lg:flex-col 
+lg:p-8 xs:rounded-2xl xs:p-4 
     "
     >
-      <div
-        className="absolute top-0 -right-3 -z-10 h-[103%] w-[101%] rounded-[2.5rem] rounded-br-3xl bg-dark
-         dark:bg-light xs:-right-2 xs:h-[102%] xs:w-[100%]
-        xs:rounded-[1.5rem] "
-      />
 
       <Link
         href={link}
@@ -98,7 +96,7 @@ lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4
           {type}
         </span>
       </div>
-    </article>
+    </motion.article>
   );
 };
 

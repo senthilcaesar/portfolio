@@ -1,99 +1,94 @@
 'use client';
-import { motion } from "framer-motion";
 import React, { useRef } from "react";
+import { motion, useScroll } from "framer-motion";
+import LiIcon from "./LiIcon";
 
-interface SkillProps {
-  name: string;
-  x: string;
-  y: string;
+interface SkillCategoryProps {
+  title: string;
+  skills: string[];
 }
 
-const Skill = ({ name, x, y }: SkillProps) => {
-  const ref = useRef<HTMLDivElement>(null);
+const SkillCategory = ({ title, skills }: SkillCategoryProps) => {
+  const ref = useRef<HTMLLIElement>(null);
   return (
-    <motion.div
+    <li
       ref={ref}
-      whileHover={{ scale: 1.05 }}
-      initial={{ x: 0, y: 0 }}
-      whileInView={{ x: x, y: y, transition: { duration: 1.5 } }}
-      viewport={{ once: true }}
-      className="cursor-pointer w-max origin-center absolute 
-       font-semibold bg-dark text-light py-3 px-6 rounded-full dark:bg-light dark:text-dark
-       lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 xs:bg-transparent xs:dark:bg-transparent xs:text-dark xs:dark:text-light xs:font-bold
-       "
+      className="my-8 first:mt-0 last:mb-0 w-[90%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
     >
-      {name}
-    </motion.div>
+      <motion.div
+        initial={{ y: 50 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 0.5, type: "spring" }}
+        className="w-full bg-light border border-solid border-dark rounded-2xl p-6 shadow-xl dark:bg-dark dark:border-light/25 dark:shadow-light/10"
+      >
+        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg text-primary dark:text-primaryDark mb-4">
+            {title}
+        </h3>
+        <div className="flex flex-wrap gap-2">
+            {skills.map((skill, index) => (
+                <span 
+                    key={index}
+                    className="bg-dark text-light dark:bg-light dark:text-dark py-1 px-3 rounded-lg text-sm font-semibold hover:scale-105 transition-all duration-200 cursor-default"
+                >
+                    {skill}
+                </span>
+            ))}
+        </div>
+      </motion.div>
+    </li>
   );
 };
 
 const Skills = () => {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "center start"],
+  });
+
+  const languages = [
+    "Python", "R Programming", "R Shiny", "SQL", "JavaScript", "TypeScript", "HTML", "CSS", "Shell Scripting", "MATLAB"
+  ];
+
+  const webDev = [
+    "Next.js", "React", "Tailwind CSS", "Framer Motion", "Zustand", "Node.js", "REST APIs", 
+    "Streamlit", "FastAPI"
+  ];
+  
+  const mlAndAI = [
+      "Machine Learning", "Deep Learning", "LLMs & RAG", "AI Agents", "Computer Vision", 
+      "NLP", "PyTorch", "Scikit-learn", "XGBoost", "OpenAI API", "Prompt Engineering",
+      "Random Forest", "SVM", "Gradient Descent", "PCA", "Neural Networks"
+  ];
+
+  const dataScience = [
+      "Data Analysis", "Statistical Modeling", "Hypothesis Testing", "Time Series Analysis", 
+      "Signal Processing", "Bayesian Statistics", "Pandas", "NumPy", "Matplotlib/Seaborn", 
+      "Data Visualization", "Linear/Logistic Regression", "Probability Theory"
+  ];
+
+  const tools = [
+      "AWS", "Docker", "Linux", "Git/GitHub", "CI/CD", "GitHub Actions", 
+      "VS Code", "Jupyter", "Netlify", "PyMuPDF", "Pinecone"
+  ];
+
   return (
-    <>
-      <h2 className="font-bold text-8xl mt-40 w-full text-center md:text-6xl md:mt-32">
+    <div className="mt-8 mb-16">
+      <h2 className="font-bold text-6xl mb-32 w-full text-center md:text-5xl xs:text-3xl md:mb-16">
         Skills
       </h2>
-      <div
-        ref={ref}
-        className="w-full h-[100vh] relative bg-circularLight dark:bg-circularDark flex items-center justify-center 
-      mb-64 md:mb-32 rounded-full
-      lg:bg-circularLightLg lg:dark:bg-circularDarkLg md:bg-circularLightMd md:dark:bg-circularDarkMd 
-      sm:bg-circularLightSm sm:dark:bg-circularDarkSm lg:h-[80vh] sm:h-[60vh] xs:h-[50vh] 
-      "
-      >
-        💡
-        <Skill name="Python" x="-18vw" y="-2vw" />
-        <Skill name="scikit-learn" x="-10vw" y="-2vw" />
-        <Skill name="CI/CD" x="-35vw" y="-6vw" />
-        <Skill name="MATLAB" x="-25vw" y="-6vw" />
-        <Skill name="Linux" x="-9vw" y="-15vw" />
-        <Skill name="Docker" x="-10vw" y="-10vw" />
-        <Skill name="R" x="-24vw" y="-1vw" />
-        <Skill name="SQL" x="-16vw" y="-6vw" />
-        <Skill name="PyTorch" x="-16vw" y="2vw" />
-        <Skill name="Pandas" x="-23vw" y="4vw" />
-        <Skill name="Numpy" x="-14vw" y="7vw" />
-        <Skill name="Data Engineering" x="-14vw" y="12vw" />
-        <Skill name="AWS" x="-8vw" y="-20vw" />
-        <Skill name="Jupyter Lab" x="-18vw" y="-20vw" />
-        <Skill name="C++" x="-22vw" y="8vw" />
-        <Skill name="R Shiny" x="-18vw" y="-10vw" />
-        <Skill name="Data visualization" x="16vw" y="10vw" />
-        <Skill name="GitHub actions" x="-28vw" y="18vw" />
-        <Skill name="matplotlib" x="-16vw" y="18vw" />
-        <Skill name="Excel" x="-18vw" y="-15vw" />
-        <Skill name="Optimization" x="12vw" y="-17vw" />
-        <Skill name="Classification" x="15vw" y="-10vw" />
-        <Skill name="Feature selection/engineering" x="30vw" y="-11vw" />
-        <Skill name="Neural networks" x="28vw" y="-6vw" />
-        <Skill name="Clustering" x="15vw" y="-5vw" />
-        <Skill name="Regression" x="15vw" y="0vw" />
-        <Skill name="Statistical modeling" x="15vw" y="5vw" />
-        <Skill name="Computer vision" x="18vw" y="-14vw" />
-        <Skill name="Bayesian statistics" x="28vw" y="-17vw" />
-        <Skill name="Signal Processing" x="29vw" y="4vw" />
-        <Skill name="Predictive modelling" x="29vw" y="10vw" />
-        <Skill name="Data analysis" x="10vw" y="-21vw" />
-        <Skill name="Data science" x="20vw" y="-21vw" />
-        <Skill name="Shell scripting" x="-29vw" y="-16vw" />
-        <Skill name="GitHub/Version control" x="-30vw" y="-11vw" />
-        <Skill name="HTML & CSS" x="-33vw" y="0vw" />
-        <Skill name="Containerization" x="-33vw" y="5vw" />
-        <Skill name="VS code" x="-30vw" y="9vw" />
-        <Skill name="Software development" x="-30vw" y="13vw" />
-        <Skill name="Machine Learning" x="15vw" y="16vw" />
-        <Skill name="Time series analysis" x="28vw" y="16vw" />
-        <Skill name="Algorithms development" x="28vw" y="-1vw" />
-        <Skill name="GitHub Copilot" x="2vw" y="0vw" />
-        <Skill name="AI agents" x="2vw" y="-5vw" />
-        <Skill name="OpenAI" x="2vw" y="-15vw" />
-        <Skill name="Prompt Engineering" x="2vw" y="-10vw" />
-        <Skill name="RAG" x="2vw" y="5vw" />
-        <Skill name="Finetuning" x="2vw" y="10vw" />
-        <Skill name="LLM" x="2vw" y="15vw" />
+
+      <div ref={ref} className="relative w-[95%] mx-auto lg:w-[90%] md:w-full">
+        
+        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
+            <SkillCategory title="Languages" skills={languages} />
+            <SkillCategory title="Full Stack Development" skills={webDev} />
+            <SkillCategory title="Machine Learning & AI" skills={mlAndAI} />
+            <SkillCategory title="Data Science & Analytics" skills={dataScience} />
+            <SkillCategory title="Tools & Platforms" skills={tools} />
+        </ul>
       </div>
-    </>
+    </div>
   );
 };
 

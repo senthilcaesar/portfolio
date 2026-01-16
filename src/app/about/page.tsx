@@ -3,9 +3,8 @@ import Layout from "@/components/Layout";
 import Image from "next/image";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useRef } from "react";
-import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
-import Education from "@/components/Education";
+
 import TransitionEffect from "@/components/TransitionEffect";
 import React from "react";
 import profilepic from "../../../public/images/profile/aboutProfile.jpeg";
@@ -86,30 +85,23 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div
-              className="relative w-full max-w-lg rounded-2xl border-2 border-solid border-dark 
-            bg-light p-8 dark:border-light dark:bg-dark md:order-1"
-            >
-              <div
-                className="absolute top-0 -right-3 -z-10 h-[103%] w-[102%] rounded-[2rem] rounded-br-3xl 
-                bg-dark
-        dark:bg-light"
-              />
-              <Image
-                className="h-auto w-full rounded-2xl"
-                src={profilepic}
-                alt="Senthil Palanivelu"
-                width={500}
-                height={500}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                priority
-              />
+            <div className="w-full max-w-lg md:order-1">
+              <div className="w-full bg-light border border-solid border-dark rounded-2xl p-8 shadow-xl dark:bg-dark dark:border-light/25 dark:shadow-light/10">
+                <Image
+                  className="h-auto w-full rounded-2xl"
+                  src={profilepic}
+                  alt="Senthil Palanivelu"
+                  width={500}
+                  height={500}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority
+                />
+              </div>
             </div>
           </div>
 
-          <Skills />
+
           <Experience />
-          <Education />
         </Layout>
       </main>
     </>
