@@ -94,8 +94,8 @@ const Navbar = () => {
 
   return (
     <header
-      className="w-full flex items-center justify-between px-32 py-8 font-medium z-10 dark:text-light
-    lg:px-16 relative z-1 md:px-12 sm:px-8
+      className="w-full flex items-center justify-between px-32 py-8 font-medium z-30 dark:text-light
+    lg:px-16 relative md:px-12 sm:px-8
     "
     >
       <button
@@ -136,7 +136,7 @@ const Navbar = () => {
           <CustomLink className="mx-8" href="/blogs" title="Blogs" />
         </nav>
         <nav
-          className="flex items-center justify-center flex-wrap lg:mt-2
+          className="flex items-center justify-center flex-wrap lg:mt-2 text-dark dark:text-light
       "
         >
           <motion.a
@@ -202,7 +202,7 @@ const Navbar = () => {
         <motion.div
           className="min-w-[70vw] sm:min-w-[90vw] flex justify-between items-center flex-col fixed top-1/2 left-1/2 -translate-x-1/2
       -translate-y-1/2
-      py-32 bg-dark/90 dark:bg-light/75 rounded-lg z-50 backdrop-blur-md
+      py-32 bg-dark/90 dark:bg-light/75 rounded-lg z-50 backdrop-blur-md text-light dark:text-dark
       "
           initial={{ scale: 0, x: "-50%", y: "-50%", opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -259,7 +259,7 @@ const Navbar = () => {
 
             <motion.a
               target={"_blank"}
-              className="w-6 m-1 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1"
+              className="w-6 m-1 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1 text-dark dark:text-light"
               href="https://github.com/SenthilCaesar"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
