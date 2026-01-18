@@ -35,7 +35,7 @@ export default function Home() {
                 wrapperClassName="!items-start !justify-start !text-left lg:!items-center lg:!justify-center lg:!text-center"
               />
               <p className="my-4 text-xl font-medium md:text-lg sm:text-base text-left lg:text-center">
-                Background in Computer Science with a strong interest in Data Analytics, AI Engineering and Machine Learning. Committed to leveraging AI and data-driven insights to develop solutions that create meaningful and measurable business value.
+                I’m a Computer Science professional with a background in Data Analytics, AI Engineering, and Machine Learning. I enjoy exploring data to uncover patterns and trends that drive informed decision-making. My goal is to leverage AI and data-driven insights to solve real-world challenges and deliver clear, measurable value to businesses.
               </p>
               <div className="mt-2 flex items-center self-start lg:self-center">
                 <Link

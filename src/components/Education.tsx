@@ -67,8 +67,14 @@ const Education = () => {
           <Details
             type="Master of Science in Computer Science"
             time="Jan 2015 - Jan 2019"
-            place="University of Massachusetts Boston"
+            place="University of Massachusetts Boston | USA"
             info="Courses: Advanced Algorithms, Algorithms in Bioinformatics, Analysis of Algorithm, Big Data Analytics, Linear Algebra, Calculus, Software Development and Design, Database Management, Computing Data Structure, Mathematical Logic"
+          />
+          <Details
+            type="Bachelor of Engineering in Electronics and Communication"
+            time="Sep 2007 - Sep 2011"
+            place="Anna University | India"
+            info="Courses: Signal Processing, Microprocessor, Satellite communication, Control Systems Design"
           />
            <li className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]">
              <div className="flex flex-col items-center w-full">
@@ -92,6 +98,13 @@ const Education = () => {
             place="Google on Coursera"
             info="AI agent design, Multimodal prompting, Prompt chaining, Prompt Design, Prompt evaluation and iteration, Responsible AI."
             link="https://coursera.org/share/af3d27b38f7b03039e89c2ff0703d84b"
+          />
+          <Details
+            type="Supervised Machine Learning: Regression and Classification"
+            time="March 2025"
+            place="DeepLearning.AI on Coursera | Standford Online"
+            info="Build & train supervised machine learning models in Python using popular libraries NumPy & scikit-learn for prediction & binary classification tasks, including linear regression & logistic regression."
+            link="https://coursera.org/share/50bdece4207ce9550bf6369b46593fb8"
           />
         </ul>
       </div>
