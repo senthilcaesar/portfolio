@@ -41,6 +41,7 @@ import lrsig from '../../../public/images/articles/lrsig.png';
 import dblr from '../../../public/images/articles/dblr.png';
 import logitreg from '../../../public/images/articles/logitreg.png';
 import eda from '../../../public/images/articles/eda.png';
+import pandas from '../../../public/images/articles/pandas.jpeg';
 
 const FramerImage = motion.create(Image);
 
@@ -199,6 +200,13 @@ export default function Articles() {
               time='10 min read'
               summary='Use the World Happiness Report dataset for predicting the happiness. Exploratory data analysis, Random Forest, Linear Regression, Python'
               link='https://woolly-revolve-fec.notion.site/Exploratory-Data-Analysis-Linear-Regression-99df93e03cde4cb9b3a876d2aa30380b?pvs=4'
+            />
+            <FeaturedArticle
+              img={pandas}
+              title='Import datasets with Python'
+              time='10 min read'
+              summary='CSV, Excel, JSON, BigQuery, Pandas'
+              link='https://woolly-revolve-fec.notion.site/Import-datasets-with-Python-2f2bdfa1611d8097980dd1977a05a240?source=copy_link'
             />
             <FeaturedArticle
               img={hyperplane}
