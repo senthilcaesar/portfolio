@@ -37,6 +37,13 @@ export default function Home() {
               <p className="my-4 text-xl font-medium md:text-lg sm:text-base text-left lg:text-center">
                 I’m a Computer Science professional with a background in Data Analytics, AI Engineering, and Machine Learning. I enjoy exploring data to uncover patterns and trends that drive informed decision-making. My goal is to leverage AI and data-driven insights to solve real-world challenges and deliver clear, measurable value to businesses.
               </p>
+              <ul className="my-4 text-lg font-medium md:text-base sm:text-sm text-left lg:text-center space-y-2 list-disc list-inside lg:list-none">
+                <li>5 years of experience as a Data Analyst.</li>
+                <li>Proficient in Python, Machine Learning and SQL.</li>
+                <li>Analytic mindset and a passion for AI.</li>
+                <li>Creative, curious, and innovative - I love exploring new ways to use data.</li>
+                <li>AI early adopter - I stay ahead of trends and love experimenting with new tools.</li>
+              </ul>
               <div className="mt-2 flex items-center self-start lg:self-center">
                 <Link
                   href="/documents/Senthil.pdf"
