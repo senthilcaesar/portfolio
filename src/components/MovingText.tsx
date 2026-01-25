@@ -5,6 +5,22 @@ import React from "react";
 const MovingText = () => {
   const text = "Currently Reading: \"Becoming a Data Head: How to Think, Speak, and Understand Data Science, Statistics, and Machine Learning by Alex J. Gutman\"";
 
+  const [duration, setDuration] = React.useState(20);
+
+  React.useEffect(() => {
+    const updateDuration = () => {
+      if (window.innerWidth < 768) {
+        setDuration(12); // Faster on mobile (less distance to cover)
+      } else {
+        setDuration(20);
+      }
+    };
+
+    updateDuration();
+    window.addEventListener("resize", updateDuration);
+    return () => window.removeEventListener("resize", updateDuration);
+  }, []);
+
   return (
     <div className="w-full overflow-hidden py-2 sm:mt-0 mb-4">
       <div className="relative flex whitespace-nowrap overflow-hidden bg-white/30 dark:bg-dark/30 backdrop-blur-md rounded-full border border-dark/10 dark:border-light/10 shadow-sm">
@@ -19,7 +35,7 @@ const MovingText = () => {
            transition={{
              repeat: Infinity,
              repeatType: "loop",
-             duration: 20,
+             duration: duration,
              ease: "linear",
            }}
         >
