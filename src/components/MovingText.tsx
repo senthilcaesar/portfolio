@@ -10,7 +10,7 @@ const MovingText = () => {
   React.useEffect(() => {
     const updateDuration = () => {
       if (window.innerWidth < 768) {
-        setDuration(12); // Faster on mobile (less distance to cover)
+        setDuration(10); // Faster on mobile (less distance to cover)
       } else {
         setDuration(20);
       }
@@ -30,7 +30,7 @@ const MovingText = () => {
 
         <motion.div
            className="flex items-center w-max"
-           initial={{ x: "100%" }}
+           initial={{ x: "100vw" }}
            animate={{ x: "-100%" }}
            transition={{
              repeat: Infinity,
