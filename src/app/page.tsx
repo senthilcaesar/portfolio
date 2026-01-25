@@ -11,6 +11,8 @@ import Link from "next/link";
 import TransitionEffect from "@/components/TransitionEffect";
 import type { Metadata } from "next";
 
+import MovingText from "@/components/MovingText";
+
 export const metadata: Metadata = {
   title: "Senthil Palanivelu",
   description: "Senthil Palanivelu Personal Website",
@@ -27,6 +29,11 @@ export default function Home() {
             <Image src={banner} alt="background" fill className="object-cover" priority />
         </div>
         <Layout className="pt-16 md:pt-16 sm:pt-8 relative z-10">
+          {/* Moving Text Marquee */}
+           <div className="w-full mb-8 -mt-8 xl:-mt-4 lg:-mt-2 sm:-mt-0">
+             <MovingText />
+           </div>
+
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 flex flex-col items-start self-center lg:w-full lg:text-center">
               <AnimatedText
