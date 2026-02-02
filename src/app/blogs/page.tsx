@@ -103,6 +103,11 @@ export default function Blogs() {
               link='https://woolly-revolve-fec.notion.site/The-Architecture-of-Character-Essential-cores-for-Personal-Growth-1d7bdfa1611d80e7beebe52e63b8ed42?pvs=4'
             />
             <Article
+              title='Key Business Systems Explained: POS, ESB, MOKA, ERM, and CRP'
+              date='February, 2026'
+              link='https://woolly-revolve-fec.notion.site/Key-Business-Systems-Explained-POS-ESB-MOKA-ERM-and-CRP-2fbbdfa1611d802e949df0709eff2ce2?source=copy_link'
+            />
+            <Article
               title='The Power and Peril of Turning Experience into Stories'
               date='March, 2025'
               link='https://woolly-revolve-fec.notion.site/The-Power-and-Peril-of-Turning-Experience-into-Stories-1a9bdfa1611d804fb672eb253e81e054?pvs=4'
