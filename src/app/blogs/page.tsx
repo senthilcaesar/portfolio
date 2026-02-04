@@ -78,6 +78,11 @@ export default function Blogs() {
               link='https://woolly-revolve-fec.notion.site/Context-engineering-explained-243bdfa1611d80e89b4ceed3d46b9532?source=copy_link'
             />
             <Article
+              title='Percentiles and Quartiles'
+              date='February, 2026'
+              link='https://woolly-revolve-fec.notion.site/Measures-of-position-Percentiles-and-quartiles-2fdbdfa1611d8022a103c077c17e1133?source=copy_link'
+            />
+            <Article
               title='My Professional Journey'
               date='June, 2025'
               link='https://woolly-revolve-fec.notion.site/My-Professional-Journey-218bdfa1611d80f78d36e4c1813866b6'
