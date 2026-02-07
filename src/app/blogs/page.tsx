@@ -153,6 +153,11 @@ export default function Blogs() {
               link='https://woolly-revolve-fec.notion.site/Building-Docker-images-for-multiple-platforms-7a84ad5b58194c3b859c1a41a11708d0?pvs=4'
             />
             <Article
+              title='Conditional probability with Bayes theorem'
+              date='February, 2026'
+              link='https://woolly-revolve-fec.notion.site/Conditional-probability-with-Bayes-s-theorem-300bdfa1611d80dc9cddd8087b055dce?source=copy_link'
+            />
+            <Article
               title='Git Tutorial'
               date='March, 2024'
               link='https://woolly-revolve-fec.notion.site/Git-Tutorial-dca4aaaf46f2456ba95208b3c41ff31a?pvs=4'
