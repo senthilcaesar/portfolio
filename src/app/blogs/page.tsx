@@ -57,11 +57,7 @@ export default function Blogs() {
           <ul className='grid grid-cols-3 gap-4 lg:gap-6 md:grid-cols-2 sm:grid-cols-1 sm:gap-y-8'></ul>
 
           <ul className='flex flex-col items-center relative'>
-            <Article
-              title='Data Analysis with Claude Sonnet 4.5'
-              date='February, 2026'
-              link='https://woolly-revolve-fec.notion.site/Data-Analysis-with-Claude-Sonnet-4-5-2f9bdfa1611d80e6953be762481a6f30?source=copy_link'
-            />
+
             <Article
               title='Using PACE in a Project Proposal'
               date='January, 2026'
