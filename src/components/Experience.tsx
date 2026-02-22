@@ -112,9 +112,16 @@ Diagnosed and resolved complex network connectivity and firewall issues between 
 Created Unix shell scripts for automated failure data collection and analysis, improving incident response time by 60%
 Configured Access Control Lists (ACLs) and file-level security settings across multiple platforms, ensuring compliance with enterprise security standards`;
 
-  const amudhamWorkProp = `Architected a high-performance e-commerce platform for a premium organic food brand, delivering a seamless shopping experience through modern web technologies and secure payment integration
-Built a high-performance e-commerce SPA using Next.js 15 (App Router), React 19, and TypeScript, achieving sub-second load times with Static Site Generation and strict typing
-Designed a modern, animated UI/UX with Tailwind CSS 4.0 and Framer Motion, implementing infinite-scroll product carousels, smooth multi-step checkout, and persistent cart state using Zustand with custom GST (5%) logic`;
+  const amudhamWorkProp = `Architected and delivered an end-to-end digital platform for a premium food brand, including a high-performance e-commerce site (Next.js, React), an internal profitability analytics tool (Python, Streamlit), and a conversational AI agent built with Chainlit and the Anthropic API that translates natural-language questions into SQL-driven business insights.
+
+Architected a responsive e-commerce SPA using Next.js 15 (App Router) and React 19, achieving sub-second page loads via Static Site Generation.
+Engineered a high-performance Python/Streamlit analytics dashboard to visualize business profitability, processing raw invoice data into actionable insights.
+Designed and developed TalkToYourData, an intelligent conversational AI agent that transforms natural language questions into SQL queries, executes them against customer order databases, and delivers business insights in plain English.
+Designed immersive UI/UX with Tailwind CSS 4 and Framer Motion, featuring infinite coordinate-scrolling carousels and smooth checkout transitions.
+Leveraged SQL to answer business performance questions and built robust ETL pipelines using Pandas and Regex to clean PDF invoice data for precise margin analysis.
+Implemented secure payment infrastructure using Razorpay API with real-time webhooks, custom GST logic, and automated EmailJS receipts.
+Developed advanced statistical modules using the Interquartile Range (IQR) method to detect anomalies and visualize profit distributions via interactive Plotly charts.
+Deployed automated CI/CD pipelines on Netlify and maintained rigorous TypeScript standards to ensure code reliability and rapid feature delivery.`;
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -130,7 +137,7 @@ Designed a modern, animated UI/UX with Tailwind CSS 4.0 and Framer Motion, imple
       <div ref={ref} className="relative w-[90%] mx-auto md:w-full">
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="Full Stack Developer/Frontend Engineer"
+            position="Member of Technical Staff"
             company="Amudham Naturals"
             location="India"
             companyLink="https://amudhamnaturals.com/"

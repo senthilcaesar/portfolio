@@ -47,41 +47,34 @@ export default function About() {
                 BIOGRAPHY
               </h2>
               <p className="font-medium">
-                Hi👋 I&apos;m <strong>Senthil Palanivelu</strong>, a graduate
-                with a background in Computer Science from{" "}
+                Hi👋 I&apos;m <strong>Senthil Palanivelu</strong>, a builder
+                at heart with a background in Computer Science from{" "}
                 <strong>University of Massachusetts Boston</strong>.
               </p>
               <div className="mt-7 my-4 text-base font-medium md:text-sm sm:text-xs font-helvetica leading-relaxed space-y-4">
                 <p>
-                  Healthcare AI Specialist passionate about transforming patient
-                  care through data science and machine learning.
+                  I approach every problem analytically — I love digging into
+                  large, complex datasets to find the patterns and trends
+                  hiding inside them. Data, to me, is never just numbers; it&apos;s
+                  a story waiting to be told.
                 </p>
                 <p>
-                  With 6+ years of experience across enterprise systems,
-                  research infrastructure, and clinical applications, I bridge
-                  the gap between cutting-edge technology and real-world
-                  healthcare impact.
+                  What drives me is uncovering those stories and translating
+                  them into clear visualisations and insights that help people
+                  make better decisions — and then take better action. I
+                  genuinely believe that the right information, presented the
+                  right way, can change outcomes.
                 </p>
                 <p>
-                  At leading institutions like MGH, BWH, and Boston University,
-                  I&apos;ve led projects that directly improve patient outcomes
-                  - from reducing sleep study analysis time by 90% to developing
-                  brain age prediction models that provide new clinical
-                  biomarkers.
+                  Over the years that mindset has taken me from clinical
+                  research labs in Boston to building end-to-end digital
+                  products — always with the same goal: turn raw, complicated
+                  data into something useful, clear, and dependable.
                 </p>
                 <p>
-                  What drives me: Taking complex biomedical data and creating
-                  solutions that clinicians can actually use.
-                </p>
-                <p>
-                  Technical expertise: Python, R, AWS, Docker, machine learning,
-                  deep learning, medical imaging, EEG/fMRI analysis, and
-                  full-stack development.
-                </p>
-                <p>
-                  Looking to collaborate with teams pushing the boundaries of
-                  healthcare AI, precision medicine, and clinical decision
-                  support systems.
+                  Outside of work, I&apos;m curious about how AI is reshaping
+                  the way we learn, build, and make decisions — and I try to
+                  stay close to those edges.
                 </p>
               </div>
             </div>
