@@ -60,7 +60,7 @@ export default function Home() {
                 solutions.
               </p>
               <ul className='my-4 text-lg font-medium md:text-base sm:text-sm text-left lg:text-center space-y-2 list-disc list-inside lg:list-none'>
-                <li>5 years of experience as a Data Analyst.</li>
+                <li>5+ years of experience as a Data Analyst.</li>
                 <li>Proficient in Python, Machine Learning and SQL.</li>
                 <li>Analytic mindset and a passion for AI.</li>
                 <li>
