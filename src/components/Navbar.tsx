@@ -11,6 +11,7 @@ import {
   Sun,
   Moon,
   BookOpenText,
+  ExternalLink,
   Newspaper,
   Menu,
   X
@@ -154,6 +155,17 @@ const Navbar = () => {
           <motion.a
             target={"_blank"}
             className="w-7 mr-8"
+            href="https://senthilcaesar.github.io/resources/"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 2 }}
+            aria-label="Checkout my Resources"
+          >
+            <ExternalLink className="w-7 h-7" />
+          </motion.a>
+
+          <motion.a
+            target={"_blank"}
+            className="w-7 mr-8"
             href="https://senthilcaesar.github.io/blogs/"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 2 }}
@@ -267,6 +279,17 @@ const Navbar = () => {
               aria-label="Checkout my Readings"
             >
               <BookOpenText className="w-6 h-6" />
+            </motion.a>
+
+            <motion.a
+              target={"_blank"}
+              className="w-6 m-1 mx-3 sm:mx-1"
+              href="https://senthilcaesar.github.io/resources/"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="Checkout my Resources"
+            >
+              <ExternalLink className="w-6 h-6" />
             </motion.a>
 
             <motion.a
