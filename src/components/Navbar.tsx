@@ -15,10 +15,12 @@ import {
   Newspaper,
   Menu,
   X,
-  FlaskConical
+  FlaskConical,
+  Code
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useThemeStore } from "@/store/useThemeStore";
+import TechStackModal from "./TechStackModal";
 
 interface CustomLinkProps {
   href: string;
@@ -30,6 +32,8 @@ const CustomLink = ({ href, title, className = "" }: CustomLinkProps) => {
   const pathname = usePathname();
   const isExternal = href.startsWith("http");
 
+  const isActive = href === "/" ? pathname === href : pathname.startsWith(href);
+
   return (
     <Link
       href={href}
@@ -40,8 +44,8 @@ const CustomLink = ({ href, title, className = "" }: CustomLinkProps) => {
       <span
         className={`
           inline-block h-[1px] bg-dark absolute left-0 -bottom-0.5 
-          group-hover:w-full transition-[width] ease duration-300 dark:bg-light
-          ${pathname === href ? "w-full" : "w-0"}
+          transition-[width] ease duration-300 dark:bg-light
+          ${isActive ? "w-full" : "w-0 group-hover:w-full"}
           lg:bg-light lg:dark:bg-dark
         `}
       >
@@ -67,6 +71,8 @@ const CustomMobileLink = ({ href, title, className = "", toggle }: CustomMobileL
     router.push(href);
   };
 
+  const isActive = href === "/" ? pathname === href : pathname.startsWith(href);
+
   return (
     <button
       className={`${className} rounded relative group lg:text-light lg:dark:text-dark`}
@@ -76,8 +82,8 @@ const CustomMobileLink = ({ href, title, className = "", toggle }: CustomMobileL
       <span
         className={`
               inline-block h-[1px] bg-dark absolute left-0 -bottom -0.5 
-              group-hover:w-full transition-[width] ease duration-300 dark:bg-light
-              ${pathname === href ? "w-full" : "w-0"}
+              transition-[width] ease duration-300 dark:bg-light
+              ${isActive ? "w-full" : "w-0 group-hover:w-full"}
               lg:bg-light lg:dark:bg-dark
               `}
       >
@@ -90,6 +96,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }: CustomMobileL
 const Navbar = () => {
   const { mode, toggleMode } = useThemeStore();
   const [isOpen, setIsOpen] = useState(false);
+  const [isTechStackOpen, setIsTechStackOpen] = useState(false);
 
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -131,105 +138,113 @@ const Navbar = () => {
       </button>
 
       <div className="w-full flex justify-between items-center lg:hidden">
-        <nav className="flex items-center justify-center">
-          <CustomLink className="mr-8" href="/" title="Home" />
-          <CustomLink className="mx-8" href="/about" title="About" />
-          <CustomLink className="mx-8" href="/projects" title="Projects" />
-          <CustomLink className="mx-8" href="/articles" title="Articles" />
-          <CustomLink className="mx-8" href="/blogs" title="Blogs" />
+        <nav className="flex items-center justify-center gap-8 xl:gap-4">
+          <CustomLink href="/" title="Home" />
+          <CustomLink href="/about" title="About" />
+          <CustomLink href="/projects" title="Projects" />
+          <CustomLink href="/articles" title="Articles" />
+          <CustomLink href="/blogs" title="Blogs" />
         </nav>
         <nav
-          className="flex items-center justify-center flex-wrap lg:mt-2 text-dark dark:text-light
-      "
+          className="flex items-center justify-center gap-5 xl:gap-3 flex-wrap lg:mt-2 text-dark dark:text-light"
         >
+          <button
+            onClick={() => setIsTechStackOpen(true)}
+            className="flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg border border-dark/20 dark:border-light/20 hover:bg-dark/5 dark:hover:bg-light/5 transition-colors"
+            title="Tech Stack"
+          >
+            <Code className="w-5 h-5 xl:w-4 xl:h-4" />
+            <span className="font-semibold text-sm xl:text-xs whitespace-nowrap">Tech Stack</span>
+          </button>
+
           <motion.a
             target={"_blank"}
-            className="w-7 mr-8"
+            className="w-7 h-7 xl:w-6 xl:h-6"
             href="https://senthilcaesar.github.io/knowledgelab/"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 2 }}
             aria-label="Checkout my Knowledge Lab"
           >
-            <FlaskConical className="w-7 h-7" />
+            <FlaskConical className="w-full h-full" />
           </motion.a>
 
           <motion.a
             target={"_blank"}
-            className="w-7 mr-8"
+            className="w-7 h-7 xl:w-6 xl:h-6"
             href="https://senthilcaesar.github.io/my-reading/"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 2 }}
             aria-label="Checkout my Readings"
           >
-            <BookOpenText className="w-7 h-7" />
+            <BookOpenText className="w-full h-full" />
           </motion.a>
 
           <motion.a
             target={"_blank"}
-            className="w-7 mr-8"
+            className="w-7 h-7 xl:w-6 xl:h-6"
             href="https://senthilcaesar.github.io/resources/"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 2 }}
             aria-label="Checkout my Resources"
           >
-            <ExternalLink className="w-7 h-7" />
+            <ExternalLink className="w-full h-full" />
           </motion.a>
 
           <motion.a
             target={"_blank"}
-            className="w-7 mr-8"
+            className="w-7 h-7 xl:w-6 xl:h-6"
             href="https://senthilcaesar.github.io/blogs/"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 2 }}
             aria-label="Checkout my Blogs"
           >
-            <Newspaper className="w-7 h-7" />
+            <Newspaper className="w-full h-full" />
           </motion.a>
 
           <motion.a
             target={"_blank"}
-            className="w-7 mr-4"
+            className="w-7 h-7 xl:w-6 xl:h-6"
             href="https://github.com/SenthilCaesar"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 2 }}
             aria-label="Checkout my github profile"
           >
-            <Github className="w-7 h-7" />
+            <Github className="w-full h-full" />
           </motion.a>
 
           <motion.a
             target={"_blank"}
-            className="w-7 mx-3"
+            className="w-7 h-7 xl:w-6 xl:h-6"
             href="https://www.linkedin.com/in/senthil-palanivelu-0ba38844/"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 2 }}
             aria-label="Checkout my linkedin profile"
           >
-            <Linkedin className="w-7 h-7" />
+            <Linkedin className="w-full h-full" />
           </motion.a>
 
           <motion.a
             href="https://www.instagram.com/senthil_p89/"
-            className="w-7 mx-3"
+            className="w-7 h-7 xl:w-6 xl:h-6"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 2 }}
           >
-             <Instagram className="w-7 h-7" />
+             <Instagram className="w-full h-full" />
           </motion.a>
 
           <button
             onClick={toggleMode}
-            className={`w-7 h-7 ease ml-6 flex items-center justify-center rounded-full p-1  
+            className={`w-7 h-7 xl:w-6 xl:h-6 ease flex items-center justify-center rounded-full p-1  
             ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
             `}
             aria-label="theme-switcher"
           >
             {mode === "light" ? (
-              <Sun className={"fill-dark"} />
+              <Sun className={"fill-dark w-full h-full"} />
             ) : (
-              <Moon className={"fill-dark"} />
+              <Moon className={"fill-dark w-full h-full"} />
             )}
           </button>
         </nav>
@@ -282,6 +297,19 @@ const Navbar = () => {
             className="flex items-center justify-center mt-2
       "
           >
+            <motion.button
+              className="w-6 m-1 mx-3 sm:mx-1 flex items-center justify-center"
+              onClick={() => {
+                setIsOpen(false);
+                setIsTechStackOpen(true);
+              }}
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="View Project Tech Stack"
+            >
+              <Code className="w-6 h-6" />
+            </motion.button>
+
             <motion.a
               target={"_blank"}
               className="w-6 m-1 mx-3 sm:mx-1"
@@ -377,6 +405,11 @@ const Navbar = () => {
       <div className="absolute left-[50%] top-2 translate-x-[-50%] ">
         <Logo />
       </div>
+
+      <TechStackModal 
+        isOpen={isTechStackOpen} 
+        onClose={() => setIsTechStackOpen(false)} 
+      />
     </header>
   );
 };
